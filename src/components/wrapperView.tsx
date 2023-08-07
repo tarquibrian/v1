@@ -16,8 +16,8 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
             </div>
             <div className="aside__content-header">
               <header>
-                <h1>Brian Tarqui Rojas</h1>
-                <h2>Full Stack Developer</h2>{" "}
+                <h1>BRIAN TARQUI</h1>
+                <h2>Full Stack Developer</h2>
                 <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
                   unde aspernatur, praesentium velit ea reiciendis suscipit
@@ -42,9 +42,6 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
             </Link>
             <Link href={"/"}>
               <span>Studio</span>
-            </Link>
-            <Link href={"/"}>
-              <span>Contact</span>
             </Link>
           </nav>
           <main>{children}</main>
