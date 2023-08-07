@@ -27,8 +27,38 @@
     &-aside {
       .aside__content {
         position: sticky;
-        top: 0;
+        top: calc(4rem + 3rem);
         left: 0;
+        background-color: lightcoral;
+
+        &-picture {
+          position: relative;
+
+          .picture__content {
+            position: absolute;
+            top: 0;
+            left: 3rem;
+            width: 8rem;
+            height: 8rem;
+            border-radius: 10rem;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-50%);
+          }
+        }
+        &-header {
+          padding: 5rem 3rem 3rem;
+          display: flex;
+          flex-direction: column;
+          gap: 12rem;
+          
+          .socials {
+            display: flex;
+            gap: 1rem;
+          }
+        }
       }
     }
 
