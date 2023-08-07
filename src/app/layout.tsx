@@ -1,6 +1,7 @@
 import ThreeCanvas from "@/threejs/canvas";
 import "../styles/global.scss";
 import type { Metadata } from "next";
+import WrapperView from "@/components/wrapperView";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <WrapperView>{children}</WrapperView>
         <ThreeCanvas />
       </body>
     </html>
