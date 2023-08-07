@@ -1,15 +1,44 @@
 @import "./components/styles";
-@import './fonts.scss';
+@import "./fonts.scss";
 
-* {
+*,
+*:after,
+*:before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
 }
 
 body {
   color: white;
   font-size: 100%;
   line-height: 1.5;
-  font-family: 'Manrope';
+  font-family: "Manrope";
 }
+
+a {
+  color: white;
+}
+

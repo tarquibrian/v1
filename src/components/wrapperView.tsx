@@ -1,5 +1,6 @@
 import React from "react";
 import Aside from "./aside";
+import Link from "next/link";
 
 const WrapperView = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -32,7 +33,20 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
           </div>
         </div>
         <div className="wrapperview__content-main">
-          <nav>nav</nav>
+          <nav>
+            <Link href={"/"}>
+              <span>Posts</span>
+            </Link>
+            <Link href={"/"}>
+              <span>Projects</span>
+            </Link>
+            <Link href={"/"}>
+              <span>Studio</span>
+            </Link>
+            <Link href={"/"}>
+              <span>Contact</span>
+            </Link>
+          </nav>
           <main>{children}</main>
         </div>
       </div>
