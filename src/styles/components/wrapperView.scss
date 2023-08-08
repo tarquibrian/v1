@@ -1,6 +1,7 @@
 #wrapperview {
   min-height: 100vh;
   max-width: 1200px;
+  width: 90%;
   margin-inline: auto;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -22,54 +23,17 @@
     grid-template-columns: repeat(2, 1fr);
 
     &-aside {
+      border-right: 1px solid white;
+      padding: 3rem;
       .aside__content {
         position: sticky;
         top: calc(6rem + 3rem);
         left: 0;
 
-        &-picture {
-          position: relative;
-
-          .picture__content {
-            position: absolute;
-            top: 0;
-            left: 3rem;
-            width: 8rem;
-            height: 8rem;
-            border-radius: 10rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid white;
-            transform: translateY(-80%);
-          }
-        }
         &-header {
-          padding: 3rem 3rem;
           display: flex;
           flex-direction: column;
           gap: 12rem;
-          max-width: 500px;
-
-          header {
-            h1 {
-              font-size: 3.5rem;
-              font-weight: 600;
-              font-family: "Adam";
-              margin-bottom: -10px;
-            }
-            h2 {
-              font-family: "Adam";
-              font-size: 2.3rem;
-              font-weight: 600;
-              margin-bottom: 1rem;
-            }
-          }
-
-          .socials {
-            display: flex;
-            gap: 1rem;
-          }
         }
       }
     }
@@ -81,28 +45,38 @@
       position: relative;
 
       nav {
-        position: sticky;
-        top: 3rem;
-        left: 0;
+        // position: sticky;
+        // top: 3rem;
+        // left: 0;
         display: flex;
         justify-content: space-between;
         gap: 1rem;
+        // -webkit-backdrop-filter: blur(20px);
+        // backdrop-filter: blur(20px);
+        // background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        // padding: 0.5rem 1rem;
+        z-index: 999;
         a {
           display: flex;
           position: relative;
           span {
-            padding: 0.5rem 2rem;
+            // padding: 0.5rem 1.5rem;
+            // padding-top: .2rem;
           }
           &::after {
             content: "";
             position: absolute;
-            bottom: 0;
+            bottom: 4px;
             left: 0;
             width: 100%;
-            height: 2px;
+            height: 1px;
             background-color: white;
           }
         }
+      }
+      main {
+        padding: 2rem 0;
       }
     }
   }
