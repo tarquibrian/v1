@@ -5,12 +5,15 @@
   margin-inline: auto;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  border-left: 1px solid rgba(200, 200, 200, 0.2);
-  border-right: 1px solid rgba(200, 200, 200, 0.2);
+  border: 1px solid rgba(200, 200, 200, 0.2);
+  border: 1px solid rgba(200, 200, 200, 0.2);
   background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 
   .wrapperview__picture {
-    background-color: lightcoral;
+    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.2);
+    // border-top: 1px solid rgba(200, 200, 200, 0.2);
     .picture__content {
       aspect-ratio: 5 / 1;
       width: 100%;
@@ -24,6 +27,7 @@
 
     &-aside {
       border-right: 1px solid white;
+      border-right: 1px solid rgba(200, 200, 200, 0.2);
       padding: 3rem;
       .aside__content {
         position: sticky;
@@ -40,8 +44,8 @@
 
     &-main {
       min-height: 2000px;
-      padding: 3rem;
-      padding-left: 0;
+      // padding: 3rem;
+      // padding-left: 0;
       position: relative;
 
       nav {

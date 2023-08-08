@@ -6,7 +6,7 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
   return (
     <div id="wrapperview">
       <div className="wrapperview__picture">
-        <div className="picture__content">l</div>
+        <div className="picture__content"></div>
       </div>
       <div className="wrapperview__content">
         <div className="wrapperview__content-aside">
