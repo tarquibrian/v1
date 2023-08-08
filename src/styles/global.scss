@@ -1,4 +1,5 @@
 @import "./components/styles";
+@import "./variables.scss";
 // @import "./fonts.scss";
 
 *,
@@ -49,4 +50,23 @@ h3,
 h4,
 h5 {
   font-size: 1rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.line-y {
+  background-color: var(--c-border);
+  height: 100%;
+  width: 1px;
+}
+
+.line-x {
+  background-color: var(--c-border);
+  width: 100%;
+  height: 1px;
 }
