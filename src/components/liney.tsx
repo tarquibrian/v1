@@ -3,12 +3,16 @@ import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const LineY = () => {
+interface Props {
+  view?: boolean;
+}
+
+const LineY = ({ view = true }: Props) => {
   const [ref, inView] = useInView();
   const controls = useAnimation();
 
   useEffect(() => {
-    if (inView) {
+    if (inView && view) {
       controls.start("visible");
     }
   }, [controls, inView]);
