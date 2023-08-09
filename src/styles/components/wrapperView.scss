@@ -83,6 +83,21 @@
               font-weight: 300;
             }
           }
+
+          .sticky__contact {
+            padding: 2rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            gap: 0.5rem;
+            &-icons {
+              display: flex;
+              gap: 1rem;
+            }
+            svg {
+              width: 30px;
+              height: 30px;
+            }
+          }
         }
       }
     }

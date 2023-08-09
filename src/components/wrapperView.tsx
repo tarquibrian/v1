@@ -6,6 +6,10 @@ import banner from "../../public/img/banner-top.jpg";
 import Image from "next/image";
 import LineY from "./liney";
 import picture from "../../public/img/pf-white.jpg";
+import EmailIcon from "./icons/email";
+import LinkedinIcon from "./icons/linkedin";
+import GithubIcon from "./icons/github";
+import DribbbleIcon from "./icons/dribbble";
 
 const WrapperView = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -50,13 +54,22 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                   </p>
                 </div>
               </Wrapper>
-              <Wrapper>
+              {/* <Wrapper>
                 <h2>CONTACT</h2>
-              </Wrapper>
+              </Wrapper> */}
               <Wrapper>
                 <div className="sticky__contact">
                   {/* <div className="contact-link">tarquibrian@gmail.com</div> */}
                   {/* <div className="contact-link">+591 63909428</div> */}
+                  <div className="sticky__contact-label">
+                    <div className="">Social links:</div>
+                  </div>
+                  <div className="sticky__contact-icons">
+                    <EmailIcon />
+                    <LinkedinIcon />
+                    <GithubIcon />
+                    <DribbbleIcon />
+                  </div>
                 </div>
               </Wrapper>
             </div>
