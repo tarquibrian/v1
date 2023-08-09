@@ -3,6 +3,7 @@ import Wrapper from "./wrapper";
 import author from "../../public/img/pf-white.jpg";
 import post from "../../public/img/banner-top.jpg";
 import Image from "next/image";
+import HeartIcon from "./icons/heart";
 
 const PostWrapper = () => {
   return (
@@ -34,6 +35,11 @@ const PostWrapper = () => {
         <div className="postwrapper__section-picture">
           <div className="picture__content">
             <Image src={post} alt="picture post" placeholder="blur" />
+          </div>
+        </div>
+        <div className="postwrapper__section-options">
+          <div className="options__content">
+            <HeartIcon />
           </div>
         </div>
       </div>
