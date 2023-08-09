@@ -22,6 +22,12 @@ const PostWrapper = () => {
           </div>
           <div className="postwrapper__section-title">
             <h4>Title Post</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              nihil alias quas? Quidem, accusantium quae dolorem fuga iste
+              tempore corporis aliquam laudantium cum, minus voluptas expedita,
+              ut nostrum
+            </p>
           </div>
         </div>
 
