@@ -1,9 +1,15 @@
-import React from 'react'
+import ProjectsWrapper from "@/components/projectsWrapper";
+import React from "react";
 
 const ProjectsPage = () => {
   return (
-    <div>ProjectsPage</div>
-  )
-}
+    <>
+      <ProjectsWrapper />
+      <ProjectsWrapper />
+      <ProjectsWrapper />
+      <ProjectsWrapper />
+    </>
+  );
+};
 
-export default ProjectsPage
+export default ProjectsPage;
