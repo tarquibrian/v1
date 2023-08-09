@@ -75,6 +75,22 @@
             }
           }
 
+          .sticky__profile {
+            display: grid;
+            grid-template-columns: auto 1px auto 1px auto;
+
+            .profile__content {
+              text-align: center;
+              padding: 1.5rem 0.5rem;
+              h3 {
+                line-height: 1;
+                font-family: "Adam", sans-serif;
+                font-size: clamp(14px, 1.5vw, 18px);
+                // font-weight: 400;
+              }
+            }
+          }
+
           .sticky__desc {
             padding: 3rem;
 
@@ -85,17 +101,40 @@
           }
 
           .sticky__contact {
-            padding: 2rem 3rem;
+            padding: 1.5rem 3rem;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             gap: 0.5rem;
+            &-label {
+              font-family: "Adam", sans-serif;
+              font-weight: 600;
+            }
             &-icons {
               display: flex;
               gap: 1rem;
+              svg {
+                width: 30px;
+                height: 30px;
+              }
             }
-            svg {
-              width: 30px;
-              height: 30px;
+          }
+
+          .sticky__resume {
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+            &-label {
+              font-family: "Adam", sans-serif;
+              font-weight: 600;
+            }
+
+            &-link {
+              a {
+                text-decoration: underline;
+              }
             }
           }
         }

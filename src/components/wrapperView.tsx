@@ -37,13 +37,25 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                   <LineY />
                   <div className="header__title">
                     <h1>BRIAN TARQUI</h1>
-                    <h2>Full Stack Developer</h2>
+                    <h2>Digital Freelancer</h2>
                   </div>
                 </div>
               </Wrapper>
-              {/* <Wrapper>
-                <h2>ABOUT</h2>
-              </Wrapper> */}
+              <Wrapper>
+                <div className="sticky__profile">
+                  <div className="profile__content">
+                    <h3>Web Developer</h3>
+                  </div>
+                  <LineY />
+                  <div className="profile__content">
+                    <h3>UX/UI Designer</h3>
+                  </div>
+                  <LineY />
+                  <div className="profile__content">
+                    <h3>System Engineer</h3>
+                  </div>
+                </div>
+              </Wrapper>
               <Wrapper>
                 <div className="sticky__desc">
                   <p>
@@ -62,13 +74,25 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                   {/* <div className="contact-link">tarquibrian@gmail.com</div> */}
                   {/* <div className="contact-link">+591 63909428</div> */}
                   <div className="sticky__contact-label">
-                    <div className="">Social links:</div>
+                    <div className="">SOCIAL</div>
                   </div>
                   <div className="sticky__contact-icons">
                     <EmailIcon />
                     <LinkedinIcon />
                     <GithubIcon />
                     <DribbbleIcon />
+                  </div>
+                </div>
+              </Wrapper>
+              <Wrapper>
+                <div className="sticky__resume">
+                  <div className="sticky__resume-label">
+                    <div className="">MY RESUME</div>
+                  </div>
+                  <div className="sticky__resume-link">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                      resume
+                    </a>
                   </div>
                 </div>
               </Wrapper>
