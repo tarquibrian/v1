@@ -136,7 +136,7 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
               </Wrapper>
             </div>
           </div>
-          <LineY />
+          <LineY view={false} />
         </div>
         <div className="wrapperview__content-main">
           <Wrapper className="nav">

@@ -12,6 +12,9 @@ const LineY = ({ view = true }: Props) => {
   const controls = useAnimation();
 
   useEffect(() => {
+    if (!view) {
+      controls.start("visible");
+    }
     if (inView && view) {
       controls.start("visible");
     }
