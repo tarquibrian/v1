@@ -4,6 +4,7 @@ import author from "../../public/img/pf-white.jpg";
 import post from "../../public/img/banner-top.jpg";
 import Image from "next/image";
 import HeartIcon from "./icons/heart";
+import FeedbackIcon from "./icons/feedback";
 
 const PostWrapper = () => {
   return (
@@ -39,7 +40,22 @@ const PostWrapper = () => {
         </div>
         <div className="postwrapper__section-options">
           <div className="options__content">
-            <HeartIcon />
+            <div className="heart__icon">
+              <HeartIcon />
+            </div>
+            <div className="content__feedback">
+              <div className="feedback__input">
+                <input
+                  type="text"
+                  name="desd"
+                  id="desc"
+                  placeholder="dame tu feedback"
+                />
+              </div>
+              <div className="feedback__icon">
+                <FeedbackIcon />
+              </div>
+            </div>
           </div>
         </div>
       </div>

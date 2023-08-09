@@ -2,7 +2,7 @@
   .postwrapper__section {
     // gap: 1rem;
     .top {
-      padding: 1.5rem;
+      padding: 2rem;
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
@@ -46,6 +46,18 @@
         line-height: 1;
         font-size: clamp(16px, 2vw, 20px);
         margin-bottom: 0.5rem;
+      }
+    }
+
+    &-options {
+      padding: 2rem;
+      .options__content {
+        display: flex;
+
+        svg {
+          width: 25px;
+          height: 25px;
+        }
       }
     }
   }

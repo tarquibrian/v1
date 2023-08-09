@@ -2,14 +2,24 @@ import * as React from "react";
 
 const HeartIcon = ({ size = 46, color = "currentColor", ...props }) => (
   <svg
-    width={size}
-    height={size}
-    fill={color}
-    viewBox="0 0 24 24"
+    viewBox="0 0 192 192"
     xmlns="http://www.w3.org/2000/svg"
-    {...props}
+    xmlSpace="preserve"
+    fill="none"
   >
-    <path d="M12 2.25c-5.376 0-9.75 4.374-9.75 9.75s4.374 9.75 9.75 9.75 9.75-4.374 9.75-9.75S17.376 2.25 12 2.25Zm3.501 11.85c-.398.487-1.86 1.805-3.501 2.978-1.64-1.172-3.103-2.491-3.501-2.977-.938-1.142-1.387-2.316-1.374-3.586.015-1.456 1.183-2.64 2.603-2.64 1.032 0 1.749.581 2.166 1.066l.106.13.106-.13c.41-.49 1.132-1.066 2.166-1.066 1.42 0 2.588 1.185 2.603 2.64.013 1.27-.437 2.444-1.374 3.586Z" />
+    <path
+      d="M60.732 29.7C41.107 29.7 22 39.7 22 67.41c0 27.29 45.274 67.29 74 94.89 28.744-27.6 74-67.6 74-94.89 0-27.71-19.092-37.71-38.695-37.71C116 29.7 104.325 41.575 96 54.066 87.638 41.516 76 29.7 60.732 29.7z"
+      clipRule={"evenodd"}
+      display={"inline"}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={12}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeMiterlimit={2}
+      strokeDasharray={"none"}
+      strokeOpacity={1}
+    ></path>
   </svg>
 );
 
