@@ -11,6 +11,7 @@ import LinkedinIcon from "./icons/linkedin";
 import GithubIcon from "./icons/github";
 import DribbbleIcon from "./icons/dribbble";
 import OpenIcon from "./icons/open";
+import BehanceIcon from "./icons/behance";
 
 const WrapperView = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -85,16 +86,38 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
               </Wrapper>
               <Wrapper>
                 <div className="sticky__contact">
-                  {/* <div className="contact-link">tarquibrian@gmail.com</div> */}
-                  {/* <div className="contact-link">+591 63909428</div> */}
                   <div className="sticky__contact-label">
                     <div className="">SOCIAL</div>
                   </div>
                   <div className="sticky__contact-icons">
-                    <EmailIcon />
-                    <LinkedinIcon />
-                    <GithubIcon />
-                    <DribbbleIcon />
+                    <a
+                      href="http://linkedin.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <LinkedinIcon />
+                    </a>
+                    <a
+                      href="http://github.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <GithubIcon />
+                    </a>
+                    <a
+                      href="http://dribbble.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <DribbbleIcon />
+                    </a>
+                    <a
+                      href="http://behance.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <BehanceIcon />
+                    </a>
                   </div>
                 </div>
               </Wrapper>
