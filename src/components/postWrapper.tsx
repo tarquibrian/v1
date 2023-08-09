@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import Wrapper from "./wrapper";
 import author from "../../public/img/pf-white.jpg";
 import post from "../../public/img/banner-top.jpg";
@@ -7,6 +8,17 @@ import HeartIcon from "./icons/heart";
 import FeedbackIcon from "./icons/feedback";
 
 const PostWrapper = () => {
+  const [isActive, setIsActive] = useState(false);
+  const [clicked, setClicked] = useState(false);
+  const active = () => {
+    if (!isActive) {
+      setIsActive(true);
+      setTimeout(() => {
+        setIsActive(false);
+      }, 1000);
+    }
+  };
+
   return (
     <Wrapper htmlElement="section" id="postwrapper">
       <div className="postwrapper__section">
@@ -34,21 +46,30 @@ const PostWrapper = () => {
         </div>
 
         <div className="postwrapper__section-picture">
-          <div className="picture__content">
+          <div className="picture__content" onDoubleClick={() => active()}>
             <Image src={post} alt="picture post" placeholder="blur" />
+            <div className={`icon ${isActive ? "like" : ""}`}>
+              <HeartIcon />
+            </div>
           </div>
         </div>
         <div className="postwrapper__section-options">
           <div className="options__content">
-            <div className="heart__icon">
+            <button
+              className={`heart__icon ${clicked ? "click" : ""}`}
+              onClick={() => {
+                active();
+                setClicked(true);
+              }}
+            >
               <HeartIcon />
-            </div>
+            </button>
             <div className="feedback">
               <input
                 type="text"
                 name="desd"
                 id="desc"
-                placeholder="dame tu feedback"
+                placeholder="Give me your feedback"
               />
               <FeedbackIcon />
             </div>

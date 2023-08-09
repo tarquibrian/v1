@@ -14,6 +14,7 @@
       // padding: 1rem;
 
       .header__picture {
+        position: relative;
         .picture__content {
           width: 45px;
           height: 45px;
@@ -49,6 +50,51 @@
       }
     }
 
+    &-picture {
+      .picture__content {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icon {
+          position: absolute;
+          pointer-events: none;
+          opacity: 0;
+        }
+        .like {
+          animation: 1s like ease-in-out;
+
+          @keyframes like {
+            0% {
+              opacity: 0;
+              scale: 0;
+            }
+            15% {
+              opacity: 1;
+              scale: 1.2;
+            }
+            30% {
+              scale: 0.9;
+            }
+            45%,
+            80% {
+              scale: 1;
+            }
+            100% {
+              scale: 0;
+              opacity: 1;
+            }
+          }
+        }
+        svg {
+          width: 100px;
+          height: 100px;
+          color: #f48bc5;
+          fill: #f48bc5;
+        }
+      }
+    }
+
     &-options {
       padding: 2rem;
       svg {
@@ -58,25 +104,45 @@
       .options__content {
         display: flex;
         justify-content: space-between;
+        gap: 1rem;
+
+        .heart__icon {
+          svg {
+            // color: transparent;
+            // fill: black;
+            // color: transparent;
+            // stroke: black;
+          }
+        }
+
+        .click {
+          // svg {
+          //   fill
+          // }
+        }
 
         .feedback {
-          // width: 100%;
+          width: 100%;
           display: flex;
           align-items: center;
           gap: 1rem;
           input {
-            // width: 100%;
+            width: 100%;
             padding: 0 1rem;
-            min-width: 300px;
+            // min-width: 300px;
             height: 35px;
             background-color: transparent;
-            border: 1px solid var(--c-border);
-            border-radius: 4px;
+            border: 1px solid white;
+            border-radius: 10rem;
             color: white;
             transition: 0.2s ease;
+            // font-family: "Manrope";
+            // line-height: 2;
 
             &::placeholder {
-              // color: white;
+              color: white;
+              font-family: "Adam";
+              line-height: 1;
             }
 
             &:focus {
