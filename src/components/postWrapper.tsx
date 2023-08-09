@@ -7,6 +7,7 @@ import Image from "next/image";
 import HeartIcon from "./icons/heart";
 import FeedbackIcon from "./icons/feedback";
 import LineY from "./liney";
+import ShareIcon from "./icons/share";
 
 const PostWrapper = () => {
   const [isActive, setIsActive] = useState(false);
@@ -80,9 +81,20 @@ const PostWrapper = () => {
               />
             </div>
             <LineY />
-            <div className="box content__send">S</div>
+            <div className="box content__send">
+              <button
+                className={`feedback__icon ${feedbackClick ? "click" : ""}`}
+                onClick={() => setFeedbackClick(true)}
+              >
+                <FeedbackIcon />
+              </button>
+            </div>
             <LineY />
-            <div className="box content__share">S</div>
+            <div className="box content__share">
+              <button className={`share__icon`}>
+                <ShareIcon color="white" />
+              </button>
+            </div>
             {/* <button
               className={`heart__icon ${clicked ? "click" : ""}`}
               onClick={() => {
