@@ -43,18 +43,14 @@ const PostWrapper = () => {
             <div className="heart__icon">
               <HeartIcon />
             </div>
-            <div className="content__feedback">
-              <div className="feedback__input">
-                <input
-                  type="text"
-                  name="desd"
-                  id="desc"
-                  placeholder="dame tu feedback"
-                />
-              </div>
-              <div className="feedback__icon">
-                <FeedbackIcon />
-              </div>
+            <div className="feedback">
+              <input
+                type="text"
+                name="desd"
+                id="desc"
+                placeholder="dame tu feedback"
+              />
+              <FeedbackIcon />
             </div>
           </div>
         </div>

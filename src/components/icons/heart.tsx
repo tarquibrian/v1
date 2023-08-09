@@ -13,7 +13,7 @@ const HeartIcon = ({ size = 46, color = "currentColor", ...props }) => (
       display={"inline"}
       fill="none"
       stroke="currentColor"
-      strokeWidth={12}
+      strokeWidth={10}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeMiterlimit={2}
