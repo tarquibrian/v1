@@ -37,6 +37,16 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                   </div>
                 </div>
               </Wrapper>
+              <Wrapper>
+                <div className="sticky__desc">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Error et assumenda aut enim tempore culpa odio rerum. Totam
+                    sunt voluptas laborum! Quidem doloribus aliquam
+                    necessitatibus doloremque obcaecati impedit quas optio.
+                  </p>
+                </div>
+              </Wrapper>
             </div>
           </div>
           <LineY />
