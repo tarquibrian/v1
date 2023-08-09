@@ -1,19 +1,34 @@
 import React from "react";
 import Wrapper from "./wrapper";
+import author from "../../public/img/pf-white.jpg";
+import post from "../../public/img/banner-top.jpg";
+import Image from "next/image";
 
 const PostWrapper = () => {
   return (
     <Wrapper htmlElement="section" id="postwrapper">
       <div className="postwrapper__section">
-        <div className="postwrapper__section-header">
-          <div className="header__author">
-            <div className="header__author-picture">P</div>
-            <div className="header__author-name">Brian Tarqui Rojas</div>
+        <div className="top">
+          <div className="postwrapper__section-header">
+            <div className="header__picture">
+              <div className="picture__content">
+                <Image src={author} alt="author picture" placeholder="blur" />
+              </div>
+            </div>
+            <div className="header__title">
+              <div className="name">Brian Tarqui</div>
+              <div className="date">July 2023</div>
+            </div>
           </div>
-          <div className="header__date">July 2023</div>
+          <div className="postwrapper__section-title">
+            <h4>Title Post</h4>
+          </div>
         </div>
+
         <div className="postwrapper__section-picture">
-          <div className="picture__content">asdf</div>
+          <div className="picture__content">
+            <Image src={post} alt="picture post" placeholder="blur" />
+          </div>
         </div>
         <div className="postwrapper__section-desc">asd</div>
       </div>

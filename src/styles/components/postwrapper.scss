@@ -1,0 +1,51 @@
+#postwrapper {
+  .postwrapper__section {
+    // gap: 1rem;
+    .top {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    &-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      // padding: 1rem;
+
+      .header__picture {
+        .picture__content {
+          width: 45px;
+          height: 45px;
+          border-radius: 10rem;
+          overflow: hidden;
+        }
+      }
+
+      .header__title {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        .name {
+          font-family: "Adam";
+          font-size: 18px;
+          line-height: 1;
+          font-weight: 400;
+        }
+        .date {
+          font-family: "Adam";
+          font-size: 16px;
+          line-height: 1;
+        }
+      }
+    }
+    &-title {
+      // padding: 0rem 1rem;
+      h4 {
+        font-family: "Adam";
+        line-height: 1;
+        font-size: clamp(16px, 2vw, 20px);
+      }
+    }
+  }
+}
