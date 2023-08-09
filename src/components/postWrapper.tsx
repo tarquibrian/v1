@@ -92,7 +92,7 @@ const PostWrapper = () => {
             <LineY />
             <div className="box content__share">
               <button className={`share__icon`}>
-                <ShareIcon color="white" />
+                <ShareIcon />
               </button>
             </div>
             {/* <button
