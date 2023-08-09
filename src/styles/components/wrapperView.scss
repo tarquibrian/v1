@@ -28,9 +28,12 @@
       .aside__content {
         &-sticky {
           position: sticky;
-          top: 0;
+          top: 0rem;
           left: 0;
+          // border-top: 1px solid var(--c-border);
           // background-color: lightcoral;
+          // min-height: 100vh;
+          // background-color: lightblue;
 
           .sticky__header {
             display: grid;

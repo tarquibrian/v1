@@ -37,6 +37,9 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                   </div>
                 </div>
               </Wrapper>
+              {/* <Wrapper>
+                <h2>ABOUT</h2>
+              </Wrapper> */}
               <Wrapper>
                 <div className="sticky__desc">
                   <p>
@@ -45,6 +48,15 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                     sunt voluptas laborum! Quidem doloribus aliquam
                     necessitatibus doloremque obcaecati impedit quas optio.
                   </p>
+                </div>
+              </Wrapper>
+              <Wrapper>
+                <h2>CONTACT</h2>
+              </Wrapper>
+              <Wrapper>
+                <div className="sticky__contact">
+                  {/* <div className="contact-link">tarquibrian@gmail.com</div> */}
+                  {/* <div className="contact-link">+591 63909428</div> */}
                 </div>
               </Wrapper>
             </div>
