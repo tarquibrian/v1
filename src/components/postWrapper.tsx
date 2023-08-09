@@ -36,7 +36,6 @@ const PostWrapper = () => {
             <Image src={post} alt="picture post" placeholder="blur" />
           </div>
         </div>
-        <div className="postwrapper__section-desc">asd</div>
       </div>
     </Wrapper>
   );
