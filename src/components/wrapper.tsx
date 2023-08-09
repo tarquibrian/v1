@@ -5,12 +5,20 @@ interface Props {
   id?: string;
   className?: string;
   children: React.ReactNode;
+  htmlElement?: string;
 }
 
-const Wrapper = ({ id, className, children }: Props) => {
+const Wrapper = ({ id, className, children, htmlElement = "div" }: Props) => {
+  if (htmlElement === "section") {
+    return (
+      <section id={id} className={`${className} wrapper`}>
+        {children}
+        <LineX />
+      </section>
+    );
+  }
   return (
     <div id={id} className={`${className} wrapper`}>
-      {/* <div className="wrapper__content">{children}</div> */}
       {children}
       <LineX />
     </div>
