@@ -10,6 +10,7 @@ import EmailIcon from "./icons/email";
 import LinkedinIcon from "./icons/linkedin";
 import GithubIcon from "./icons/github";
 import DribbbleIcon from "./icons/dribbble";
+import OpenIcon from "./icons/open";
 
 const WrapperView = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -66,9 +67,22 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                   </p>
                 </div>
               </Wrapper>
-              {/* <Wrapper>
-                <h2>CONTACT</h2>
-              </Wrapper> */}
+              <Wrapper>
+                <div className="sticky__email">
+                  <div className="sticky__email-label">
+                    <div className="">EMAIL</div>
+                  </div>
+                  <div className="sticky__email-link">
+                    <a
+                      href="mailto:tarquibrian@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      tarquibrian@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </Wrapper>
               <Wrapper>
                 <div className="sticky__contact">
                   {/* <div className="contact-link">tarquibrian@gmail.com</div> */}
@@ -92,6 +106,7 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                   <div className="sticky__resume-link">
                     <a href="http://" target="_blank" rel="noopener noreferrer">
                       resume
+                      <OpenIcon />
                     </a>
                   </div>
                 </div>
