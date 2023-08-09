@@ -96,29 +96,67 @@
     }
 
     &-options {
-      padding: 2rem;
+      // padding: 2rem;
       svg {
         width: 30px;
         height: 30px;
       }
       .options__content {
-        display: flex;
-        justify-content: space-between;
-        gap: 1rem;
+        // display: flex;
+        // justify-content: space-between;
+        // gap: 1rem;
+        display: grid;
+        grid-template-columns: max-content 1px 1fr 1px max-content 1px max-content;
+
+        .box {
+          padding: 1rem 1.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          button {
+            display: flex;
+          }
+
+          input {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            padding: 1rem 1.5rem;
+            color: white;
+            font-family: "Adam";
+            font-size: 1rem;
+
+            &:focus {
+              outline: none;
+            }
+
+            &::placeholder {
+              font-family: "Adam";
+              color: rgba(255, 255, 255, 0.6);
+              font-weight: 400;
+              font-size: 1rem;
+            }
+          }
+        }
+
+        .content__comment {
+          padding: 0;
+        }
 
         .heart__icon {
           svg {
-            // color: transparent;
-            // fill: black;
-            // color: transparent;
-            // stroke: black;
+            fill: none;
           }
         }
 
         .click {
-          // svg {
-          //   fill
-          // }
+          svg {
+            fill: white;
+          }
         }
 
         .feedback {
@@ -150,6 +188,9 @@
               border: 1px solid white;
               // outline-color: white;
             }
+          }
+          button {
+            height: fit-content;
           }
         }
       }
