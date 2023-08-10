@@ -17,7 +17,11 @@ const Navbar = () => {
       <LineY />
       <Link
         href={"/projects"}
-        className={pathname.split("/")[1] === "projects" ? "active" : ""}
+        className={
+          !pathname.split("/")[2] && pathname.split("/")[1] === "projects"
+            ? "active"
+            : ""
+        }
       >
         <span>PROJECTS</span>
       </Link>

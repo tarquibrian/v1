@@ -1,7 +1,12 @@
+import ProjectWrapper from "@/components/projectWrapper";
 import React from "react";
 
 const ProjectPage = () => {
-  return <div>ProjectSinglePage</div>;
+  return (
+    <>
+      <ProjectWrapper />
+    </>
+  );
 };
 
 export default ProjectPage;
