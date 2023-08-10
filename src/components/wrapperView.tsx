@@ -19,7 +19,7 @@ import Footer from "./footer";
 const WrapperView = ({ children }: { children: React.ReactNode }) => {
   const ref = useRef(null);
 
-  const handleOnMouseMove = (e: any) => {
+  const handleOnMouseMove = (e: MouseEvent) => {
     const rect = ref?.current?.getBoundingClientRect(),
       x = e?.clientX - rect?.left,
       y = e?.clientY - rect?.top || "";
