@@ -1,0 +1,47 @@
+#education {
+  .educationwrapper__section {
+    &-title {
+      padding: 1.5rem 3rem;
+      text-align: center;
+      h3 {
+        font-size: 24px;
+        margin-bottom: -4px;
+      }
+    }
+
+    &-list {
+      .list__header {
+        display: grid;
+        grid-template-columns: max-content 1px auto;
+        &-year {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 3rem;
+          font-family: "Manrope";
+        }
+        &-title {
+          font-family: "Manrope";
+          padding: 1rem 1.5rem;
+          display: flex;
+          align-items: center;
+          h4 {
+            font-size: 18px;
+            font-weight: 400;
+          }
+        }
+
+        &-desc {
+          padding: 3rem;
+          font-size: 18px;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          p {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
