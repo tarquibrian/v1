@@ -11,14 +11,14 @@ interface Props {
 const Wrapper = ({ id, className, children, htmlElement = "div" }: Props) => {
   if (htmlElement === "section") {
     return (
-      <section id={id} className={` wrapper`}>
+      <section id={id} className={`wrapper`}>
         <div className={className ? className : ""}>{children}</div>
-        <LineX />
+        <LineX className="section-line-x"/>
       </section>
     );
   }
   return (
-    <div id={id} className={` wrapper`}>
+    <div id={id} className={`wrapper`}>
       <div className={className ? className : ""}>{children}</div>
       <LineX />
     </div>

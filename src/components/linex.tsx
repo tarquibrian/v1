@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const LineX = () => {
+const LineX = ({ className }: { className?: string }) => {
   const [ref, inView] = useInView();
   const controls = useAnimation();
 
@@ -16,7 +16,7 @@ const LineX = () => {
   return (
     <motion.div
       ref={ref}
-      className="line-x"
+      className={`line-x ${className ? className : ""}`}
       initial="hidden"
       animate={controls}
       variants={{

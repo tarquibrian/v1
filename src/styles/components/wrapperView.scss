@@ -219,6 +219,13 @@
         }
       }
       main {
+        section {
+          &:last-of-type {
+            .section-line-x {
+              display: none;
+            }
+          }
+        }
       }
     }
   }

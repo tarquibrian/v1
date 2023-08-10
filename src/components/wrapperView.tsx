@@ -13,6 +13,7 @@ import DribbbleIcon from "./icons/dribbble";
 import OpenIcon from "./icons/open";
 import BehanceIcon from "./icons/behance";
 import Navbar from "./navbar";
+import Footer from "./footer";
 
 const WrapperView = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -22,7 +23,7 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
           <Image src={banner} alt="banner top picture" placeholder="blur" />
         </div>
       </Wrapper>
-      <div className="wrapperview__content">
+      <Wrapper className="wrapperview__content">
         <div className="wrapperview__content-aside">
           <div className="aside__content">
             <div className="aside__content-sticky">
@@ -62,10 +63,10 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
               <Wrapper>
                 <div className="sticky__desc">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Error et assumenda aut enim tempore culpa odio rerum. Totam
-                    sunt voluptas laborum! Quidem doloribus aliquam
-                    necessitatibus doloremque obcaecati impedit quas optio.
+                    Crafting inclusive digital products and web experiences is
+                    my expertise, making the online world accessible to
+                    everyone. Let's collaborate to build a more inclusive
+                    digital landscape.
                   </p>
                 </div>
               </Wrapper>
@@ -145,7 +146,8 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
           </Wrapper>
           <main>{children}</main>
         </div>
-      </div>
+      </Wrapper>
+      <Footer />
     </div>
   );
 };
