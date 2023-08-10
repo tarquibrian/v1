@@ -176,31 +176,18 @@
 
     &-main {
       min-height: 2000px;
-      // padding: 3rem;
-      // padding-left: 0;
       position: relative;
 
       nav {
-        // padding: 1rem;
         display: grid;
         grid-template-columns: 1fr 1px 1fr 1px 1fr;
-        // a {
-        //   display: flex;
-        //   position: relative;
-        //   span {
-        //     // padding: 0.5rem 1.5rem;
-        //     // padding-top: .2rem;
-        //   }
-        //   &::after {
-        //     content: "";
-        //     position: absolute;
-        //     bottom: 4px;
-        //     left: 0;
-        //     width: 100%;
-        //     height: 1px;
-        //     background-color: white;
-        //   }
-        // }
+        .active {
+          span {
+            &::after {
+              width: 100%;
+            }
+          }
+        }
 
         a {
           display: flex;
@@ -208,6 +195,22 @@
           justify-content: center;
           padding: 1rem;
           transition: 0.2s ease;
+          position: relative;
+
+          span {
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 0%;
+              height: 1px;
+              background-color: white;
+              transition: 0.2s ease;
+            }
+          }
 
           &:hover {
             background-color: rgba(0, 0, 0, 0.4);
