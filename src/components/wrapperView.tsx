@@ -12,6 +12,7 @@ import GithubIcon from "./icons/github";
 import DribbbleIcon from "./icons/dribbble";
 import OpenIcon from "./icons/open";
 import BehanceIcon from "./icons/behance";
+import Navbar from "./navbar";
 
 const WrapperView = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -140,19 +141,7 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
         </div>
         <div className="wrapperview__content-main">
           <Wrapper className="nav">
-            <nav>
-              <Link href={"/"}>
-                <span>POSTS</span>
-              </Link>
-              <LineY />
-              <Link href={"/projects"}>
-                <span>PROJECTS</span>
-              </Link>
-              <LineY />
-              <Link href={"/"}>
-                <span>STUDIO</span>
-              </Link>
-            </nav>
+            <Navbar />
           </Wrapper>
           <main>{children}</main>
         </div>
