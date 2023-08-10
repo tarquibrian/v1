@@ -21,8 +21,8 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
 
   const handleOnMouseMove = (e: MouseEvent) => {
     const rect = ref?.current?.getBoundingClientRect(),
-      x = e?.clientX - rect?.left,
-      y = e?.clientY - rect?.top || "";
+      x = e?.clientX - (rect?.left || 0),
+      y = e?.clientY - (rect?.top || 0);
 
     ref?.current?.style?.setProperty("--mouse1-x", `${x}px`);
     ref?.current?.style?.setProperty("--mouse1-y", `${y}px`);
