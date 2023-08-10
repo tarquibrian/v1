@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useEffect, useState, useRef } from "react";
 import Aside from "./aside";
 import Link from "next/link";
@@ -17,9 +17,23 @@ import Navbar from "./navbar";
 import Footer from "./footer";
 
 const WrapperView = ({ children }: { children: React.ReactNode }) => {
-  const ref = useRef()
+  const ref = useRef(null);
+
+  const handleOnMouseMove = (e) => {
+    const rect = ref?.current?.getBoundingClientRect(),
+      x = e?.clientX - rect?.left,
+      y = e?.clientY - rect?.top || "";
+
+    ref?.current?.style?.setProperty("--mouse1-x", `${x}px`);
+    ref?.current?.style?.setProperty("--mouse1-y", `${y}px`);
+  };
+
+  useEffect(() => {
+    window.addEventListener("mousemove", handleOnMouseMove);
+  }, []);
+
   return (
-    <div id="wrapperview">
+    <div id="wrapperview" ref={ref}>
       <Wrapper className="wrapperview__picture">
         <div className="picture__content">
           <Image src={banner} alt="banner top picture" placeholder="blur" />
