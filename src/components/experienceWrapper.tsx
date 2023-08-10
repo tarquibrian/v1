@@ -16,7 +16,9 @@ const ExperienceWrapper = () => {
             <Wrapper className="list__header">
               <div className="list__header-year">2021 - 2022</div>
               <LineY />
-              <div className="list__header-title">Experience title</div>
+              <div className="list__header-title">
+                <h4>Developer - Municipality of Villa Rivero</h4>
+              </div>
             </Wrapper>
             <Wrapper className="list__header-desc">
               <p>
