@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="author-title">
           Designed and developed by{" "}
           <a href="http://github.com" target="_blank" rel="noopener noreferrer">
-            Brian Tarqui
+            Brian Tarqui.
           </a>{" "}
         </div>
       </div>

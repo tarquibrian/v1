@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+import React, { useEffect, useState, useRef } from "react";
 import Aside from "./aside";
 import Link from "next/link";
 import Wrapper from "./wrapper";
@@ -16,6 +17,7 @@ import Navbar from "./navbar";
 import Footer from "./footer";
 
 const WrapperView = ({ children }: { children: React.ReactNode }) => {
+  const ref = useRef()
   return (
     <div id="wrapperview">
       <Wrapper className="wrapperview__picture">
@@ -129,7 +131,12 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                     <div className="">MY RESUME</div>
                   </div>
                   <div className="sticky__resume-link">
-                    <a href="http://github.com" target="_blank" rel="noopener noreferrer" aria-label="resume link">
+                    <a
+                      href="http://github.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="resume link"
+                    >
                       resume
                       <OpenIcon />
                     </a>
