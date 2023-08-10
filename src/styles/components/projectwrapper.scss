@@ -10,9 +10,9 @@
     &-details {
       .details__title {
         padding: 8px 2rem;
-        background-color: rgba(0, 0, 0, 0.4);
-        background-color: rgba(255, 255, 255, 0.6);
-        color: black;
+        background-color: var(--c-dark-variant);
+        // background-color: rgba(255, 255, 255, 0.6);
+        // color: black;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -30,9 +30,9 @@
     &-desc {
       .row__sticky {
         padding: 8px 2rem;
-        background-color: rgba(0, 0, 0, 0.4);
-        background-color: rgba(255, 255, 255, 0.6);
-        color: black;
+        background-color: var(--c-dark-variant);
+        // background-color: rgba(255, 255, 255, 0.6);
+        // color: black;
         display: flex;
         justify-content: space-between;
         align-items: center;

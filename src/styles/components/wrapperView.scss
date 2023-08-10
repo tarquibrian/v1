@@ -35,8 +35,7 @@
             display: grid;
             grid-template-columns: 1fr 1px 3fr;
             overflow: hidden;
-            // background-color: rgba(255, 255, 255, 0.6);
-            // color: black;
+            background-color: var(--c-dark-variant);
 
             .header__picture {
               aspect-ratio: 1 / 1;
@@ -69,14 +68,10 @@
           .sticky__profile {
             display: grid;
             grid-template-columns: auto 1px auto 1px auto;
-            // background-color: rgba(255, 255, 255, 0.7);
-            // color: black;
 
             .profile__content {
               text-align: center;
               padding: 1.5rem 0.5rem;
-              // background-color: rgba(255, 255, 255, 0.6);
-              // color: black;
               h3 {
                 line-height: 1;
                 font-family: "Adam", sans-serif;
@@ -87,9 +82,7 @@
 
           .content__row {
             padding: 8px 3rem;
-            background-color: rgba(0, 0, 0, 0.4);
-            background-color: rgba(255, 255, 255, 0.6);
-            color: black;
+            background-color: var(--c-dark-variant);
             display: flex;
             justify-content: space-between;
             align-items: center;
