@@ -10,6 +10,7 @@ const StatusIcon = ({ active = false }) => {
       xmlns="http://www.w3.org/2000/svg"
       className="circle"
     >
+      <title>Status</title>
       <circle cx="12" cy="12" r="12" />
     </svg>
   );
