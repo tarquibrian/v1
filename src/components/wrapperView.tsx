@@ -129,7 +129,7 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                     <div className="">MY RESUME</div>
                   </div>
                   <div className="sticky__resume-link">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a href="http://github.com" target="_blank" rel="noopener noreferrer" aria-label="resume link">
                       resume
                       <OpenIcon />
                     </a>
