@@ -13,7 +13,9 @@ const ProjectsWrapper = () => {
         <Wrapper>
           <div className="projectswrapper__section-top">
             <div className="top__title">
-              <h4>PROJECT TITLE</h4>
+              <Link href={"/"}>
+                <h4>PROJECT TITLE</h4>
+              </Link>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
                 ipsum expedita quam doloremque molestias, reprehenderit ipsa
@@ -35,7 +37,7 @@ const ProjectsWrapper = () => {
           <LineY />
           <a
             className="link"
-            href="http://"
+            href="http://tarquibrian.com"
             target="_blank"
             rel="noopener noreferrer"
           >
