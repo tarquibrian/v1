@@ -30,6 +30,10 @@
           position: sticky;
           top: 0rem;
           left: 0;
+          // min-height: 100vh;
+          // display: flex;
+          // flex-direction: column;
+          // justify-content: space-between;
 
           .sticky__header {
             display: grid;
@@ -75,7 +79,6 @@
                 line-height: 1;
                 font-family: "Adam", sans-serif;
                 font-size: clamp(14px, 1.5vw, 18px);
-                // font-weight: 400;
               }
             }
           }
