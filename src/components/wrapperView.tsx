@@ -17,7 +17,7 @@ import Navbar from "./navbar";
 import Footer from "./footer";
 
 const WrapperView = ({ children }: { children: React.ReactNode }) => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   const handleOnMouseMove = (e: MouseEvent) => {
     const rect = ref?.current?.getBoundingClientRect(),
