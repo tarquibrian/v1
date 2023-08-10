@@ -98,6 +98,7 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                       rel="noopener noreferrer"
                     >
                       tarquibrian@gmail.com
+                      <OpenIcon />
                     </a>
                   </div>
                 </div>
