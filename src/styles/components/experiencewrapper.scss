@@ -1,0 +1,24 @@
+#experience {
+  .experiencewrapper__section {
+    // padding: 3rem;
+    &-title {
+      padding: 1.5rem 3rem;
+    }
+
+    &-list {
+      .list__header {
+        display: grid;
+        grid-template-columns: max-content 1px auto;
+        &-year {
+          padding: 1rem 3rem;
+        }
+        &-title {
+          display: flex;
+          align-items: center;
+          font-size: 1.5rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
