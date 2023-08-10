@@ -5,6 +5,7 @@ import Image from "next/image";
 import LineY from "./liney";
 import OpenIcon from "./icons/open";
 import Link from "next/link";
+import StatusIcon from "./icons/status";
 
 const ProjectsWrapper = () => {
   return (
@@ -25,9 +26,9 @@ const ProjectsWrapper = () => {
         </Wrapper>
         <Wrapper>
           <div className="projectswrapper__section-picture">
-            <div className="picture__content">
+            <Link href={"/"} className="picture__content">
               <Image src={img} alt="project picture " placeholder="blur" />
-            </div>
+            </Link>
           </div>
         </Wrapper>
         <div className="projectswrapper__section-details">
@@ -41,16 +42,7 @@ const ProjectsWrapper = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="circle"
-            >
-              <circle cx="12" cy="12" r="12" />
-            </svg>
+            <StatusIcon />
             <OpenIcon />
           </a>
         </div>
