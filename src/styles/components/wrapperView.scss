@@ -30,10 +30,6 @@
           position: sticky;
           top: 0rem;
           left: 0;
-          // border-top: 1px solid var(--c-border);
-          // background-color: lightcoral;
-          // min-height: 100vh;
-          // background-color: lightblue;
 
           .sticky__header {
             display: grid;
@@ -44,13 +40,6 @@
               aspect-ratio: 1 / 1;
               width: 100%;
               height: auto;
-              // max-width: 150px;
-              // .picture__content {
-              //   aspect-ratio: 1 / 1;
-              //   width: 100%;
-              //   height: auto;
-              //   max-width: 150px;
-              // }
             }
 
             .header__title {
