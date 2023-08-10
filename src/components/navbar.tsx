@@ -12,7 +12,7 @@ const Navbar = () => {
         href={"/"}
         className={pathname.split("/")[1] === "" ? "active" : ""}
       >
-        <span>POSTS</span>
+        <span>ABOUT ME</span>
       </Link>
       <LineY />
       <Link
@@ -23,10 +23,10 @@ const Navbar = () => {
       </Link>
       <LineY />
       <Link
-        href={"/"}
-        className={pathname.split("/")[1] === "studio" ? "active" : ""}
+        href={"/posts"}
+        className={pathname.split("/")[1] === "posts" ? "active" : ""}
       >
-        <span>STUDIO</span>
+        <span>POSTS</span>
       </Link>
     </nav>
   );

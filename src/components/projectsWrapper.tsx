@@ -14,7 +14,7 @@ const ProjectsWrapper = () => {
         <Wrapper>
           <div className="projectswrapper__section-top">
             <div className="top__title">
-              <Link href={"/"}>
+              <Link href={"/projects/123"}>
                 <h4>PROJECT TITLE</h4>
               </Link>
               <p>
