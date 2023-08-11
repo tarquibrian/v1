@@ -26,9 +26,11 @@ const ProjectWrapper = ({
   timeline,
   client,
   services,
+  picture,
   challenge,
   goal,
   solution,
+  gallery,
 }: Project) => {
   return (
     <Wrapper htmlElement="section" id="projectwrapper">
@@ -69,7 +71,11 @@ const ProjectWrapper = ({
         </div>
         <Wrapper className="projectwrapper__section-picture">
           <div className="picture__content">
-            <Image src={img} alt="single project picutre" placeholder="blur" />
+            <Image
+              src={picture}
+              alt="single project picutre"
+              placeholder="blur"
+            />
           </div>
         </Wrapper>
         <Wrapper className="projectwrapper__section-desc">
@@ -132,16 +138,16 @@ const ProjectWrapper = ({
           <div className="gallery__content">
             <div className="one">
               <Wrapper className="picture__content">
-                <Image src={img} alt="one" placeholder="blur" />
+                <Image src={gallery[0]} alt="one" placeholder="blur" />
               </Wrapper>
               <div className="picture__content">
-                <Image src={img} alt="one" placeholder="blur" />
+                <Image src={gallery[1]} alt="one" placeholder="blur" />
               </div>
             </div>
             <LineY />
             <div className="two">
               <div className="picture__content">
-                <Image src={img} alt="one" placeholder="blur" />
+                <Image src={gallery[2]} alt="one" placeholder="blur" />
               </div>
             </div>
           </div>

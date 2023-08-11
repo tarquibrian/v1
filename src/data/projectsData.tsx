@@ -1,8 +1,21 @@
+import { StaticImageData } from "next/image";
 import img from "../../public/img/banner-top.jpg";
 
-interface Project {}
+interface Project {
+  id: string;
+  title: string;
+  desc: string;
+  client: string;
+  timeline: string;
+  services: string[];
+  picture: StaticImageData;
+  challenge: string;
+  goal: string;
+  solution: string;
+  gallery: StaticImageData[];
+}
 
-export const ProjectsData = [
+export const ProjectsData: Project[] = [
   {
     id: "project1",
     title: "Title Project",
