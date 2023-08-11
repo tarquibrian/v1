@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image";
 import img from "../../public/img/banner-top.jpg";
 import project1picture from "../../public/img/project1-picture.png";
 import project2picture from "../../public/img/project2-picture.png";
+import project3picture from "../../public/img/project3-picture.png";
 
 interface Project {
   id: string;
@@ -48,11 +49,30 @@ export const ProjectsData: Project[] = [
     picture: project2picture,
     challenge:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    solution: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+    solution:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     gallery: [img, img, img],
     status: true,
     href: "https://www.zonustech.com/",
+  },
+  {
+    id: "modernfashion",
+    title: "MODERFASHION",
+    desc: "Modern clothing ecommerce web application that offers a wide selection of clothing and fashion accessories for demanding customers.",
+    client: "Personal",
+    timeline: "3 Months",
+    services: ["Web Design", "Web Development", "UX/UI"],
+    picture: project3picture,
+    challenge:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+    solution:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+    result:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+    gallery: [img, img, img],
+    status: true,
+    href: "https://ecommerce-website-zeta-one.vercel.app/",
   },
 ];
