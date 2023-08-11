@@ -1,18 +1,43 @@
 #projectwrapper {
   .projectwrapper__section {
     &-title {
-      padding: 2rem 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1px max-content;
+
       h3 {
+        padding: 2rem 2rem;
         font-size: 24px;
         margin-bottom: -4px;
+      }
+
+      .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2rem;
+        position: relative;
+        transition: 0.2s ease;
+        .circle {
+          position: absolute;
+          top: 20%;
+          right: 20%;
+          width: 10px;
+          height: 10px;
+        }
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.4);
+        }
       }
     }
     &-details {
       .details__title {
         padding: 8px 2rem;
         background-color: var(--c-dark-variant);
-        // background-color: rgba(255, 255, 255, 0.6);
-        // color: black;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -31,8 +56,6 @@
       .row__sticky {
         padding: 8px 2rem;
         background-color: var(--c-dark-variant);
-        // background-color: rgba(255, 255, 255, 0.6);
-        // color: black;
         display: flex;
         justify-content: space-between;
         align-items: center;

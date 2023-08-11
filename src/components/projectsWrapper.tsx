@@ -11,9 +11,18 @@ interface Project {
   title: string;
   desc: string;
   picture: StaticImageData;
+  status: boolean;
+  href: string;
 }
 
-const ProjectsWrapper = ({ id, title, desc, picture }: Project) => {
+const ProjectsWrapper = ({
+  id,
+  title,
+  desc,
+  picture,
+  status,
+  href,
+}: Project) => {
   return (
     <Wrapper className="projectswrapper" htmlElement="section">
       <div className="projectswrapper__section">
@@ -41,11 +50,11 @@ const ProjectsWrapper = ({ id, title, desc, picture }: Project) => {
           <LineY />
           <a
             className="link"
-            href="http://tarquibrian.com"
+            href={href}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <StatusIcon />
+            <StatusIcon active={status} />
             <OpenIcon />
           </a>
         </div>

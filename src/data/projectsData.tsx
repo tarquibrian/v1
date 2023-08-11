@@ -1,5 +1,7 @@
 import { StaticImageData } from "next/image";
 import img from "../../public/img/banner-top.jpg";
+import project1picture from "../../public/img/project1-picture.png";
+import project2picture from "../../public/img/project2-picture.png";
 
 interface Project {
   id: string;
@@ -10,43 +12,47 @@ interface Project {
   services: string[];
   picture: StaticImageData;
   challenge: string;
-  goal: string;
   solution: string;
+  result: string;
   gallery: StaticImageData[];
   status: boolean;
+  href: string;
 }
 
 export const ProjectsData: Project[] = [
   {
-    id: "project1",
-    title: "Title Project",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsum expedita quam doloremque molestias, reprehenderit ipsa",
+    id: "carlsburger",
+    title: "CARLS BURGER",
+    desc: "Web application about a hamburger restaurant that provides a satisfying, easy and attractive user experience, and is an excellent marketing tool to attract new customers and keep existing ones.",
     client: "Personal",
-    timeline: "4 weeks",
-    services: ["Branding", "Web Design"],
-    picture: img,
+    timeline: "4 Weeks",
+    services: ["Web Design"],
+    picture: project1picture,
     challenge:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    goal: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+      "The challenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provide them with a unique experience.",
     solution:
+      "The challenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provide them with a unique experience.",
+    result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     gallery: [img, img, img],
     status: true,
+    href: "https://carls-burger.vercel.app/",
   },
   {
-    id: "project2",
-    title: "Title Project",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsum expedita quam doloremque molestias, reprehenderit ipsa",
+    id: "zonustech",
+    title: "ZONUSTECH AGENCY",
+    desc: "Comprehensive Website for Branding Creation Agency: Design, Development, Deployment and Configuration of Domain and Hosting.",
     client: "Personal",
-    timeline: "4 weeks",
-    services: ["Branding", "Web Design"],
-    picture: img,
+    timeline: "3 Months",
+    services: ["Web Design", "Web Development"],
+    picture: project2picture,
     challenge:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    goal: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    solution:
+    solution: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+    result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     gallery: [img, img, img],
     status: true,
+    href: "https://www.zonustech.com/",
   },
 ];
