@@ -13,6 +13,7 @@ interface Project {
   goal: string;
   solution: string;
   gallery: StaticImageData[];
+  status: boolean;
 }
 
 export const ProjectsData: Project[] = [
@@ -30,6 +31,7 @@ export const ProjectsData: Project[] = [
     solution:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     gallery: [img, img, img],
+    status: true,
   },
   {
     id: "project2",
@@ -45,5 +47,6 @@ export const ProjectsData: Project[] = [
     solution:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     gallery: [img, img, img],
+    status: true,
   },
 ];

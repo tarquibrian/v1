@@ -100,7 +100,7 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                 </svg>
               </Wrapper>
               <Wrapper>
-                <div className="sticky__email">
+                <div className="sticky__email contact__detail">
                   <div className="sticky__email-label">
                     <div className="">EMAIL</div>
                   </div>
@@ -117,7 +117,7 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                 </div>
               </Wrapper>
               <Wrapper>
-                <div className="sticky__contact">
+                <div className="sticky__contact contact__detail">
                   <div className="sticky__contact-label">
                     <div className="">SOCIAL</div>
                   </div>
@@ -154,7 +154,7 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                 </div>
               </Wrapper>
               <Wrapper>
-                <div className="sticky__resume">
+                <div className="sticky__resume contact__detail">
                   <div className="sticky__resume-label">
                     <div className="">MY RESUME</div>
                   </div>
@@ -173,7 +173,7 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
               </Wrapper>
             </div>
           </div>
-          <LineY view={false} />
+          <LineY view={false} className="aside-line"/>
         </div>
         <div className="wrapperview__content-main">
           <Wrapper className="nav">

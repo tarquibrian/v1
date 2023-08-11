@@ -5,9 +5,10 @@ import { useInView } from "react-intersection-observer";
 
 interface Props {
   view?: boolean;
+  className?: string;
 }
 
-const LineY = ({ view = true }: Props) => {
+const LineY = ({ view = true, className = "" }: Props) => {
   const [ref, inView] = useInView();
   const controls = useAnimation();
 
@@ -23,7 +24,7 @@ const LineY = ({ view = true }: Props) => {
   return (
     <motion.div
       ref={ref}
-      className="line-y"
+      className={`line-y ${className}`}
       initial="hidden"
       animate={controls}
       variants={{

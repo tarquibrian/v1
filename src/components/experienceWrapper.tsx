@@ -14,7 +14,7 @@ const ExperienceWrapper = () => {
         <div className="experiencewrapper__section-list">
           <Wrapper>
             <Wrapper className="list__header">
-              <div className="list__header-year">2021 - 2022</div>
+              <Wrapper id="year" className="list__header-year">2021 - 2022</Wrapper>
               <LineY />
               <div className="list__header-title">
                 <h4>Developer - Municipality of Villa Rivero</h4>
@@ -43,7 +43,7 @@ const ExperienceWrapper = () => {
           </Wrapper>
           <div>
             <Wrapper className="list__header">
-              <div className="list__header-year">July - Dec 2021</div>
+              <Wrapper id="year" className="list__header-year">July - Dec 2021</Wrapper>
               <LineY />
               <div className="list__header-title">
                 <h4>Internships at the Military School of Engineering</h4>
