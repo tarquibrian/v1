@@ -4,7 +4,7 @@ interface Project {}
 
 export const ProjectsData = [
   {
-    id: "project",
+    id: "project1",
     title: "Title Project",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsum expedita quam doloremque molestias, reprehenderit ipsa",
     client: "Personal",
@@ -19,7 +19,7 @@ export const ProjectsData = [
     gallery: [img, img, img],
   },
   {
-    id: "project",
+    id: "project2",
     title: "Title Project",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsum expedita quam doloremque molestias, reprehenderit ipsa",
     client: "Personal",

@@ -6,8 +6,8 @@ const ProjectsPage = () => {
   return (
     <>
       {ProjectsData.map((project) => {
-        const { title, desc, picture } = project;
-        return <ProjectsWrapper title={title} desc={desc} picture={picture} />;
+        const { id, title, desc, picture } = project;
+        return <ProjectsWrapper id={id} title={title} desc={desc} picture={picture} />;
       })}
     </>
   );

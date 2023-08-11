@@ -7,6 +7,7 @@ import Link from "next/link";
 import StatusIcon from "./icons/status";
 
 interface Project {
+  id: string;
   title: string;
   desc: string;
   picture: StaticImageData;
