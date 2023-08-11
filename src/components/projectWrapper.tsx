@@ -1,15 +1,40 @@
+"use client";
 import React from "react";
 import Wrapper from "./wrapper";
 import img from "../../public/img/banner-top.jpg";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import LineY from "./liney";
 
-const ProjectWrapper = () => {
+interface Project {
+  id: string;
+  title: string;
+  desc: string;
+  timeline: string;
+  client: string;
+  services: string[];
+  picture: StaticImageData;
+  challenge: string;
+  goal: string;
+  solution: string;
+  gallery: StaticImageData[];
+}
+
+const ProjectWrapper = ({
+  id,
+  title,
+  desc,
+  timeline,
+  client,
+  services,
+  challenge,
+  goal,
+  solution,
+}: Project) => {
   return (
     <Wrapper htmlElement="section" id="projectwrapper">
       <div className="projectwrapper__section">
         <Wrapper className="projectwrapper__section-title">
-          <h3>Project title</h3>
+          <h3>{title}</h3>
         </Wrapper>
         <div className="projectwrapper__section-details">
           <Wrapper className="details__title row__sticky">
@@ -26,16 +51,20 @@ const ProjectWrapper = () => {
             </svg>
           </Wrapper>
           <Wrapper className="details__row">
-            <div className="label">TIMELINE</div>
-            <div className="desc">4 Weeks</div>
+            <div className="label">CLIENT</div>
+            <div className="desc">{client}</div>
           </Wrapper>
           <Wrapper className="details__row">
             <div className="label">TIMELINE</div>
-            <div className="desc">4 Weeks</div>
+            <div className="desc">{timeline}</div>
           </Wrapper>
           <Wrapper className="details__row">
-            <div className="label">TIMELINE</div>
-            <div className="desc">4 Weeks</div>
+            <div className="label">SERVICES</div>
+            <div className="desc">
+              {services.map((service) => (
+                <span>{service}</span>
+              ))}
+            </div>
           </Wrapper>
         </div>
         <Wrapper className="projectwrapper__section-picture">
@@ -59,12 +88,7 @@ const ProjectWrapper = () => {
               </svg>
             </Wrapper>
             <div className="row__desc">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio
-                eius dolores rerum ducimus impedit illo in fugit consequuntur,
-                iste voluptas neque placeat.
-              </p>
+              <p>{challenge}</p>
             </div>
           </Wrapper>
           <Wrapper className="desc__row">
@@ -82,12 +106,7 @@ const ProjectWrapper = () => {
               </svg>
             </Wrapper>
             <div className="row__desc">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio
-                eius dolores rerum ducimus impedit illo in fugit consequuntur,
-                iste voluptas neque placeat.
-              </p>
+              <p>{goal}</p>
             </div>
           </Wrapper>
           <div className="desc__row">
@@ -105,12 +124,7 @@ const ProjectWrapper = () => {
               </svg>
             </Wrapper>
             <div className="row__desc">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio
-                eius dolores rerum ducimus impedit illo in fugit consequuntur,
-                iste voluptas neque placeat.
-              </p>
+              <p>{solution}</p>
             </div>
           </div>
         </Wrapper>
