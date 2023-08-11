@@ -1,7 +1,5 @@
-"use client";
 import React from "react";
 import Wrapper from "./wrapper";
-import img from "../../public/img/banner-top.jpg";
 import Image, { StaticImageData } from "next/image";
 import LineY from "./liney";
 import StatusIcon from "./icons/status";
