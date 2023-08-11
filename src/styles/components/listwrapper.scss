@@ -1,0 +1,18 @@
+.listwrapper {
+  .listwrapper__section {
+    display: grid;
+    grid-template-columns: 1fr 1px 2fr;
+
+    &-picture {
+      .picture__content {
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &-info {
+      padding: 2rem;
+    }
+  }
+}
