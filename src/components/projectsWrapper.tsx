@@ -13,14 +13,14 @@ interface Project {
   picture: StaticImageData;
 }
 
-const ProjectsWrapper = ({ title, desc, picture }: Project) => {
+const ProjectsWrapper = ({ id, title, desc, picture }: Project) => {
   return (
     <Wrapper className="projectswrapper" htmlElement="section">
       <div className="projectswrapper__section">
         <Wrapper>
           <div className="projectswrapper__section-top">
             <div className="top__title">
-              <Link href={"/projects/123"}>
+              <Link href={`/projects/${id}`}>
                 <h4>{title}</h4>
               </Link>
               <p>{desc}</p>
@@ -29,14 +29,14 @@ const ProjectsWrapper = ({ title, desc, picture }: Project) => {
         </Wrapper>
         <Wrapper>
           <div className="projectswrapper__section-picture">
-            <Link href={"/"} className="picture__content">
+            <Link href={`/projects/${id}`} className="picture__content">
               <Image src={picture} alt="project picture " placeholder="blur" />
             </Link>
           </div>
         </Wrapper>
         <div className="projectswrapper__section-details">
           <div className="more">
-            <Link href={"/"}>More information</Link>
+            <Link href={`/projects/${id}`}>More information</Link>
           </div>
           <LineY />
           <a
