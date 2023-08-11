@@ -32,18 +32,11 @@ const ProjectsWrapper = ({
               <Link href={`/projects/${id}`}>
                 <h4>{title}</h4>
               </Link>
-              <p>{desc}</p>
+              {/* <p>{desc}</p> */}
             </div>
           </div>
         </Wrapper>
-        <Wrapper>
-          <div className="projectswrapper__section-picture">
-            <Link href={`/projects/${id}`} className="picture__content">
-              <Image src={picture} alt="project picture " placeholder="blur" />
-            </Link>
-          </div>
-        </Wrapper>
-        <div className="projectswrapper__section-details">
+        <Wrapper className="projectswrapper__section-details">
           <div className="more">
             <Link href={`/projects/${id}`}>More information</Link>
           </div>
@@ -57,6 +50,11 @@ const ProjectsWrapper = ({
             <StatusIcon active={status} />
             <OpenIcon />
           </a>
+        </Wrapper>
+        <div className="projectswrapper__section-picture">
+          <Link href={`/projects/${id}`} className="picture__content">
+            <Image src={picture} alt="project picture " placeholder="blur" />
+          </Link>
         </div>
       </div>
     </Wrapper>
