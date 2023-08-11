@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { ProjectsData } from "@/data/projectsData";
 import Wrapper from "@/components/wrapper";
 import LineY from "@/components/liney";
+import ListWrapper from "@/components/listWrapper";
 
 const ProjectsPage = () => {
   const [mode, setMode] = useState("mode1");
@@ -60,23 +61,24 @@ const ProjectsPage = () => {
           </div>
         </div>
       </Wrapper>
-      {mode === "mode1" ? (
-        ProjectsData.map((project) => {
-          const { id, title, desc, picture, status, href } = project;
-          return (
-            <ProjectsWrapper
-              id={id}
-              title={title}
-              desc={desc}
-              picture={picture}
-              status={status}
-              href={href}
-            />
-          );
-        })
-      ) : (
-        <>hola</>
-      )}
+      {mode === "mode1"
+        ? ProjectsData.map((project) => {
+            const { id, title, desc, picture, status, href } = project;
+            return (
+              <ProjectsWrapper
+                id={id}
+                title={title}
+                desc={desc}
+                picture={picture}
+                status={status}
+                href={href}
+              />
+            );
+          })
+        : ProjectsData.map((project) => {
+            const { id, title, desc, picture, status, href } = project;
+            return <ListWrapper />;
+          })}
       {/* {ProjectsData.map((project) => {
         const { id, title, desc, picture, status, href } = project;
         return (
