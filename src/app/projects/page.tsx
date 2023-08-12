@@ -10,7 +10,7 @@ const ProjectsPage = () => {
   const [mode, setMode] = useState("mode1");
   return (
     <>
-      <Wrapper id="project-nav">
+      <Wrapper id="projects-nav">
         <div className="nav">
           <div className="nav-link">View my projects</div>
           <LineY />
