@@ -26,19 +26,18 @@ const ProjectsWrapper = ({
   return (
     <Wrapper className="projectswrapper" htmlElement="section">
       <div className="projectswrapper__section">
-        <Wrapper>
+        {/* <Wrapper>
           <div className="projectswrapper__section-top">
             <div className="top__title">
-              <Link href={`/projects/${id}`}>
-                <h4>{title}</h4>
-              </Link>
-              {/* <p>{desc}</p> */}
+              <Link href={`/projects/${id}`}></Link>
             </div>
           </div>
-        </Wrapper>
+        </Wrapper> */}
         <Wrapper className="projectswrapper__section-details">
           <div className="more">
-            <Link href={`/projects/${id}`}>More information</Link>
+            <Link href={`/projects/${id}`}>
+              <h4>{title}</h4>
+            </Link>
           </div>
           <LineY />
           <a

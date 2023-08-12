@@ -8,6 +8,7 @@
       display: flex;
       align-items: center;
       padding: 1rem 2rem;
+      font-size: 18px;
     }
 
     .options {
@@ -74,11 +75,34 @@
     &-details {
       display: grid;
       grid-template-columns: 1fr 1px max-content;
-
       .more {
-        padding: 1.5rem 2rem;
         a {
-          text-decoration: underline;
+          display: flex;
+          padding: 2rem;
+          h4 {
+            line-height: 1;
+            font-size: clamp(1.2rem, 2vw, 1.5rem);
+            margin-bottom: -4px;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 0%;
+              height: 1px;
+              background-color: white;
+              transition: 0.2s ease;
+            }
+          }
+
+          &:hover {
+            h4 {
+              &::after {
+                width: 100%;
+              }
+            }
+          }
         }
       }
 
@@ -86,7 +110,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 1.5rem;
+        padding: 0 2rem;
         position: relative;
         .circle {
           position: absolute;
@@ -98,6 +122,9 @@
         svg {
           width: 30px;
           height: 30px;
+        }
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.4);
         }
       }
     }
