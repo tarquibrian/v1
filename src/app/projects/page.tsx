@@ -76,8 +76,19 @@ const ProjectsPage = () => {
             );
           })
         : ProjectsData.map((project) => {
-            const { id, title, desc, picture, status, href } = project;
-            return <ListWrapper />;
+            const { id, title, desc, picture, status, href, squarePicture } =
+              project;
+            return (
+              <ListWrapper
+                // id={id}
+                title={title}
+                squarePicture={squarePicture}
+                // desc={desc}
+                // picture={picture}
+                // status={status}
+                // href={href}
+              />
+            );
           })}
       {/* {ProjectsData.map((project) => {
         const { id, title, desc, picture, status, href } = project;

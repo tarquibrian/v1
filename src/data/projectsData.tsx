@@ -1,8 +1,13 @@
 import { StaticImageData } from "next/image";
 import img from "../../public/img/banner-top.jpg";
 import project1picture from "../../public/img/project1-picture.png";
+import carlsSquarePicture from "../../public/img/squarecarls.png";
 import project2picture from "../../public/img/project2-picture.png";
+import zonusSquarePicture from "../../public/img/squarezonus.png";
 import project3picture from "../../public/img/project3-picture.png";
+import moderSquarePicture from "../../public/img/squaremodern.png";
+import projectVilaPicture from "../../public/img/villatyoursm-picture.png";
+import villaSquarePicutre from "../../public/img/squarevilla.png";
 
 interface Project {
   id: string;
@@ -18,6 +23,7 @@ interface Project {
   gallery: StaticImageData[];
   status: boolean;
   href: string;
+  squarePicture: StaticImageData;
 }
 
 export const ProjectsData: Project[] = [
@@ -29,6 +35,7 @@ export const ProjectsData: Project[] = [
     timeline: "4 Weeks",
     services: ["Web Design"],
     picture: project1picture,
+    squarePicture: carlsSquarePicture,
     challenge:
       "The challenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provide them with a unique experience.",
     solution:
@@ -47,6 +54,7 @@ export const ProjectsData: Project[] = [
     timeline: "3 Months",
     services: ["Web Design", "Web Development"],
     picture: project2picture,
+    squarePicture: zonusSquarePicture,
     challenge:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     solution:
@@ -65,6 +73,7 @@ export const ProjectsData: Project[] = [
     timeline: "3 Months",
     services: ["Web Design", "Web Development", "UX/UI"],
     picture: project3picture,
+    squarePicture: moderSquarePicture,
     challenge:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     solution:
@@ -74,5 +83,24 @@ export const ProjectsData: Project[] = [
     gallery: [img, img, img],
     status: true,
     href: "https://ecommerce-website-zeta-one.vercel.app/",
+  },
+  {
+    id: "villarivero",
+    title: "VILLA TOURISM",
+    desc: "Web application for tourist information management, using modules of Biographical Articles, Management and notification of cultural events, Visualization and addressing of tourist sites through Google Maps based on specific coordinates.",
+    client: "Villa Rivero",
+    timeline: "6 Months",
+    services: ["Web Design", "Web Development", "UX/UI"],
+    picture: projectVilaPicture,
+    squarePicture: villaSquarePicutre,
+    challenge:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+    solution:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+    result:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+    gallery: [img, img, img],
+    status: false,
+    href: "https://villa-turismo.herokuapp.com/",
   },
 ];

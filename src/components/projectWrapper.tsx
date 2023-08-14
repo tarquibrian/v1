@@ -4,6 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import LineY from "./liney";
 import StatusIcon from "./icons/status";
 import OpenIcon from "./icons/open";
+import Link from "next/link";
 
 interface Project {
   id: string;
@@ -40,6 +41,23 @@ const ProjectWrapper = ({
     <Wrapper htmlElement="section" id="projectwrapper">
       <div className="projectwrapper__section">
         <Wrapper className="projectwrapper__section-title">
+          <Link href={"/projects"} className="link-back">
+            <svg
+              width="46"
+              height="46"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M19 12H5"></path>
+              <path d="m12 19-7-7 7-7"></path>
+            </svg>
+          </Link>
+          <LineY />
           <h3>{title}</h3>
           <LineY />
           <a
