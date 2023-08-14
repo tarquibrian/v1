@@ -7,6 +7,8 @@ import carls2 from "../../public/img/carlsburger2.png";
 import carls3 from "../../public/img/carlsburger3.png";
 import project2picture from "../../public/img/project2-picture.png";
 import zonusSquarePicture from "../../public/img/squarezonus.png";
+import zonusMockup from "../../public/img/zonusmockup.webp";
+import zonusMockup2 from "../../public/img/zonusmockup2.png";
 import project3picture from "../../public/img/project3-picture.png";
 import moderSquarePicture from "../../public/img/squaremodern.png";
 import projectVilaPicture from "../../public/img/villatyoursm-picture.png";
@@ -60,7 +62,7 @@ export const ProjectsData: Project[] = [
     id: "zonustech",
     title: "ZONUSTECH AGENCY",
     desc: "Comprehensive Website for Branding Creation Agency: Design, Development, Deployment and Configuration of Domain and Hosting.",
-    client: "Personal",
+    client: "Zonustech",
     timeline: "3 Months",
     services: ["Web Design", "Web Development"],
     year: 2023,
@@ -73,7 +75,7 @@ export const ProjectsData: Project[] = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    gallery: [img, img, img],
+    gallery: [zonusSquarePicture, zonusMockup, zonusMockup2],
     status: true,
     href: "https://www.zonustech.com/",
   },
@@ -82,7 +84,7 @@ export const ProjectsData: Project[] = [
     title: "MODERFASHION",
     desc: "Modern clothing ecommerce web application that offers a wide selection of clothing and fashion accessories for demanding customers.",
     client: "Personal",
-    timeline: "3 Months",
+    timeline: "4 Weeks",
     services: ["Web Design", "Web Development", "UX/UI"],
     year: 2022,
     website: "modernfashion.com",
@@ -94,7 +96,7 @@ export const ProjectsData: Project[] = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    gallery: [img, img, img],
+    gallery: [moderSquarePicture, img, img],
     status: true,
     href: "https://ecommerce-website-zeta-one.vercel.app/",
   },
@@ -104,7 +106,7 @@ export const ProjectsData: Project[] = [
     desc: "Web application for tourist information management, using modules of Biographical Articles, Management and notification of cultural events, Visualization and addressing of tourist sites through Google Maps based on specific coordinates.",
     client: "Villa Rivero",
     timeline: "6 Months",
-    services: ["Web Design", "Web Development", "UX/UI", "DB Design", "DevOps", 'Test'],
+    services: ["Web Design", "Web Development", "UX/UI", "DB Design", "DevOps"],
     year: 2022,
     website: "villatourism.com",
     picture: projectVilaPicture,
@@ -115,7 +117,7 @@ export const ProjectsData: Project[] = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    gallery: [img, img, img],
+    gallery: [villaSquarePicutre, img, img],
     status: false,
     href: "https://villa-turismo.herokuapp.com/",
   },
@@ -136,7 +138,7 @@ export const ProjectsData: Project[] = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    gallery: [img, img, img],
+    gallery: [darvythemeSquarePicture, img, img],
     status: true,
     href: "https://marketplace.visualstudio.com/items?itemName=darvy.darvypro",
   },
