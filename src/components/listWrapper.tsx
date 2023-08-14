@@ -5,29 +5,35 @@ import img from "../../public/img/banner-top.jpg";
 import LineY from "./liney";
 import StatusIcon from "./icons/status";
 import OpenIcon from "./icons/open";
+import Link from "next/link";
 
 interface Project {
   id: string;
   title: string;
-  desc: string;
-  timeline: string;
-  client: string;
-  services: string[];
-  picture: StaticImageData;
-  challenge: string;
-  result: string;
-  solution: string;
-  gallery: StaticImageData[];
+  desc?: string;
+  timeline?: string;
+  client?: string;
+  services?: string[];
+  year?: number;
   href: string;
   status: boolean;
   squarePicture: StaticImageData;
 }
 
-const ListWrapper = ({ title, squarePicture, href, status }: Project) => {
+const ListWrapper = ({
+  id,
+  title,
+  squarePicture,
+  href,
+  status,
+  year,
+  desc,
+  services = [],
+}: Project) => {
   return (
     <Wrapper className="listwrapper" htmlElement="section">
       <div className="listwrapper__section">
-        <div className="listwrapper__section-picture">
+        <Link href={`/projects/${id}`} className="listwrapper__section-picture">
           <div className="picture__content">
             <Image
               src={squarePicture}
@@ -35,11 +41,13 @@ const ListWrapper = ({ title, squarePicture, href, status }: Project) => {
               placeholder="blur"
             />
           </div>
-        </div>
+        </Link>
         <LineY />
         <div className="listwrapper__section-info">
           <Wrapper className="info-title">
-            <h4>{title}</h4>
+            <Link href={`/projects/${id}`} className="title-content">
+              <h4>{title}</h4>
+            </Link>
             <LineY />
             <a
               className="link"
@@ -52,13 +60,20 @@ const ListWrapper = ({ title, squarePicture, href, status }: Project) => {
             </a>
           </Wrapper>
           <Wrapper className="info-desc">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
-              iste earum esse beatae adipisci at est recusandae accusantium
-              fugiat saepe veniam amet eius quam tenetur, impedit eveniet eos
-              iure unde.
-            </p>
+            <p>{desc}</p>
           </Wrapper>
+          <div className="info__details">
+            <div className="info__details-row">
+              <div className="label">Services</div>
+              <div className="label-content">
+                <span>{services[0]}</span>-<span>{services[1]}</span>
+              </div>
+            </div>
+            <div className="info__details-row">
+              <div className="label">Year</div>
+              <div className="label-content">{year}</div>
+            </div>
+          </div>
         </div>
       </div>
     </Wrapper>

@@ -19,6 +19,8 @@ interface Project {
   client: string;
   timeline: string;
   services: string[];
+  year?: number;
+  website?: string;
   picture: StaticImageData;
   challenge: string;
   solution: string;
@@ -37,6 +39,8 @@ export const ProjectsData: Project[] = [
     client: "Personal",
     timeline: "4 Weeks",
     services: ["Web Design"],
+    year: 2022,
+    website: "carlsburger.com",
     picture: project1picture,
     squarePicture: carlsSquarePicture,
     challenge:
@@ -56,6 +60,8 @@ export const ProjectsData: Project[] = [
     client: "Personal",
     timeline: "3 Months",
     services: ["Web Design", "Web Development"],
+    year: 2023,
+    website: "zonustech.com",
     picture: project2picture,
     squarePicture: zonusSquarePicture,
     challenge:
@@ -75,6 +81,8 @@ export const ProjectsData: Project[] = [
     client: "Personal",
     timeline: "3 Months",
     services: ["Web Design", "Web Development", "UX/UI"],
+    year: 2022,
+    website: "modernfashion.com",
     picture: project3picture,
     squarePicture: moderSquarePicture,
     challenge:
@@ -94,6 +102,8 @@ export const ProjectsData: Project[] = [
     client: "Villa Rivero",
     timeline: "6 Months",
     services: ["Web Design", "Web Development", "UX/UI"],
+    year: 2022,
+    website: "villatourism.com",
     picture: projectVilaPicture,
     squarePicture: villaSquarePicutre,
     challenge:
@@ -113,6 +123,8 @@ export const ProjectsData: Project[] = [
     client: "Personal",
     timeline: "2 Weeks",
     services: ["Web Design", "Web Development", "UX/UI"],
+    year: 2022,
+    website: "VSMarketplace",
     picture: darvythemePicture,
     squarePicture: darvythemeSquarePicture,
     challenge:

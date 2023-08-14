@@ -9,30 +9,15 @@ import StatusIcon from "./icons/status";
 interface Project {
   id: string;
   title: string;
-  desc: string;
   picture: StaticImageData;
   status: boolean;
   href: string;
 }
 
-const ProjectsWrapper = ({
-  id,
-  title,
-  desc,
-  picture,
-  status,
-  href,
-}: Project) => {
+const ProjectsWrapper = ({ id, title, picture, status, href }: Project) => {
   return (
     <Wrapper className="projectswrapper" htmlElement="section">
       <div className="projectswrapper__section">
-        {/* <Wrapper>
-          <div className="projectswrapper__section-top">
-            <div className="top__title">
-              <Link href={`/projects/${id}`}></Link>
-            </div>
-          </div>
-        </Wrapper> */}
         <Wrapper className="projectswrapper__section-details">
           <div className="more">
             <Link href={`/projects/${id}`}>

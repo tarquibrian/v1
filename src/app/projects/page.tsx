@@ -63,12 +63,11 @@ const ProjectsPage = () => {
       </Wrapper>
       {mode === "mode1"
         ? ProjectsData.map((project) => {
-            const { id, title, desc, picture, status, href } = project;
+            const { id, title, picture, status, href } = project;
             return (
               <ProjectsWrapper
                 id={id}
                 title={title}
-                desc={desc}
                 picture={picture}
                 status={status}
                 href={href}
@@ -76,13 +75,27 @@ const ProjectsPage = () => {
             );
           })
         : ProjectsData.map((project) => {
-            const { id, title, desc, picture, status, href, squarePicture } =
-              project;
+            const {
+              id,
+              title,
+              desc,
+              picture,
+              status,
+              href,
+              squarePicture,
+              year,
+              services,
+            } = project;
             return (
               <ListWrapper
-                // id={id}
+                id={id}
                 title={title}
                 squarePicture={squarePicture}
+                status={status}
+                href={href}
+                year={year}
+                desc={desc}
+                services={services}
                 // desc={desc}
                 // picture={picture}
                 // status={status}
