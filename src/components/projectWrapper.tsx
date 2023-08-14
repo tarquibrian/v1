@@ -167,20 +167,18 @@ const ProjectWrapper = ({
           </div>
         </Wrapper>
         <div className="projectwrapper__section-gallery">
-          <div className="gallery__content">
-            <div className="one">
-              <Wrapper className="picture__content">
-                <Image src={gallery[0]} alt="one" placeholder="blur" />
-              </Wrapper>
-              <div className="picture__content">
-                <Image src={gallery[1]} alt="one" placeholder="blur" />
-              </div>
+          <div className="one">
+            <div className="picture__contents">
+              <Image src={gallery[0]} alt="one" placeholder="blur" />
             </div>
-            <LineY />
-            <div className="two">
-              <div className="picture__content">
-                <Image src={gallery[2]} alt="one" placeholder="blur" />
-              </div>
+            <div className="picture__contents">
+              <Image src={gallery[1]} alt="one" placeholder="blur" />
+            </div>
+          </div>
+          <LineY />
+          <div className="two">
+            <div className="picture__contents">
+              <Image src={gallery[2]} alt="one" placeholder="blur" />
             </div>
           </div>
         </div>
