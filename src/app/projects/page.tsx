@@ -12,7 +12,7 @@ const ProjectsPage = () => {
     <>
       <Wrapper id="projects-nav">
         <div className="nav">
-          <div className="nav-link">View my projects</div>
+          <div className="nav-link">My works</div>
           <LineY />
           <div className="options">
             <button

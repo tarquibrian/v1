@@ -66,11 +66,20 @@
         justify-content: space-between;
         align-items: center;
         padding: 1.5rem 2rem;
+        gap: 2rem;
 
         .desc {
           display: flex;
           flex-wrap: wrap;
-          gap: 1rem;
+          gap: 0.5rem;
+          justify-content: flex-end;
+          .service {
+            &:last-of-type {
+              span {
+                display: none;
+              }
+            }
+          }
         }
       }
     }

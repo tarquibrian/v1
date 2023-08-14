@@ -96,7 +96,9 @@ const ProjectWrapper = ({
             <div className="label">SERVICES</div>
             <div className="desc">
               {services.map((service) => (
-                <span>{`${service}`}</span>
+                <div className="service">
+                  {`${service}`} <span>-</span>
+                </div>
               ))}
             </div>
           </Wrapper>
