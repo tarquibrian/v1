@@ -14,9 +14,33 @@
     &-info {
       // padding: 2rem;
       .info-title {
-        padding: 0.5rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1px max-content;
         h4 {
+          padding: 10px 1rem;
           font-size: 18px;
+          line-height: 1;
+        }
+        .link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 1rem;
+          position: relative;
+          .circle {
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            width: 6px;
+            height: 6px;
+          }
+          svg {
+            width: 25px;
+            height: 25px;
+          }
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+          }
         }
       }
       .info-desc {

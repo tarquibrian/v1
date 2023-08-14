@@ -3,6 +3,8 @@ import Wrapper from "./wrapper";
 import Image, { StaticImageData } from "next/image";
 import img from "../../public/img/banner-top.jpg";
 import LineY from "./liney";
+import StatusIcon from "./icons/status";
+import OpenIcon from "./icons/open";
 
 interface Project {
   id: string;
@@ -21,7 +23,7 @@ interface Project {
   squarePicture: StaticImageData;
 }
 
-const ListWrapper = ({ title, squarePicture }: Project) => {
+const ListWrapper = ({ title, squarePicture, href, status }: Project) => {
   return (
     <Wrapper className="listwrapper" htmlElement="section">
       <div className="listwrapper__section">
@@ -38,6 +40,16 @@ const ListWrapper = ({ title, squarePicture }: Project) => {
         <div className="listwrapper__section-info">
           <Wrapper className="info-title">
             <h4>{title}</h4>
+            <LineY />
+            <a
+              className="link"
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <StatusIcon active={status} />
+              <OpenIcon />
+            </a>
           </Wrapper>
           <Wrapper className="info-desc">
             <p>
