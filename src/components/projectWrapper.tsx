@@ -96,7 +96,7 @@ const ProjectWrapper = ({
             <div className="label">SERVICES</div>
             <div className="desc">
               {services.map((service) => (
-                <span>{service}</span>
+                <span>{`${service}`}</span>
               ))}
             </div>
           </Wrapper>
@@ -111,7 +111,7 @@ const ProjectWrapper = ({
           </div>
         </Wrapper>
         <Wrapper className="projectwrapper__section-desc">
-          <Wrapper className="desc__row">
+          {/* <Wrapper className="desc__row">
             <Wrapper className="row__sticky">
               <h5>CHALLENGE</h5>
               <svg
@@ -146,7 +146,7 @@ const ProjectWrapper = ({
             <div className="row__desc">
               <p>{solution}</p>
             </div>
-          </Wrapper>
+          </Wrapper> */}
           <div className="desc__row">
             <Wrapper className="row__sticky">
               <h5>RESULT</h5>
@@ -162,7 +162,7 @@ const ProjectWrapper = ({
               </svg>
             </Wrapper>
             <div className="row__desc">
-              <p>{result}</p>
+              <p>{desc}</p>
             </div>
           </div>
         </Wrapper>
