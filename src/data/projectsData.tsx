@@ -9,6 +9,9 @@ import moderSquarePicture from "../../public/img/squaremodern.png";
 import projectVilaPicture from "../../public/img/villatyoursm-picture.png";
 import villaSquarePicutre from "../../public/img/squarevilla.png";
 
+import darvythemeSquarePicture from "../../public/img/square1.png";
+import darvythemePicture from "../../public/img/darvy-picture.png";
+
 interface Project {
   id: string;
   title: string;
@@ -102,5 +105,24 @@ export const ProjectsData: Project[] = [
     gallery: [img, img, img],
     status: false,
     href: "https://villa-turismo.herokuapp.com/",
+  },
+  {
+    id: "darvytheme",
+    title: "DARVY THEME",
+    desc: "Darvy Theme is a color theme for Visual Studio Code and very soon for other editors like Atom or Sublime Text. The color palette is inspired by popular themes like One Dark Pro and Tokyo Night, so you might love this theme",
+    client: "Personal",
+    timeline: "2 Weeks",
+    services: ["Web Design", "Web Development", "UX/UI"],
+    picture: darvythemePicture,
+    squarePicture: darvythemeSquarePicture,
+    challenge:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+    solution:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+    result:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+    gallery: [img, img, img],
+    status: true,
+    href: "https://marketplace.visualstudio.com/items?itemName=darvy.darvypro",
   },
 ];
