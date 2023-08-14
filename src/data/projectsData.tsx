@@ -5,6 +5,7 @@ import carlsSquarePicture from "../../public/img/squarecarls.png";
 import carls1 from "../../public/img/carlsburger1.jpg";
 import carls2 from "../../public/img/carlsburger2.png";
 import carls3 from "../../public/img/carlsburger3.png";
+import carlsMockup from "../../public/img/carlsmockup.webp";
 import project2picture from "../../public/img/project2-picture.png";
 import zonusSquarePicture from "../../public/img/squarezonus.png";
 import zonusMockup from "../../public/img/zonusmockup.webp";
@@ -54,7 +55,7 @@ export const ProjectsData: Project[] = [
       "The challenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provide them with a unique experience.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    gallery: [carlsSquarePicture, carls2, carls3],
+    gallery: [carlsSquarePicture, carlsMockup, carls3],
     status: true,
     href: "https://carls-burger.vercel.app/",
   },
