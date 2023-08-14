@@ -123,28 +123,28 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                   </div>
                   <div className="sticky__contact-icons">
                     <a
-                      href="http://linkedin.com"
+                      href="https://www.linkedin.com/in/tarquibrian/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <LinkedinIcon />
                     </a>
                     <a
-                      href="http://github.com"
+                      href="https://github.com/tarquibrian"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <GithubIcon />
                     </a>
                     <a
-                      href="http://dribbble.com"
+                      href="https://dribbble.com/tarquibrian"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <DribbbleIcon />
                     </a>
                     <a
-                      href="http://behance.com"
+                      href="https://www.behance.net/briantarqui"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -173,7 +173,7 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
               </Wrapper>
             </div>
           </div>
-          <LineY view={false} className="aside-line"/>
+          <LineY view={false} className="aside-line" />
         </div>
         <div className="wrapperview__content-main">
           <Wrapper className="nav">
