@@ -6,17 +6,24 @@ import carls1 from "../../public/img/carlsburger1.jpg";
 import carls2 from "../../public/img/carlsburger2.png";
 import carls3 from "../../public/img/carlsburger3.png";
 import carlsMockup from "../../public/img/carlsmockup.webp";
+import carlsMockup2 from "../../public/img/carlsmockup2.webp";
 import project2picture from "../../public/img/project2-picture.png";
 import zonusSquarePicture from "../../public/img/squarezonus.png";
 import zonusMockup from "../../public/img/zonusmockup.webp";
 import zonusMockup2 from "../../public/img/zonusmockup2.png";
 import project3picture from "../../public/img/project3-picture.png";
 import moderSquarePicture from "../../public/img/squaremodern.png";
+import modernMockup from "../../public/img/modernmockup.webp";
+import modernMockup2 from "../../public/img/modernmockup2.webp";
 import projectVilaPicture from "../../public/img/villatyoursm-picture.png";
 import villaSquarePicutre from "../../public/img/squarevilla.png";
+import villaMockup from "../../public/img/villamockup.webp";
+import villaMockup2 from "../../public/img/villamockup2.webp";
 
 import darvythemeSquarePicture from "../../public/img/square1.png";
 import darvythemePicture from "../../public/img/darvy-picture.png";
+import darvyMockup from "../../public/img/darvymockup.webp";
+import darvyMockup2 from "../../public/img/darvymockup2.webp";
 
 interface Project {
   id: string;
@@ -55,7 +62,7 @@ export const ProjectsData: Project[] = [
       "The challenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provide them with a unique experience.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    gallery: [carlsSquarePicture, carlsMockup, carls3],
+    gallery: [carlsSquarePicture, carlsMockup, carlsMockup2],
     status: true,
     href: "https://carls-burger.vercel.app/",
   },
@@ -97,7 +104,7 @@ export const ProjectsData: Project[] = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    gallery: [moderSquarePicture, img, img],
+    gallery: [moderSquarePicture, modernMockup, modernMockup2],
     status: true,
     href: "https://ecommerce-website-zeta-one.vercel.app/",
   },
@@ -118,7 +125,7 @@ export const ProjectsData: Project[] = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    gallery: [villaSquarePicutre, img, img],
+    gallery: [villaSquarePicutre, villaMockup, villaMockup2],
     status: false,
     href: "https://villa-turismo.herokuapp.com/",
   },
@@ -139,7 +146,7 @@ export const ProjectsData: Project[] = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    gallery: [darvythemeSquarePicture, img, img],
+    gallery: [darvythemeSquarePicture, darvyMockup, darvyMockup2],
     status: true,
     href: "https://marketplace.visualstudio.com/items?itemName=darvy.darvypro",
   },
