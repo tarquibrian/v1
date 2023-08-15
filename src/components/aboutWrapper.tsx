@@ -40,9 +40,9 @@ const AboutWrapper = () => {
           </a>{" "}
           who are taking their first steps in the world of technology.
         </p>
-        <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+        <Link href="resumeV1en.pdf" target="_blank" rel="noopener noreferrer">
           View full resume
-        </a>
+        </Link>
       </div>
     </Wrapper>
   );
