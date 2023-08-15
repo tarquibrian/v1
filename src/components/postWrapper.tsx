@@ -15,6 +15,7 @@ const PostWrapper = () => {
   const [feedbackClick, setFeedbackClick] = useState(false);
   const active = () => {
     if (!isActive) {
+      setClicked(true);
       setIsActive(true);
       setTimeout(() => {
         setIsActive(false);
