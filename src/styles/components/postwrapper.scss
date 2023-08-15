@@ -1,6 +1,5 @@
 #postwrapper {
   .postwrapper__section {
-    // gap: 1rem;
     .top {
       padding: 2rem;
       display: flex;
@@ -11,7 +10,6 @@
       display: flex;
       align-items: center;
       gap: 1rem;
-      // padding: 1rem;
 
       .header__picture {
         position: relative;
@@ -41,12 +39,14 @@
       }
     }
     &-title {
-      // padding: 0rem 1rem;
       h4 {
         font-family: "Adam";
         line-height: 1;
         font-size: clamp(16px, 2vw, 20px);
         margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: var(--fz-desc);
       }
     }
 

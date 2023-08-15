@@ -79,10 +79,10 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
               <Wrapper>
                 <div className="sticky__desc">
                   <p>
-                    Crafting inclusive digital products and web experiences is
-                    my expertise, making the online world accessible to
-                    everyone. Let's collaborate to build a more inclusive
-                    digital landscape.
+                    Crafting unique digital products and web experiences is my
+                    expertise, making the online world accessible to everyone.
+                    Let's collaborate to build a more inclusive digital
+                    landscape.
                   </p>
                 </div>
               </Wrapper>

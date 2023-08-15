@@ -40,6 +40,20 @@
           gap: 1rem;
           p {
             color: white;
+            font-size: var(--fz-desc);
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      &-list {
+        .list__header {
+          &-year {
+            padding: 0 2rem;
+          }
+          &-desc {
+            padding: 2rem;
           }
         }
       }

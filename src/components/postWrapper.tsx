@@ -39,7 +39,7 @@ const PostWrapper = () => {
               </div>
             </div>
             <div className="postwrapper__section-title">
-              <h4>Title Post</h4>
+              <h4>Post Title</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
                 nihil alias quas? Quidem, accusantium quae dolorem fuga iste
