@@ -31,6 +31,7 @@ const Navbar = () => {
         className={pathname.split("/")[1] === "posts" ? "active" : ""}
       >
         <span>POSTS</span>
+        <div className="tik">(Beta)</div>
       </Link>
     </nav>
   );
