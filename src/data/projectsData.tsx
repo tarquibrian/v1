@@ -93,6 +93,27 @@ export const ProjectsData: Project[] = [
     href: "https://www.zonustech.com/",
   },
   {
+    id: "gymstorm",
+    title: "GYMSTORM",
+    desc: "GymStorm is an exciting design project in Figma, where user experience and a visually appealing interface are combined. Every detail has been carefully thought out to create a seamless and engaging experience.",
+    client: "Personal",
+    timeline: "1 Weeks",
+    services: ["UX", "UI", "Web Design"],
+    year: 2022,
+    website: "Dribbble | Behance",
+    picture: gymstormPicture,
+    squarePicture: gymstormPictureSquare,
+    challenge:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+    solution:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+    result:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+    gallery: [gymstormPictureSquare, gymstormMockup, gymstormMckup2],
+    status: true,
+    href: "https://dribbble.com/shots/22295109-GYMSTORM-Fitness-landing-page",
+  },
+  {
     id: "modernfashion",
     title: "MODERFASHION",
     desc: "Modern clothing ecommerce web application that offers a wide selection of clothing and fashion accessories for demanding customers.",
@@ -113,6 +134,7 @@ export const ProjectsData: Project[] = [
     status: true,
     href: "https://ecommerce-website-zeta-one.vercel.app/",
   },
+
   {
     id: "villarivero",
     title: "VILLA TOURISM",
@@ -154,26 +176,5 @@ export const ProjectsData: Project[] = [
     gallery: [darvythemeSquarePicture, darvyMockup, darvyMockup2],
     status: true,
     href: "https://marketplace.visualstudio.com/items?itemName=darvy.darvypro",
-  },
-  {
-    id: "gymstorm",
-    title: "GYMSTORM",
-    desc: "GymStorm is an exciting design project in Figma, where user experience and a visually appealing interface are combined. Every detail has been carefully thought out to create a seamless and engaging experience.",
-    client: "Personal",
-    timeline: "1 Weeks",
-    services: ["UX", "UI", "Web Design"],
-    year: 2022,
-    website: "Dribbble | Behance",
-    picture: gymstormPicture,
-    squarePicture: gymstormPictureSquare,
-    challenge:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    solution:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    result:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    gallery: [gymstormPictureSquare, gymstormMockup, gymstormMckup2],
-    status: true,
-    href: "https://dribbble.com/shots/22295109-GYMSTORM-Fitness-landing-page",
   },
 ];
