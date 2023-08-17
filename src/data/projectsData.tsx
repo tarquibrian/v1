@@ -25,6 +25,11 @@ import darvythemePicture from "../../public/img/darvy-picture.png";
 import darvyMockup from "../../public/img/darvymockup.webp";
 import darvyMockup2 from "../../public/img/darvymockup2.webp";
 
+import gymstormPicture from "../../public/img/gymstorm-picture.webp";
+import gymstormPictureSquare from "../../public/img/gymstormSquare.webp";
+import gymstormMockup from "../../public/img/gymstormmockup.png";
+import gymstormMckup2 from "../../public/img/gymstormmockup2.webp";
+
 interface Project {
   id: string;
   title: string;
@@ -149,5 +154,26 @@ export const ProjectsData: Project[] = [
     gallery: [darvythemeSquarePicture, darvyMockup, darvyMockup2],
     status: true,
     href: "https://marketplace.visualstudio.com/items?itemName=darvy.darvypro",
+  },
+  {
+    id: "gymstorm",
+    title: "GYMSTORM",
+    desc: "GymStorm is an exciting design project in Figma, where user experience and a visually appealing interface are combined. Every detail has been carefully thought out to create a seamless and engaging experience.",
+    client: "Personal",
+    timeline: "1 Weeks",
+    services: ["UX", "UI", "Web Design"],
+    year: 2022,
+    website: "Dribbble | Behance",
+    picture: gymstormPicture,
+    squarePicture: gymstormPictureSquare,
+    challenge:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+    solution:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+    result:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+    gallery: [gymstormPictureSquare, gymstormMockup, gymstormMckup2],
+    status: true,
+    href: "https://dribbble.com/shots/22295109-GYMSTORM-Fitness-landing-page",
   },
 ];
