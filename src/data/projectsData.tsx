@@ -134,7 +134,6 @@ export const ProjectsData: Project[] = [
     status: true,
     href: "https://ecommerce-website-zeta-one.vercel.app/",
   },
-
   {
     id: "villarivero",
     title: "VILLA TOURISM",
