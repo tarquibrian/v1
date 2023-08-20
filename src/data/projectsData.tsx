@@ -32,6 +32,8 @@ import gymstormMckup2 from "../../public/img/gymstormmockup2.webp";
 
 import arkitectsPicture from "../../public/img/arkitects.webp";
 import arkitectsSquare from "../../public/img/arkitectsSquare.webp";
+import arkitectsMockup from "../../public/img/arkitectsmockup.webp";
+import arkitectMockup2 from "../../public/img/arkitectsmockup2.webp";
 
 interface Project {
   id: string;
@@ -57,8 +59,8 @@ export const ProjectsData: Project[] = [
     id: "arkitects",
     title: "ARKITECTS",
     desc: "Web application about a hamburger restaurant that provides a satisfying, easy and attractive user experience, and is an excellent marketing tool to attract new customers and keep existing ones.",
-    client: "Carls Burger",
-    timeline: "6 Weeks",
+    client: "Arkitects",
+    timeline: "2 Monts",
     services: ["UX/UI", "Web Dev", "CMS"],
     year: 2022,
     website: "carlsburger.com",
@@ -70,7 +72,7 @@ export const ProjectsData: Project[] = [
       "The challenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provide them with a unique experience.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    gallery: [arkitectsSquare, carlsMockup, carlsMockup2],
+    gallery: [arkitectsSquare, arkitectsMockup, arkitectMockup2],
     status: true,
     href: "https://carls-burger.vercel.app/",
   },
