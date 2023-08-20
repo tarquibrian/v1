@@ -58,7 +58,7 @@ export const ProjectsData: Project[] = [
   {
     id: "arkitects",
     title: "ARKITECTS",
-    desc: "Web application about a hamburger restaurant that provides a satisfying, easy and attractive user experience, and is an excellent marketing tool to attract new customers and keep existing ones.",
+    desc: "Online platform specialized in architecture services, designed for a pleasant and efficient user experience. A strategic tool that attracts and retains clients by providing access to previous work.",
     client: "Arkitects",
     timeline: "2 Monts",
     services: ["UX/UI", "Web Dev", "CMS"],
