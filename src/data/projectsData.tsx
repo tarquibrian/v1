@@ -30,6 +30,9 @@ import gymstormPictureSquare from "../../public/img/gymstormSquare.webp";
 import gymstormMockup from "../../public/img/gymstormmockup.png";
 import gymstormMckup2 from "../../public/img/gymstormmockup2.webp";
 
+import arkitectsPicture from "../../public/img/arkitects.webp";
+import arkitectsSquare from "../../public/img/arkitectsSquare.webp";
+
 interface Project {
   id: string;
   title: string;
@@ -50,6 +53,27 @@ interface Project {
 }
 
 export const ProjectsData: Project[] = [
+  {
+    id: "arkitects",
+    title: "ARKITECTS",
+    desc: "Web application about a hamburger restaurant that provides a satisfying, easy and attractive user experience, and is an excellent marketing tool to attract new customers and keep existing ones.",
+    client: "Carls Burger",
+    timeline: "6 Weeks",
+    services: ["UX/UI", "Web Dev", "CMS"],
+    year: 2022,
+    website: "carlsburger.com",
+    picture: arkitectsPicture,
+    squarePicture: arkitectsSquare,
+    challenge:
+      "The challenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provide them with a unique experience.",
+    solution:
+      "The challenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provide them with a unique experience.",
+    result:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
+    gallery: [arkitectsSquare, carlsMockup, carlsMockup2],
+    status: true,
+    href: "https://carls-burger.vercel.app/",
+  },
   {
     id: "carlsburger",
     title: "CARLS BURGER",
