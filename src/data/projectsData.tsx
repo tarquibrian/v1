@@ -74,7 +74,7 @@ export const ProjectsData: Project[] = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     gallery: [arkitectsSquare, arkitectsMockup, arkitectMockup2],
     status: true,
-    href: "https://carls-burger.vercel.app/",
+    href: "https://www.behance.net/gallery/177999933/ARKITECTS-Architecture-Website-Concept",
   },
   {
     id: "carlsburger",
