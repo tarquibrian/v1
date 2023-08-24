@@ -6,6 +6,7 @@ import Wrapper from "@/components/wrapper";
 import LineY from "@/components/liney";
 import ListWrapper from "@/components/listWrapper";
 import FullContent from "@/components/fullContent";
+import ListContent from "@/components/listContent";
 
 // const getProjects = async () => {
 //   try {
@@ -80,39 +81,7 @@ const ProjectsPage = () => {
           </div>
         </div>
       </Wrapper>
-      {mode === "mode1" ? (
-        <FullContent />
-      ) : (
-        ProjectsData.map((project) => {
-          const {
-            id,
-            title,
-            desc,
-            picture,
-            status,
-            href,
-            squarePicture,
-            year,
-            services,
-          } = project;
-          return (
-            <ListWrapper
-              id={id}
-              title={title}
-              squarePicture={squarePicture}
-              status={status}
-              href={href}
-              year={year}
-              desc={desc}
-              services={services}
-              // desc={desc}
-              // picture={picture}
-              // status={status}
-              // href={href}
-            />
-          );
-        })
-      )}
+      {mode === "mode1" ? <FullContent /> : <ListContent />}
       {/* {ProjectsData.map((project) => {
         const { id, title, picture, status, href } = project;
         return (
