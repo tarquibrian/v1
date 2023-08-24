@@ -79,6 +79,21 @@ button {
   cursor: pointer;
 }
 
+.true {
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.false {
+  transform: scale(1.1);
+  filter: blur(40px) grayscale(1);
+}
+
+.image-loading {
+  transform: scale(1);
+  filter: blur(0) grayscale(0);
+}
+
 @media screen and (max-width: 480px) {
   body {
     padding: 0;
