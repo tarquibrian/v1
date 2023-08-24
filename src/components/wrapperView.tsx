@@ -15,6 +15,7 @@ import OpenIcon from "./icons/open";
 import BehanceIcon from "./icons/behance";
 import Navbar from "./navbar";
 import Footer from "./footer";
+import blur from "./banner-top.svg";
 
 const WrapperView = ({ children }: { children: React.ReactNode }) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -45,7 +46,7 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
             height={1080}
             alt="banner top picture"
             placeholder="blur"
-            blurDataURL="https://res.cloudinary.com/dskypy0xt/image/upload/e_blur:2000,q_auto:low/v1692899394/banner-top_enhqba.webp"
+            blurDataURL={blur}
           />
         </div>
       </Wrapper>
