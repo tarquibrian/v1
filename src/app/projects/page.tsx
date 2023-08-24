@@ -6,29 +6,29 @@ import Wrapper from "@/components/wrapper";
 import LineY from "@/components/liney";
 import ListWrapper from "@/components/listWrapper";
 
-const getProjects = async () => {
-  try {
-    const res = await fetch("http://localhost:3000/api/projects", {
-      cache: "no-store",
-    });
+// const getProjects = async () => {
+//   try {
+//     const res = await fetch("http://localhost:3000/api/projects", {
+//       cache: "no-store",
+//     });
 
-    if (!res.ok) {
-      throw new Error("Failed to fetch");
-    }
+//     if (!res.ok) {
+//       throw new Error("Failed to fetch");
+//     }
 
-    return res.json();
-  } catch (error) {
-    console.log(error);
-  }
-};
+//     return res.json();
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
 
 const ProjectsPage = async () => {
   // const [mode, setMode] = useState("mode1");
-  const { projects } = await getProjects();
+  // const { projects } = await getProjects();
 
   return (
     <>
-      <Wrapper id="projects-nav">
+      {/* <Wrapper id="projects-nav">
         <div className="nav">
           <div className="nav-link">My works</div>
           <LineY />
@@ -78,7 +78,7 @@ const ProjectsPage = async () => {
             </button>
           </div>
         </div>
-      </Wrapper>
+      </Wrapper> */}
       {/* {mode === "mode1"
         ? ProjectsData.map((project) => {
             const { id, title, picture, status, href } = project;
@@ -121,7 +121,7 @@ const ProjectsPage = async () => {
               />
             );
           })} */}
-      {ProjectsData.map((project) => {
+      {/* {ProjectsData.map((project) => {
         const { id, title, picture, status, href } = project;
         return (
           <ProjectsWrapper
@@ -132,7 +132,7 @@ const ProjectsPage = async () => {
             href={href}
           />
         );
-      })}
+      })} */}
     </>
   );
 };
