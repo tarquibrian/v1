@@ -59,6 +59,7 @@ img {
   height: 100%;
   object-fit: cover;
   vertical-align: middle;
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .line-y {
@@ -83,14 +84,14 @@ button {
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.true-image {
+.images {
   transform: scale(1.1);
-  filter: blur(40px) grayscale(1);
+  filter: blur(40px);
 }
 
 .false {
   transform: scale(1);
-  filter: blur(0) grayscale(0);
+  filter: blur(0);
 }
 
 @media screen and (max-width: 480px) {

@@ -3,30 +3,28 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 const NextImage = ({
-  image,
+  src,
   label = "picture image",
-  blurData,
+  blurDataURL,
   width,
   height,
 }: {
-  image: string;
+  src: string;
   label: string;
-  blurData: string;
+  blurDataURL: string;
   width: number;
   height: number;
 }) => {
   const [isLoading, setIsLoading] = useState(true);
   return (
     <Image
-      src={image}
+      src={src}
       alt={label}
       width={width}
       height={height}
       placeholder="blur"
-      blurDataURL={blurData}
-      className={`
-      image-filter
-      ${isLoading ? "true-image" : "true"})`}
+      blurDataURL={blurDataURL}
+      className={isLoading ? "images" : "false"}
       onLoadingComplete={() => setIsLoading(false)}
     />
   );
