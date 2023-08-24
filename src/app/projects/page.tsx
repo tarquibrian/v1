@@ -1,13 +1,22 @@
-"use client";
+// "use client";
 import ProjectsWrapper from "@/components/projectsWrapper";
 import React, { useState } from "react";
 import { ProjectsData } from "@/data/projectsData";
 import Wrapper from "@/components/wrapper";
 import LineY from "@/components/liney";
 import ListWrapper from "@/components/listWrapper";
+import connectMongo from "@/libs/mongodb";
+import { NextResponse } from "next/server";
+import Projects from "@/models/projects";
 
-const ProjectsPage = () => {
-  const [mode, setMode] = useState("mode1");
+export async function GET() {
+  await connectMongo();
+  const topics = await Projects.find();
+  return NextResponse.json({ topics });
+}
+
+const ProjectsPage = async () => {
+  // const [mode, setMode] = useState("mode1");
   return (
     <>
       <Wrapper id="projects-nav">
@@ -17,7 +26,7 @@ const ProjectsPage = () => {
           <div className="options">
             <button
               className="option__gallery"
-              onClick={() => setMode("mode1")}
+              // onClick={() => setMode("mode1")}
             >
               <svg
                 width="46"
@@ -37,7 +46,7 @@ const ProjectsPage = () => {
             <LineY />
             <button
               className="option__gallery"
-              onClick={() => setMode("mode2")}
+              // onClick={() => setMode("mode2")}
             >
               <svg
                 width="46"
@@ -61,7 +70,7 @@ const ProjectsPage = () => {
           </div>
         </div>
       </Wrapper>
-      {mode === "mode1"
+      {/* {mode === "mode1"
         ? ProjectsData.map((project) => {
             const { id, title, picture, status, href } = project;
             return (
@@ -102,20 +111,19 @@ const ProjectsPage = () => {
                 // href={href}
               />
             );
-          })}
-      {/* {ProjectsData.map((project) => {
-        const { id, title, desc, picture, status, href } = project;
+          })} */}
+      {ProjectsData.map((project) => {
+        const { id, title, picture, status, href } = project;
         return (
           <ProjectsWrapper
             id={id}
             title={title}
-            desc={desc}
             picture={picture}
             status={status}
             href={href}
           />
         );
-      })} */}
+      })}
     </>
   );
 };
