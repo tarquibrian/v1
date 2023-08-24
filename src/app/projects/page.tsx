@@ -121,7 +121,7 @@ const ProjectsPage = async () => {
               />
             );
           })} */}
-      {/* {ProjectsData.map((project) => {
+      {ProjectsData.map((project) => {
         const { id, title, picture, status, href } = project;
         return (
           <ProjectsWrapper
@@ -132,7 +132,7 @@ const ProjectsPage = async () => {
             href={href}
           />
         );
-      })} */}
+      })}
     </>
   );
 };

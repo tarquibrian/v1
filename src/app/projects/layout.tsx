@@ -1,5 +1,6 @@
 import LineY from "@/components/liney";
 import Wrapper from "@/components/wrapper";
+import Link from "next/link";
 import React from "react";
 
 const ProjectsLayout = ({ children }: { children: React.ReactNode }) => {
@@ -10,10 +11,7 @@ const ProjectsLayout = ({ children }: { children: React.ReactNode }) => {
           <div className="nav-link">My works</div>
           <LineY />
           <div className="options">
-            <button
-              className="option__gallery"
-              // onClick={() => setMode("mode1")}
-            >
+            <Link href={"/projects"} className="option__gallery">
               <svg
                 width="46"
                 height="46"
@@ -28,12 +26,9 @@ const ProjectsLayout = ({ children }: { children: React.ReactNode }) => {
                 <path d="M18 4H6a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"></path>
                 <path d="M18 14H6a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2Z"></path>
               </svg>
-            </button>
+            </Link>
             <LineY />
-            <button
-              className="option__gallery"
-              // onClick={() => setMode("mode2")}
-            >
+            <Link href={"/projects/list"} className="option__gallery">
               <svg
                 width="46"
                 height="46"
@@ -52,7 +47,7 @@ const ProjectsLayout = ({ children }: { children: React.ReactNode }) => {
                 <path d="M8 4H4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Z"></path>
                 <path d="M8 14H4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1Z"></path>
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
       </Wrapper>
