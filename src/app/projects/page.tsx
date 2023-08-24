@@ -6,25 +6,24 @@ import Wrapper from "@/components/wrapper";
 import LineY from "@/components/liney";
 import ListWrapper from "@/components/listWrapper";
 
-// const getProjects = async () => {
-//   try {
-//     const res = await fetch("http://localhost:3000/api/projects", {
-//       cache: "no-store",
-//     });
+const getProjects = async () => {
+  try {
+    const res = await fetch("http://localhost:3000/api/projects", {
+      cache: "no-store",
+    });
 
-//     if (!res.ok) {
-//       throw new Error("Failed to fetch");
-//     }
+    if (!res.ok) {
+      throw new Error("Failed to fetch");
+    }
 
-//     return res.json();
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
+    return res.json();
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 const ProjectsPage = async () => {
-  // const [mode, setMode] = useState("mode1");
-  // const { projects } = await getProjects();
+  const { projects } = await getProjects();
 
   return (
     <>
