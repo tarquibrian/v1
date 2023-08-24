@@ -10,6 +10,6 @@ const projectSchema = new Schema(
 );
 
 const Projects =
-  mongoose.models.Topic || mongoose.model("projects", projectSchema);
+  mongoose.models.projects || mongoose.model("projects", projectSchema);
 
 export default Projects;
