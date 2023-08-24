@@ -79,17 +79,16 @@ button {
   cursor: pointer;
 }
 
-.true {
-  transition-duration: 700ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.image-filter {
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.false {
+.true-image {
   transform: scale(1.1);
   filter: blur(40px) grayscale(1);
 }
 
-.image-loading {
+.false {
   transform: scale(1);
   filter: blur(0) grayscale(0);
 }
