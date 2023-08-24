@@ -37,14 +37,15 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
       <Wrapper className="wrapperview__picture">
         <div className="picture__content">
           <Image
-            src={
-              "https://res.cloudinary.com/dskypy0xt/image/upload/v1692899394/banner-top_enhqba.jpg"
-            }
+            // src={
+            //   "https://res.cloudinary.com/dskypy0xt/image/upload/v1692899394/banner-top_enhqba.jpg"
+            // }
+            src={banner}
             width={1920}
             height={1080}
             alt="banner top picture"
             placeholder="blur"
-            blurDataURL="https://res.cloudinary.com/dskypy0xt/image/upload/c_scale,e_blur:100,w_200/v1692899394/banner-top_enhqba.jpg"
+            // blurDataURL="https://res.cloudinary.com/dskypy0xt/image/upload/c_scale,e_blur:100,w_200/v1692899394/banner-top_enhqba.jpg"
           />
         </div>
       </Wrapper>
