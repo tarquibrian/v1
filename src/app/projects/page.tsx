@@ -37,7 +37,7 @@ const ProjectsPage = () => {
           <div className="options">
             <button
               className="option__gallery"
-              // onClick={() => setMode("mode1")}
+              onClick={() => setMode("mode1")}
             >
               <svg
                 width="46"
@@ -57,7 +57,7 @@ const ProjectsPage = () => {
             <LineY />
             <button
               className="option__gallery"
-              // onClick={() => setMode("mode2")}
+              onClick={() => setMode("mode2")}
             >
               <svg
                 width="46"
