@@ -36,7 +36,15 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
     <div id="wrapperview" ref={ref}>
       <Wrapper className="wrapperview__picture">
         <div className="picture__content">
-          <Image src={banner} alt="banner top picture" placeholder="blur" />
+          <Image
+            src={
+              "https://res.cloudinary.com/dskypy0xt/image/upload/v1692899394/banner-top_enhqba.jpg"
+            }
+            width={1920}
+            height={1080}
+            alt="banner top picture"
+            // placeholder="blur"
+          />
         </div>
       </Wrapper>
       <Wrapper className="wrapperview__content">
