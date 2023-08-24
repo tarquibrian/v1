@@ -19,6 +19,7 @@ const ListContent = () => {
         } = project;
         return (
           <ListWrapper
+            key={id}
             id={id}
             title={title}
             squarePicture={squarePicture}

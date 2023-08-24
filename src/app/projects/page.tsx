@@ -8,24 +8,7 @@ import ListWrapper from "@/components/listWrapper";
 import FullContent from "@/components/fullContent";
 import ListContent from "@/components/listContent";
 
-// const getProjects = async () => {
-//   try {
-//     const res = await fetch("http://localhost:3000/api/projects", {
-//       cache: "no-store",
-//     });
-
-//     if (!res.ok) {
-//       throw new Error("Failed to fetch");
-//     }
-
-//     return res.json();
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
-
 const ProjectsPage = () => {
-  // const { projects } = await getProjects();
   const [mode, setMode] = useState("mode1");
 
   return (
@@ -44,11 +27,10 @@ const ProjectsPage = () => {
                 height="46"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M18 4H6a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"></path>
                 <path d="M18 14H6a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2Z"></path>
@@ -64,9 +46,9 @@ const ProjectsPage = () => {
                 height="46"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
