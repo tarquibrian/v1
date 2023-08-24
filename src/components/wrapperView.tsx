@@ -43,7 +43,8 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
             width={1920}
             height={1080}
             alt="banner top picture"
-            // placeholder="blur"
+            placeholder="blur"
+            blurDataURL="https://res.cloudinary.com/dskypy0xt/image/upload/c_scale,e_blur:100,w_200/v1692899394/banner-top_enhqba.jpg"
           />
         </div>
       </Wrapper>
