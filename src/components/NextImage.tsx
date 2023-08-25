@@ -24,7 +24,7 @@ const NextImage = ({
       height={height}
       placeholder="blur"
       blurDataURL={blurDataURL}
-      className={isLoading ? "images" : "false"}
+      className={isLoading ? "blurred" : "image-loaded"}
       onLoadingComplete={() => setIsLoading(false)}
     />
   );

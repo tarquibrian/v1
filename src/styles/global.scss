@@ -85,12 +85,12 @@ button {
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.images {
+.blurred {
   transform: scale(1.1);
   filter: blur(40px);
 }
 
-.false {
+.image-loaded {
   transform: scale(1);
   filter: blur(0);
 }
