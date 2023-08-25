@@ -1,3 +1,4 @@
+"server-only";
 import PostWrapper from "@/components/postWrapper";
 import React from "react";
 

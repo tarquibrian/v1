@@ -1,6 +1,6 @@
-// "use client";
+"use client";
 import Image, { StaticImageData } from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const NextImage = ({
   src,
@@ -9,7 +9,7 @@ const NextImage = ({
   width,
   height,
 }: {
-  src: string | StaticImageData;
+  src: string;
   label?: string;
   blurDataURL: string;
   width?: number;
@@ -18,7 +18,7 @@ const NextImage = ({
   const [isLoading, setIsLoading] = useState(true);
   return (
     <Image
-      src={src}
+      src={`https://res.cloudinary.com/dskypy0xt/image/upload/v1692899385/${src}`}
       alt={label}
       width={width}
       height={height}

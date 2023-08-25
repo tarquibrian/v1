@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import ProjectsWrapper from "@/components/projectsWrapper";
 import React, { useState, useEffect } from "react";
 import { ProjectsData } from "@/data/projectsData";
@@ -7,11 +7,12 @@ import LineY from "@/components/liney";
 import ListWrapper from "@/components/listWrapper";
 
 const ProjectsPage = () => {
-  const [mode, setMode] = useState("mode1");
-  const [loader, setLoader] = useState(true);
-  useEffect(() => {
-    console.log(true);
-  }, []);
+  // const [mode, setMode] = useState("mode1");
+  // const [loader, setLoader] = useState(true);
+  // useEffect(() => {
+  //   console.log(true);
+  // }, []);
+  const mode = "mode1";
 
   return (
     <>
@@ -22,7 +23,7 @@ const ProjectsPage = () => {
           <div className="options">
             <button
               className="option__gallery"
-              onClick={() => setMode("mode1")}
+              // onClick={() => setMode("mode1")}
             >
               <svg
                 width="46"
@@ -41,7 +42,7 @@ const ProjectsPage = () => {
             <LineY />
             <button
               className="option__gallery"
-              onClick={() => setMode("mode2")}
+              // onClick={() => setMode("mode2")}
             >
               <svg
                 width="46"
@@ -85,7 +86,6 @@ const ProjectsPage = () => {
               id,
               title,
               desc,
-              picture,
               status,
               href,
               squarePicture,

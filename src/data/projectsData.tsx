@@ -44,7 +44,7 @@ interface Project {
   services: string[];
   year?: number;
   website?: string;
-  picture: StaticImageData;
+  picture: string;
   pictureBlur: string;
   challenge: string;
   solution: string;
@@ -65,7 +65,8 @@ export const ProjectsData: Project[] = [
     services: ["UX/UI", "Web Dev", "CMS"],
     year: 2022,
     website: "carlsburger.com",
-    picture: arkitectsPicture,
+    // picture: arkitectsPicture,
+    picture: "arkitects_h9yfwi",
     pictureBlur:
       "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACQAQCdASoIAAYAAkA4JZwAApexH0AA/vT1XcngVaVf1DZvx7K8GpBR2EpLzsxJmHgkJbkyGK6AAA==",
     squarePicture: arkitectsSquare,
@@ -88,7 +89,8 @@ export const ProjectsData: Project[] = [
     services: ["UX/UI", "Web Dev", "CMS"],
     year: 2022,
     website: "carlsburger.com",
-    picture: project1picture,
+    // picture: project1picture,
+    picture: "arkitects_h9yfwi",
     pictureBlur:
       "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAUAAkA4JaQAAuUuDMAA/vdQn7VnyfQ/wciKMo98HdcglVtgAA==",
     squarePicture: carlsSquarePicture,
@@ -111,7 +113,8 @@ export const ProjectsData: Project[] = [
     services: ["Web Design", "Web Development"],
     year: 2023,
     website: "zonustech.com",
-    picture: project2picture,
+    // picture: project2picture,
+    picture: "arkitects_h9yfwi",
     pictureBlur:
       "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoIAAUAAkA4JYwCdAD0h61QAM45vik40VchIqY8kp7z3fCcms16uVWnUM/MJK4injxOxAxoAAA=",
     squarePicture: zonusSquarePicture,
@@ -134,7 +137,8 @@ export const ProjectsData: Project[] = [
     services: ["UX", "UI", "Web Design"],
     year: 2022,
     website: "Dribbble | Behance",
-    picture: gymstormPicture,
+    // picture: gymstormPicture,
+    picture: "arkitects_h9yfwi",
     pictureBlur:
       "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAQCdASoIAAYAAkA4JaAAAp3Knm7AAP7m+4r6ad4PMiaEDu4I5UtiCq31gL96DLt7auvN/6ci67+VWEVu/Tf/tbrX+P3nuTu03a6kvZ9dT/BdwAA=",
     squarePicture: gymstormPictureSquare,
@@ -157,7 +161,8 @@ export const ProjectsData: Project[] = [
     services: ["Web Design", "Web Development", "UX/UI"],
     year: 2022,
     website: "modernfashion.com",
-    picture: project3picture,
+    // picture: project3picture,
+    picture: "arkitects_h9yfwi",
     pictureBlur:
       "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACwAQCdASoIAAUAAkA4JbACdADze7hYAP71XniwvdIYuKU/8ujZRzoZUMJ+/mry8U7+TOqr1T430boJUs2e1BbmvOpIBkOCpv9gzu3CZ/Bv9D9Be2J82gAA",
     squarePicture: moderSquarePicture,
@@ -180,7 +185,8 @@ export const ProjectsData: Project[] = [
     services: ["Web Design", "Web Development", "UX/UI", "DB Design", "DevOps"],
     year: 2022,
     website: "villatourism.com",
-    picture: projectVilaPicture,
+    // picture: projectVilaPicture,
+    picture: "arkitects_h9yfwi",
     pictureBlur:
       "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoIAAUAAkA4JZwAAp1TSyoAAPlp7tMdgmJhrGOBzDZ9cjbgtJvq4uvogqX5u4q9e6wAAA==",
     squarePicture: villaSquarePicutre,
@@ -203,7 +209,8 @@ export const ProjectsData: Project[] = [
     services: ["", "", ""],
     year: 2022,
     website: "VSMarketplace",
-    picture: darvythemePicture,
+    // picture: darvythemePicture,
+    picture: "arkitects_h9yfwi",
     pictureBlur:
       "data:image/webp;base64,UklGRmgAAABXRUJQVlA4WAoAAAAQAAAABwAABAAAQUxQSAsAAAABD9D/iAgUMKL/AQBWUDggNgAAALABAJ0BKggABQACQDgllAJ0AN0DvYAA+9RIHX+QUQGAQ9Pun6Y/Tc6Egz3uc+OXxWDxPDdAAA==",
     squarePicture: darvythemeSquarePicture,
