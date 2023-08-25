@@ -43,9 +43,10 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
             }
             width={1920}
             height={1080}
-            blurDataURL={
-              "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA4IDUnPjxmaWx0ZXIgaWQ9J2InIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0nc1JHQic+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0nMScvPjwvZmlsdGVyPjxpbWFnZSBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSdub25lJyBmaWx0ZXI9J3VybCgjYiknIHg9JzAnIHk9JzAnIGhlaWdodD0nMTAwJScgd2lkdGg9JzEwMCUnIGhyZWY9J2RhdGE6aW1hZ2Uvd2VicDtiYXNlNjQsVWtsR1Jrb0FBQUJYUlVKUVZsQTRJRDRBQUFEUUFRQ2RBU29JQUFVQUFrQTRKWWdDZEFFZmc2WmtBQUQrK2c0T1pINzdIMW5yVzhhektLdGlDS2ZTeEgyczFnZ21ZMHh5UUJjWnB6cHJsa0FBQUE9PScvPjwvc3ZnPg=="
-            }
+            // blurDataURL={
+            //   "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA4IDUnPjxmaWx0ZXIgaWQ9J2InIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0nc1JHQic+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0nMScvPjwvZmlsdGVyPjxpbWFnZSBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSdub25lJyBmaWx0ZXI9J3VybCgjYiknIHg9JzAnIHk9JzAnIGhlaWdodD0nMTAwJScgd2lkdGg9JzEwMCUnIGhyZWY9J2RhdGE6aW1hZ2Uvd2VicDtiYXNlNjQsVWtsR1Jrb0FBQUJYUlVKUVZsQTRJRDRBQUFEUUFRQ2RBU29JQUFVQUFrQTRKWWdDZEFFZmc2WmtBQUQrK2c0T1pINzdIMW5yVzhhektLdGlDS2ZTeEgyczFnZ21ZMHh5UUJjWnB6cHJsa0FBQUE9PScvPjwvc3ZnPg=="
+            // }
+            blurDataURL="data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAQCdASoIAAYAAkA4JaAAAp3Knm7AAP7m+4r6ad4PMiaEDu4I5UtiCq31gL96DLt7auvN/6ci67+VWEVu/Tf/tbrX+P3nuTu03a6kvZ9dT/BdwAA="
             label="picture banner"
           />
         </div>

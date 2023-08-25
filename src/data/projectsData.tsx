@@ -129,6 +129,8 @@ export const ProjectsData: Project[] = [
     year: 2022,
     website: "Dribbble | Behance",
     picture: gymstormPicture,
+    pictureBlur:
+      "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAQCdASoIAAYAAkA4JaAAAp3Knm7AAP7m+4r6ad4PMiaEDu4I5UtiCq31gL96DLt7auvN/6ci67+VWEVu/Tf/tbrX+P3nuTu03a6kvZ9dT/BdwAA=",
     squarePicture: gymstormPictureSquare,
     challenge:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
