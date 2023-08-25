@@ -58,10 +58,9 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                 <div className="sticky__header">
                   <div className="header__picture">
                     <div className="picture__content">
-                      <Image
+                      <NextImage
                         src={picture}
-                        alt="picture profile content"
-                        placeholder="blur"
+                        blurDataURL="data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoIAAgAAkA4JaQAAxf/LteA4AD+6K9XkBLkvdtlYOzlHYsIHBJvObj1L89oH47YjgYEliupwshT0U0LXeCCeFAcAAA="
                       />
                     </div>
                   </div>

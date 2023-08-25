@@ -80,7 +80,8 @@ button {
   cursor: pointer;
 }
 
-.image-filter {
+.picture__content {
+  overflow: hidden;
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

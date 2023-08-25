@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React, { useState } from "react";
 
 const NextImage = ({
@@ -9,11 +9,11 @@ const NextImage = ({
   width,
   height,
 }: {
-  src: string;
-  label: string;
+  src: string | StaticImageData;
+  label?: string;
   blurDataURL: string;
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
 }) => {
   const [isLoading, setIsLoading] = useState(true);
   return (
