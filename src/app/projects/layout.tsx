@@ -1,32 +1,17 @@
-// "use client";
-import ProjectsWrapper from "@/components/projectsWrapper";
-import React, { useState, useEffect } from "react";
-import { ProjectsData } from "@/data/projectsData";
-import Wrapper from "@/components/wrapper";
 import LineY from "@/components/liney";
-import ListWrapper from "@/components/listWrapper";
-import FullWrapper from "./fullWrapper";
-import ListProjectsWrapper from "./listProjectsWrapper";
+import Wrapper from "@/components/wrapper";
+import React from "react";
+import Link from "next/link";
 
-const ProjectsPage = () => {
-  // const [mode, setMode] = useState("mode1");
-  // const [loader, setLoader] = useState(true);
-  // useEffect(() => {
-  //   console.log(true);
-  // }, []);
-  const mode = "mode1";
-
+const ProjectsLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      {/* <Wrapper id="projects-nav">
+      <Wrapper id="projects-nav">
         <div className="nav">
           <div className="nav-link">My works</div>
           <LineY />
           <div className="options">
-            <button
-              className="option__gallery"
-              // onClick={() => setMode("mode1")}
-            >
+            <Link href={"/projects"} className="option__gallery">
               <svg
                 width="46"
                 height="46"
@@ -40,12 +25,9 @@ const ProjectsPage = () => {
                 <path d="M18 4H6a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"></path>
                 <path d="M18 14H6a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2Z"></path>
               </svg>
-            </button>
+            </Link>
             <LineY />
-            <button
-              className="option__gallery"
-              // onClick={() => setMode("mode2")}
-            >
+            <Link href={"/projects/list"} className="option__gallery">
               <svg
                 width="46"
                 height="46"
@@ -64,25 +46,13 @@ const ProjectsPage = () => {
                 <path d="M8 4H4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Z"></path>
                 <path d="M8 14H4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1Z"></path>
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
-      </Wrapper> */}
-      {mode === "mode1" ? <FullWrapper /> : <ListProjectsWrapper />}
-      {/* {ProjectsData.map((project) => {
-        const { id, title, picture, status, href } = project;
-        return (
-          <ProjectsWrapper
-            id={id}
-            title={title}
-            picture={picture}
-            status={status}
-            href={href}
-          />
-        );
-      })} */}
+      </Wrapper>
+      {children}
     </>
   );
 };
 
-export default ProjectsPage;
+export default ProjectsLayout;

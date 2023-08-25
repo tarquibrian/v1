@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import ListProjectsWrapper from "../listProjectsWrapper";
 
 const List = () => {
-  return (
-    <div>List</div>
-  )
-}
+  return <ListProjectsWrapper />;
+};
 
-export default List
+export default List;
