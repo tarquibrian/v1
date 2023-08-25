@@ -5,6 +5,7 @@ import LineY from "./liney";
 import OpenIcon from "./icons/open";
 import Link from "next/link";
 import StatusIcon from "./icons/status";
+import NextImage from "./NextImage";
 
 interface Project {
   id: string;
@@ -12,9 +13,10 @@ interface Project {
   picture: StaticImageData;
   status: boolean;
   href: string;
+  blurData: string;
 }
 
-const ProjectsWrapper = ({ id, title, picture, status, href }: Project) => {
+const ProjectsWrapper = ({ id, title, picture, status, href, blurData }: Project) => {
   return (
     <Wrapper className="projectswrapper" htmlElement="section">
       <div className="projectswrapper__section">
@@ -37,7 +39,7 @@ const ProjectsWrapper = ({ id, title, picture, status, href }: Project) => {
         </Wrapper>
         <div className="projectswrapper__section-picture">
           <Link href={`/projects/${id}`} className="picture__content">
-            <Image src={picture} alt="project picture " placeholder="blur" />
+            <NextImage src={picture}  blurDataURL={blurData} />
           </Link>
         </div>
       </div>

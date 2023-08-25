@@ -24,7 +24,7 @@ const FullContent = () => {
   return (
     <>
       {ProjectsData.map((project) => {
-        const { id, title, picture, status, href } = project;
+        const { id, title, picture, status, href, pictureBlur } = project;
         return (
           <ProjectsWrapper
             key={id}
@@ -33,6 +33,7 @@ const FullContent = () => {
             picture={picture}
             status={status}
             href={href}
+            blurData={pictureBlur}
           />
         );
       })}
