@@ -45,6 +45,7 @@ interface Project {
   year?: number;
   website?: string;
   picture: StaticImageData;
+  pictureBlur?: string;
   challenge: string;
   solution: string;
   result: string;
