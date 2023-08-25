@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import Image, { StaticImageData } from "next/image";
 import React, { useState } from "react";
 
@@ -26,6 +26,7 @@ const NextImage = ({
       blurDataURL={blurDataURL}
       className={isLoading ? "blurred" : "image-loaded"}
       onLoadingComplete={() => setIsLoading(false)}
+      // onLoadingComplete={() => console.log("laoded")}
     />
   );
 };

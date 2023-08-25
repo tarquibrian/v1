@@ -10,6 +10,10 @@ import ListContent from "@/components/listContent";
 
 const ProjectsPage = () => {
   const [mode, setMode] = useState("mode1");
+  const [loader, setLoader] = useState(true);
+  useEffect(() => {
+    console.log(true);
+  }, []);
 
   return (
     <>
@@ -63,7 +67,51 @@ const ProjectsPage = () => {
           </div>
         </div>
       </Wrapper>
-      {mode === "mode1" ? <FullContent /> : <ListContent />}
+      {mode === "mode1"
+        ? ProjectsData.map((project) => {
+            const { id, title, picture, status, href, pictureBlur } = project;
+            return (
+              <ProjectsWrapper
+                key={id}
+                id={id}
+                title={title}
+                picture={picture}
+                status={status}
+                href={href}
+                blurData={pictureBlur}
+              />
+            );
+          })
+        : ProjectsData.map((project) => {
+            const {
+              id,
+              title,
+              desc,
+              picture,
+              status,
+              href,
+              squarePicture,
+              year,
+              services,
+            } = project;
+            return (
+              <ListWrapper
+                key={id}
+                id={id}
+                title={title}
+                squarePicture={squarePicture}
+                status={status}
+                href={href}
+                year={year}
+                desc={desc}
+                services={services}
+                // desc={desc}
+                // picture={picture}
+                // status={status}
+                // href={href}
+              />
+            );
+          })}
       {/* {ProjectsData.map((project) => {
         const { id, title, picture, status, href } = project;
         return (
