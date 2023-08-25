@@ -5,8 +5,6 @@ import { ProjectsData } from "@/data/projectsData";
 import Wrapper from "@/components/wrapper";
 import LineY from "@/components/liney";
 import ListWrapper from "@/components/listWrapper";
-import FullContent from "@/components/fullContent";
-import ListContent from "@/components/listContent";
 
 const ProjectsPage = () => {
   const [mode, setMode] = useState("mode1");
