@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction } from "react";
+import React from "react";
 import Wrapper from "./wrapper";
 import Image, { StaticImageData } from "next/image";
 import LineY from "./liney";
@@ -46,10 +46,7 @@ const ProjectsWrapper = ({
         </Wrapper>
         <div className="projectswrapper__section-picture">
           <Link href={`/projects/${id}`} className="picture__content">
-            <NextImage
-              src={picture}
-              blurDataURL={blurData}
-            />
+            <NextImage src={picture} blurDataURL={blurData} />
           </Link>
         </div>
       </div>
