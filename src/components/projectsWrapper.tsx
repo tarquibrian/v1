@@ -14,8 +14,6 @@ interface Project {
   status: boolean;
   href: string;
   blurData: string;
-  loader: boolean;
-  setLoader: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const ProjectsWrapper = ({
@@ -25,8 +23,6 @@ const ProjectsWrapper = ({
   status,
   href,
   blurData,
-  loader,
-  setLoader,
 }: Project) => {
   return (
     <Wrapper className="projectswrapper" htmlElement="section">
@@ -53,8 +49,6 @@ const ProjectsWrapper = ({
             <NextImage
               src={picture}
               blurDataURL={blurData}
-              loader={loader}
-              setLoader={setLoader}
             />
           </Link>
         </div>

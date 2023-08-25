@@ -1,6 +1,6 @@
 // "use client";
 import Image, { StaticImageData } from "next/image";
-import React, { Dispatch, SetStateAction, useState } from "react";
+import React, { useState } from "react";
 
 const NextImage = ({
   src,
@@ -8,16 +8,12 @@ const NextImage = ({
   blurDataURL,
   width,
   height,
-  loader,
-  setLoader,
 }: {
   src: string | StaticImageData;
   label?: string;
   blurDataURL: string;
   width?: number;
   height?: number;
-  loader: boolean;
-  setLoader: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   const [isLoading, setIsLoading] = useState(true);
   return (
@@ -28,9 +24,8 @@ const NextImage = ({
       height={height}
       placeholder="blur"
       blurDataURL={blurDataURL}
-      className={loader ? "blurred" : "image-loaded"}
-      // onLoadingComplete={() => setIsLoading(false)}
-      onLoadingComplete={() => setLoader(false)}
+      className={isLoading ? "blurred" : "image-loaded"}
+      onLoadingComplete={() => setIsLoading(false)}
     />
   );
 };

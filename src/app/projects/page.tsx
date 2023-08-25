@@ -77,8 +77,6 @@ const ProjectsPage = () => {
                 status={status}
                 href={href}
                 blurData={pictureBlur}
-                loader={loader}
-                setLoader={setLoader}
               />
             );
           })
