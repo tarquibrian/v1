@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import Wrapper from "./wrapper";
 import Image, { StaticImageData } from "next/image";
 import LineY from "./liney";
@@ -14,9 +14,20 @@ interface Project {
   status: boolean;
   href: string;
   blurData: string;
+  loader: boolean;
+  setLoader: Function;
 }
 
-const ProjectsWrapper = ({ id, title, picture, status, href, blurData }: Project) => {
+const ProjectsWrapper = ({
+  id,
+  title,
+  picture,
+  status,
+  href,
+  blurData,
+  loader,
+  setLoader,
+}: Project) => {
   return (
     <Wrapper className="projectswrapper" htmlElement="section">
       <div className="projectswrapper__section">
@@ -39,7 +50,12 @@ const ProjectsWrapper = ({ id, title, picture, status, href, blurData }: Project
         </Wrapper>
         <div className="projectswrapper__section-picture">
           <Link href={`/projects/${id}`} className="picture__content">
-            <NextImage src={picture}  blurDataURL={blurData} />
+            <NextImage
+              src={picture}
+              blurDataURL={blurData}
+              loader={loader}
+              setLoader={setLoader}
+            />
           </Link>
         </div>
       </div>
