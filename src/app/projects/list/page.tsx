@@ -1,5 +1,4 @@
 import React from "react";
-import ListProjectsWrapper from "../listProjectsWrapper";
 import { ProjectsData } from "@/data/projectsData";
 import ListWrapper from "@/components/listWrapper";
 

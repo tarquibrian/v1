@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import Image, { StaticImageData } from "next/image";
 import React, { useEffect, useState } from "react";
 
@@ -15,7 +15,7 @@ const NextImage = ({
   width?: number;
   height?: number;
 }) => {
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
   return (
     <Image
       src={`https://res.cloudinary.com/dskypy0xt/image/upload/v1692899385/${src}`}
@@ -24,8 +24,8 @@ const NextImage = ({
       height={height}
       placeholder="blur"
       blurDataURL={blurDataURL}
-      className={isLoading ? "blurred" : "image-loaded"}
-      onLoadingComplete={() => setIsLoading(false)}
+      // className={isLoading ? "blurred" : "image-loaded"}
+      // onLoadingComplete={() => setIsLoading(false)}
     />
   );
 };

@@ -90,7 +90,7 @@ export const ProjectsData: Project[] = [
     year: 2022,
     website: "carlsburger.com",
     // picture: project1picture,
-    picture: "arkitects_h9yfwi",
+    picture: "project1-picture_snqfl8",
     pictureBlur:
       "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAUAAkA4JaQAAuUuDMAA/vdQn7VnyfQ/wciKMo98HdcglVtgAA==",
     squarePicture: carlsSquarePicture,
