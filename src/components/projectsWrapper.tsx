@@ -15,7 +15,7 @@ interface Project {
   href: string;
   blurData: string;
   loader: boolean;
-  setLoader: Function;
+  setLoader: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const ProjectsWrapper = ({

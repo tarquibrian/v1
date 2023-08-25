@@ -17,7 +17,7 @@ const NextImage = ({
   width?: number;
   height?: number;
   loader: boolean;
-  setLoader: Function;
+  setLoader: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   const [isLoading, setIsLoading] = useState(true);
   return (
