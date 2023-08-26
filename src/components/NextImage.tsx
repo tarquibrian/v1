@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Cloudinary } from "@cloudinary/url-gen";
-import { AdvancedImage } from "@cloudinary/react";
+import { AdvancedImage, lazyload, placeholder } from "@cloudinary/react";
 
 const NextImage = ({
   src,
@@ -24,7 +24,12 @@ const NextImage = ({
   });
 
   const myImage = cld.image(src);
-  return <AdvancedImage cldImg={myImage} />;
+  return (
+    <AdvancedImage
+      cldImg={myImage}
+      plugins={[lazyload(), placeholder({ mode: "blur" })]}
+    />
+  );
 };
 
 export default NextImage;
