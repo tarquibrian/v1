@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage, lazyload, placeholder } from "@cloudinary/react";
+import { cld } from "@/libs/cloudinary";
 
 const NextImage = ({
   src,
@@ -17,11 +17,6 @@ const NextImage = ({
   height?: number;
 }) => {
   // const [isLoading, setIsLoading] = useState(true);
-  const cld = new Cloudinary({
-    cloud: {
-      cloudName: "dskypy0xt",
-    },
-  });
 
   const myImage = cld.image(src);
   return (
