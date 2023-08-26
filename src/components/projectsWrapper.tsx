@@ -25,13 +25,7 @@ const ProjectsWrapper = async ({
   href,
   blurData,
 }: Project) => {
-  const Blur = await getBase64ImageUrl(picture);
-  const getsized = async () => {
-    const r = await fetch(
-      `https://res.cloudinary.com/dskypy0xt/image/upload/v1692899385/${picture}`
-    ).then((res) => console.log(res));
-  };
-  console.log(getsized());
+  // const Blur = await getBase64ImageUrl(picture);
   return (
     <Wrapper className="projectswrapper" htmlElement="section">
       <div className="projectswrapper__section">
@@ -54,12 +48,7 @@ const ProjectsWrapper = async ({
         </Wrapper>
         <div className="projectswrapper__section-picture">
           <Link href={`/projects/${id}`} className="picture__content">
-            <NextImage
-              src={picture}
-              blurDataURL={Blur}
-              width={1000}
-              height={600}
-            />
+            <NextImage src={picture} />
           </Link>
         </div>
       </div>

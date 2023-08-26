@@ -6,9 +6,6 @@ import StatusIcon from "./icons/status";
 import OpenIcon from "./icons/open";
 import Link from "next/link";
 import NextImage from "./NextImage";
-import { getBase64ImageUrl } from "@/utils/base64image";
-import { Cloudinary } from "@cloudinary/url-gen";
-import { AdvancedImage } from "@cloudinary/react";
 
 interface Project {
   id: string;
@@ -41,7 +38,7 @@ const ProjectWrapper = async ({
   href,
   status,
 }: Project) => {
-  const blur = await getBase64ImageUrl(picture);
+  // const blur = await getBase64ImageUrl(picture);
 
   return (
     <Wrapper htmlElement="section" id="projectwrapper">
