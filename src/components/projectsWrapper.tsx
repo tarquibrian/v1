@@ -58,7 +58,7 @@ const ProjectsWrapper = async ({
               src={picture}
               blurDataURL={Blur}
               width={1000}
-              height={1000}
+              height={600}
             />
           </Link>
         </div>

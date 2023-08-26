@@ -5,6 +5,10 @@ import LineY from "./liney";
 import StatusIcon from "./icons/status";
 import OpenIcon from "./icons/open";
 import Link from "next/link";
+import NextImage from "./NextImage";
+import { getBase64ImageUrl } from "@/utils/base64image";
+import { Cloudinary } from "@cloudinary/url-gen";
+import { AdvancedImage } from "@cloudinary/react";
 
 interface Project {
   id: string;
@@ -13,7 +17,7 @@ interface Project {
   timeline: string;
   client: string;
   services: string[];
-  picture: StaticImageData;
+  picture: string;
   challenge: string;
   result: string;
   solution: string;
@@ -22,7 +26,7 @@ interface Project {
   status: boolean;
 }
 
-const ProjectWrapper = ({
+const ProjectWrapper = async ({
   id,
   title,
   desc,
@@ -37,6 +41,8 @@ const ProjectWrapper = ({
   href,
   status,
 }: Project) => {
+  const blur = await getBase64ImageUrl(picture);
+
   return (
     <Wrapper htmlElement="section" id="projectwrapper">
       <div className="projectwrapper__section">
@@ -105,11 +111,13 @@ const ProjectWrapper = ({
         </div>
         <Wrapper className="projectwrapper__section-picture">
           <div className="picture__content">
-            <Image
+            {/* <NextImage
               src={picture}
               alt="single project picutre"
-              placeholder="blur"
-            />
+              blurDataURL={blur}
+            /> */}
+            {/* <AdvancedImage cldImg={myImage} /> */}
+            <NextImage src={picture} />
           </div>
         </Wrapper>
         <Wrapper className="projectwrapper__section-desc">

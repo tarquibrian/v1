@@ -55,6 +55,10 @@ interface Project {
   squarePicture: StaticImageData;
 }
 
+interface SingleProject {
+  size: string[];
+}
+
 export const ProjectsData: Project[] = [
   {
     id: "arkitects",
@@ -114,7 +118,7 @@ export const ProjectsData: Project[] = [
     year: 2023,
     website: "zonustech.com",
     // picture: project2picture,
-    picture: "arkitects_h9yfwi",
+    picture: "project2-picture_gytjfn",
     pictureBlur:
       "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoIAAUAAkA4JYwCdAD0h61QAM45vik40VchIqY8kp7z3fCcms16uVWnUM/MJK4injxOxAxoAAA=",
     squarePicture: zonusSquarePicture,
@@ -138,7 +142,7 @@ export const ProjectsData: Project[] = [
     year: 2022,
     website: "Dribbble | Behance",
     // picture: gymstormPicture,
-    picture: "arkitects_h9yfwi",
+    picture: "gymstorm-picture_xryetr",
     pictureBlur:
       "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAQCdASoIAAYAAkA4JaAAAp3Knm7AAP7m+4r6ad4PMiaEDu4I5UtiCq31gL96DLt7auvN/6ci67+VWEVu/Tf/tbrX+P3nuTu03a6kvZ9dT/BdwAA=",
     squarePicture: gymstormPictureSquare,
@@ -162,7 +166,7 @@ export const ProjectsData: Project[] = [
     year: 2022,
     website: "modernfashion.com",
     // picture: project3picture,
-    picture: "arkitects_h9yfwi",
+    picture: "project3-picture_souhv9",
     pictureBlur:
       "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACwAQCdASoIAAUAAkA4JbACdADze7hYAP71XniwvdIYuKU/8ujZRzoZUMJ+/mry8U7+TOqr1T430boJUs2e1BbmvOpIBkOCpv9gzu3CZ/Bv9D9Be2J82gAA",
     squarePicture: moderSquarePicture,
@@ -186,7 +190,7 @@ export const ProjectsData: Project[] = [
     year: 2022,
     website: "villatourism.com",
     // picture: projectVilaPicture,
-    picture: "arkitects_h9yfwi",
+    picture: "villatyoursm-picture_zqwqzn",
     pictureBlur:
       "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoIAAUAAkA4JZwAAp1TSyoAAPlp7tMdgmJhrGOBzDZ9cjbgtJvq4uvogqX5u4q9e6wAAA==",
     squarePicture: villaSquarePicutre,
@@ -210,7 +214,7 @@ export const ProjectsData: Project[] = [
     year: 2022,
     website: "VSMarketplace",
     // picture: darvythemePicture,
-    picture: "arkitects_h9yfwi",
+    picture: "darvy-picture_i5rxj1",
     pictureBlur:
       "data:image/webp;base64,UklGRmgAAABXRUJQVlA4WAoAAAAQAAAABwAABAAAQUxQSAsAAAABD9D/iAgUMKL/AQBWUDggNgAAALABAJ0BKggABQACQDgllAJ0AN0DvYAA+9RIHX+QUQGAQ9Pun6Y/Tc6Egz3uc+OXxWDxPDdAAA==",
     squarePicture: darvythemeSquarePicture,
