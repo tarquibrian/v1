@@ -1,12 +1,10 @@
 import React from "react";
 import Wrapper from "./wrapper";
-import Image, { StaticImageData } from "next/image";
 import LineY from "./liney";
 import OpenIcon from "./icons/open";
 import Link from "next/link";
 import StatusIcon from "./icons/status";
 import NextImage from "./NextImage";
-import { getBase64ImageUrl } from "@/utils/base64image";
 
 interface Project {
   id: string;
