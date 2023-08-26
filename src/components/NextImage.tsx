@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { AdvancedImage, lazyload, placeholder } from "@cloudinary/react";
-// import { cld } from "@/libs/cloudinary";
+import { cld } from "@/libs/cloudinary";
 import { Cloudinary } from "@cloudinary/url-gen";
 
 const NextImage = ({
@@ -19,11 +19,12 @@ const NextImage = ({
 }) => {
   // const [isLoading, setIsLoading] = useState(true);
   // const { CLOUDNAME } = process.env;
-  const cld = new Cloudinary({
-    cloud: {
-      cloudName: "dskypy0xt",
-    },
-  });
+  // const cld = new Cloudinary({
+  //   cloud: {
+  //     cloudName: "dskypy0xt",
+  //   },
+  // });
+  // console.log(process.env)
 
   const myImage = cld.image(src);
   return (

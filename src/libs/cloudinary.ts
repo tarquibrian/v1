@@ -1,10 +1,8 @@
 import { Cloudinary } from "@cloudinary/url-gen";
-
-const { CLOUDNAME } = process.env;
-console.log(CLOUDNAME);
+console.log(process.env.CLOUDNAME);
 
 export const cld = new Cloudinary({
   cloud: {
-    cloudName: CLOUDNAME,
+    cloudName: process.env.CLOUDNAME,
   },
 });
