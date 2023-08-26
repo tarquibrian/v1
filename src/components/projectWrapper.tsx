@@ -50,9 +50,9 @@ const ProjectWrapper = async ({
               height="46"
               fill="none"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -98,8 +98,8 @@ const ProjectWrapper = async ({
           <Wrapper className="details__row">
             <div className="label">SERVICES</div>
             <div className="desc">
-              {services.map((service) => (
-                <div className="service">
+              {services.map((i, service) => (
+                <div className="service" key={i}>
                   {`${service}`} <span>-</span>
                 </div>
               ))}
