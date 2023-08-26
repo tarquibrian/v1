@@ -37,7 +37,8 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
     <div id="wrapperview" ref={ref}>
       <Wrapper className="wrapperview__picture">
         <div className="picture__content">
-          <NextImage src={"banner-top_enhqba"} />
+          {/* <NextImage src={"banner-top_enhqba"} /> */}
+          <Image src={banner} alt="picture top banner" placeholder="blur" />
         </div>
       </Wrapper>
       <Wrapper className="wrapperview__content">
@@ -48,6 +49,11 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                 <div className="sticky__header">
                   <div className="header__picture">
                     <div className="picture__content">
+                      {/* <Image
+                        src={picture}
+                        alt="picture profile"
+                        placeholder="blur"
+                      /> */}
                       <NextImage src="pf-white_aqoi5d" />
                     </div>
                   </div>
