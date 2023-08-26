@@ -1,5 +1,4 @@
-"use client";
-import React, { useEffect, useState, useRef } from "react";
+import React from "react";
 import ThreeCanvas from "@/threejs/canvas";
 import "../styles/global.scss";
 import type { Metadata } from "next";
@@ -43,20 +42,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const ref = useRef<HTMLDivElement>(null);
-
-  const handleOnMouseMove = (e: MouseEvent) => {
-    const rect = ref?.current?.getBoundingClientRect(),
-      x = e?.clientX - (rect?.left || 0),
-      y = e?.clientY - (rect?.top || 0);
-
-    ref?.current?.style?.setProperty("--mouse1-x", `${x}px`);
-    ref?.current?.style?.setProperty("--mouse1-y", `${y}px`);
-  };
-
-  useEffect(() => {
-    window.addEventListener("mousemove", handleOnMouseMove);
-  }, []);
   return (
     <html lang="en">
       <body>
