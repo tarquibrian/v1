@@ -49,12 +49,12 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                 <div className="sticky__header">
                   <div className="header__picture">
                     <div className="picture__content">
-                      {/* <Image
+                      <Image
                         src={picture}
                         alt="picture profile"
                         placeholder="blur"
-                      /> */}
-                      <NextImage src="pf-white_aqoi5d" />
+                      />
+                      {/* <NextImage src="pf-white_aqoi5d" /> */}
                     </div>
                   </div>
                   <LineY />
