@@ -54,10 +54,6 @@ interface Project {
   squarePicture: StaticImageData;
 }
 
-interface SingleProject {
-  size: string[];
-}
-
 export const ProjectsData: Project[] = [
   {
     id: "arkitects",
