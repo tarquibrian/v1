@@ -1,14 +1,16 @@
 import ProjectsWrapper from "@/components/projectsWrapper";
 import React from "react";
 import { ProjectsData } from "@/data/projectsData";
+import { NextResponse } from "next/server";
 
 const getProject = async () => {
-  return await fetch("http://localhost:3000/projects");
+  const res = await fetch("http://localhost:3000/api/projects");
+  return res.json();
 };
 
-const ProjectsPage = () => {
-  const data = getProject();
-  // console.log("data", data);
+const ProjectsPage = async () => {
+  const { projects } = await getProject();
+  console.log("data", projects);
   return ProjectsData.map((project) => {
     const { id, title, picture, status, href } = project;
     return (
