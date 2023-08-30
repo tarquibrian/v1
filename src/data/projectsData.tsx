@@ -108,7 +108,11 @@ export const ProjectsData: Project[] = [
       "The challenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provide them with a unique experience.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    gallery: [carlsSquarePicture, carlsMockup, carlsMockup2],
+    gallery: [
+      { src: "squarecarls_waed91", alt: "CarlsBurger restaurant picture" },
+      { src: "carlsmockup_ajvrcm", alt: "CarlsBurger restaurant picture" },
+      { src: "carlsmockup2_i0agoo", alt: "CarlsBurger restaurant picture" },
+    ],
     status: true,
     href: "https://carls-burger.vercel.app/",
   },
