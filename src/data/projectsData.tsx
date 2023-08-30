@@ -202,9 +202,9 @@ export const ProjectsData: Project[] = [
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     gallery: [
-      { src: "squaremodern_pntu31", alt: "CarlsBurger restaurant picture" },
-      { src: "modernmockup_tmz54d", alt: "CarlsBurger restaurant picture" },
-      { src: "modernmockup2_vevx0n", alt: "CarlsBurger restaurant picture" },
+      { src: "squaremodern_pntu31", alt: "Modernfashion project picture" },
+      { src: "modernmockup_tmz54d", alt: "Modernfashion project picture" },
+      { src: "modernmockup2_vevx0n", alt: "Modernfashion project picture" },
     ],
     status: true,
     href: "https://ecommerce-website-zeta-one.vercel.app/",
