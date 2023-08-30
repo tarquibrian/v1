@@ -136,7 +136,11 @@ export const ProjectsData: Project[] = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    gallery: [zonusSquarePicture, zonusMockup, zonusMockup2],
+    gallery: [
+      { src: "squarezonus_rpd41x", alt: "Zonustech agency picture project" },
+      { src: "zonusmockup_zsvn3j", alt: "Zonustech agency picture project" },
+      { src: "zonusmockup2_iobcti", alt: "Zonustech agency picture project" },
+    ],
     status: true,
     href: "https://www.zonustech.com/",
   },
@@ -160,7 +164,11 @@ export const ProjectsData: Project[] = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    gallery: [gymstormPictureSquare, gymstormMockup, gymstormMckup2],
+    gallery: [
+      { src: "squarecarls_waed91", alt: "CarlsBurger restaurant picture" },
+      { src: "carlsmockup_ajvrcm", alt: "CarlsBurger restaurant picture" },
+      { src: "carlsmockup2_i0agoo", alt: "CarlsBurger restaurant picture" },
+    ],
     status: true,
     href: "https://dribbble.com/shots/22295109-GYMSTORM-Fitness-landing-page",
   },
@@ -184,7 +192,11 @@ export const ProjectsData: Project[] = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    gallery: [moderSquarePicture, modernMockup, modernMockup2],
+    gallery: [
+      { src: "squarecarls_waed91", alt: "CarlsBurger restaurant picture" },
+      { src: "carlsmockup_ajvrcm", alt: "CarlsBurger restaurant picture" },
+      { src: "carlsmockup2_i0agoo", alt: "CarlsBurger restaurant picture" },
+    ],
     status: true,
     href: "https://ecommerce-website-zeta-one.vercel.app/",
   },
@@ -208,7 +220,11 @@ export const ProjectsData: Project[] = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    gallery: [villaSquarePicutre, villaMockup, villaMockup2],
+    gallery: [
+      { src: "squarecarls_waed91", alt: "CarlsBurger restaurant picture" },
+      { src: "carlsmockup_ajvrcm", alt: "CarlsBurger restaurant picture" },
+      { src: "carlsmockup2_i0agoo", alt: "CarlsBurger restaurant picture" },
+    ],
     status: false,
     href: "https://villa-turismo.herokuapp.com/",
   },
@@ -229,7 +245,11 @@ export const ProjectsData: Project[] = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    gallery: [darvythemeSquarePicture, darvyMockup, darvyMockup2],
+    gallery: [
+      { src: "squarecarls_waed91", alt: "CarlsBurger restaurant picture" },
+      { src: "carlsmockup_ajvrcm", alt: "CarlsBurger restaurant picture" },
+      { src: "carlsmockup2_i0agoo", alt: "CarlsBurger restaurant picture" },
+    ],
     status: true,
     href: "https://marketplace.visualstudio.com/items?itemName=darvy.darvypro",
   },
