@@ -165,9 +165,18 @@ export const ProjectsData: Project[] = [
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     gallery: [
-      { src: "squarecarls_waed91", alt: "CarlsBurger restaurant picture" },
-      { src: "carlsmockup_ajvrcm", alt: "CarlsBurger restaurant picture" },
-      { src: "carlsmockup2_i0agoo", alt: "CarlsBurger restaurant picture" },
+      {
+        src: "gymstormSquare_xvy1zf",
+        alt: "GYMSTORM fitness landing page picture",
+      },
+      {
+        src: "gymstormmockup_afez0h",
+        alt: "GYMSTORM fitness landing page picture",
+      },
+      {
+        src: "gymstormmockup2_dyrq9x",
+        alt: "GYMSTORM fitness landing page picture",
+      },
     ],
     status: true,
     href: "https://dribbble.com/shots/22295109-GYMSTORM-Fitness-landing-page",
@@ -193,9 +202,9 @@ export const ProjectsData: Project[] = [
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     gallery: [
-      { src: "squarecarls_waed91", alt: "CarlsBurger restaurant picture" },
-      { src: "carlsmockup_ajvrcm", alt: "CarlsBurger restaurant picture" },
-      { src: "carlsmockup2_i0agoo", alt: "CarlsBurger restaurant picture" },
+      { src: "squaremodern_pntu31", alt: "CarlsBurger restaurant picture" },
+      { src: "modernmockup_tmz54d", alt: "CarlsBurger restaurant picture" },
+      { src: "modernmockup2_vevx0n", alt: "CarlsBurger restaurant picture" },
     ],
     status: true,
     href: "https://ecommerce-website-zeta-one.vercel.app/",
