@@ -230,9 +230,9 @@ export const ProjectsData: Project[] = [
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     gallery: [
-      { src: "squarecarls_waed91", alt: "CarlsBurger restaurant picture" },
-      { src: "carlsmockup_ajvrcm", alt: "CarlsBurger restaurant picture" },
-      { src: "carlsmockup2_i0agoo", alt: "CarlsBurger restaurant picture" },
+      { src: "squarevilla_vfhkod", alt: "Villatourims project picture" },
+      { src: "villamockup_rcdohf", alt: "Villatourims project picture" },
+      { src: "villamockup2_lhytym", alt: "Villatourims project picture" },
     ],
     status: false,
     href: "https://villa-turismo.herokuapp.com/",
