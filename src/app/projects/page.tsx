@@ -4,7 +4,7 @@ import { ProjectsData } from "@/data/projectsData";
 
 const ProjectsPage = () => {
   return ProjectsData.map((project) => {
-    const { id, title, picture, status, href, pictureBlur } = project;
+    const { id, title, picture, status, href } = project;
     return (
       <ProjectsWrapper
         key={id}
@@ -13,7 +13,6 @@ const ProjectsPage = () => {
         picture={picture}
         status={status}
         href={href}
-        blurData={pictureBlur}
       />
     );
   });

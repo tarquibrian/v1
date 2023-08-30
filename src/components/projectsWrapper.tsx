@@ -10,7 +10,7 @@ import { getBase64ImageUrl } from "@/utils/base64image";
 interface Project {
   id: string;
   title: string;
-  picture: string;
+  picture: { src: string; alt: string };
   status: boolean;
   href: string;
 }
@@ -22,7 +22,7 @@ const ProjectsWrapper = async ({
   status,
   href,
 }: Project) => {
-  const blurData = await getBase64ImageUrl(picture);
+  const blurData = await getBase64ImageUrl(picture.src);
   return (
     <Wrapper className="projectswrapper" htmlElement="section">
       <div className="projectswrapper__section">
@@ -45,7 +45,11 @@ const ProjectsWrapper = async ({
         </Wrapper>
         <div className="projectswrapper__section-picture">
           <Link href={`/projects/${id}`} className="picture__content">
-            <NextImage src={picture} blurDataURL={blurData} />
+            <NextImage
+              src={picture.src}
+              blurDataURL={blurData}
+              alt={picture.alt}
+            />
           </Link>
         </div>
       </div>

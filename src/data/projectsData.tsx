@@ -44,8 +44,7 @@ interface Project {
   services: string[];
   year?: number;
   website?: string;
-  picture: string;
-  pictureBlur: string;
+  picture: { src: string; alt: string };
   challenge: string;
   solution: string;
   result: string;
@@ -70,9 +69,10 @@ export const ProjectsData: Project[] = [
     year: 2022,
     website: "carlsburger.com",
     // picture: arkitectsPicture,
-    picture: "arkitects_h9yfwi",
-    pictureBlur:
-      "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACQAQCdASoIAAYAAkA4JZwAApexH0AA/vT1XcngVaVf1DZvx7K8GpBR2EpLzsxJmHgkJbkyGK6AAA==",
+    picture: {
+      src: "arkitects_h9yfwi",
+      alt: "arkitects picture banner",
+    },
     squarePicture: arkitectsSquare,
     challenge:
       "The callenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provide them with a unique experience.",
@@ -94,9 +94,10 @@ export const ProjectsData: Project[] = [
     year: 2022,
     website: "carlsburger.com",
     // picture: project1picture,
-    picture: "project1-picture_snqfl8",
-    pictureBlur:
-      "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAUAAkA4JaQAAuUuDMAA/vdQn7VnyfQ/wciKMo98HdcglVtgAA==",
+    picture: {
+      src: "project1-picture_snqfl8",
+      alt: "CarlsBurger restaurant picture",
+    },
     squarePicture: carlsSquarePicture,
     challenge:
       "The challenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provide them with a unique experience.",
@@ -118,9 +119,10 @@ export const ProjectsData: Project[] = [
     year: 2023,
     website: "zonustech.com",
     // picture: project2picture,
-    picture: "zonustechpicture_dmp4dv",
-    pictureBlur:
-      "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoIAAUAAkA4JYwCdAD0h61QAM45vik40VchIqY8kp7z3fCcms16uVWnUM/MJK4injxOxAxoAAA=",
+    picture: {
+      src: "zonustechpicture_dmp4dv",
+      alt: "Zonustech agency picture project",
+    },
     squarePicture: zonusSquarePicture,
     challenge:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
@@ -142,9 +144,10 @@ export const ProjectsData: Project[] = [
     year: 2022,
     website: "Dribbble | Behance",
     // picture: gymstormPicture,
-    picture: "gymstorm-picture_xryetr",
-    pictureBlur:
-      "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAQCdASoIAAYAAkA4JaAAAp3Knm7AAP7m+4r6ad4PMiaEDu4I5UtiCq31gL96DLt7auvN/6ci67+VWEVu/Tf/tbrX+P3nuTu03a6kvZ9dT/BdwAA=",
+    picture: {
+      src: "gymstorm-picture_xryetr",
+      alt: "GYMSTORM fitness landing page picture",
+    },
     squarePicture: gymstormPictureSquare,
     challenge:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
@@ -166,9 +169,10 @@ export const ProjectsData: Project[] = [
     year: 2022,
     website: "modernfashion.com",
     // picture: project3picture,
-    picture: "project3-picture_souhv9",
-    pictureBlur:
-      "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACwAQCdASoIAAUAAkA4JbACdADze7hYAP71XniwvdIYuKU/8ujZRzoZUMJ+/mry8U7+TOqr1T430boJUs2e1BbmvOpIBkOCpv9gzu3CZ/Bv9D9Be2J82gAA",
+    picture: {
+      src: "project3-picture_souhv9",
+      alt: "Modernfashion project picture",
+    },
     squarePicture: moderSquarePicture,
     challenge:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
@@ -190,9 +194,10 @@ export const ProjectsData: Project[] = [
     year: 2022,
     website: "villatourism.com",
     // picture: projectVilaPicture,
-    picture: "villatyoursm-picture_zqwqzn",
-    pictureBlur:
-      "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoIAAUAAkA4JZwAAp1TSyoAAPlp7tMdgmJhrGOBzDZ9cjbgtJvq4uvogqX5u4q9e6wAAA==",
+    picture: {
+      src: "villatyoursm-picture_zqwqzn",
+      alt: "Villatourims project picture",
+    },
     squarePicture: villaSquarePicutre,
     challenge:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
@@ -214,9 +219,7 @@ export const ProjectsData: Project[] = [
     year: 2022,
     website: "VSMarketplace",
     // picture: darvythemePicture,
-    picture: "darvy-picture_i5rxj1",
-    pictureBlur:
-      "data:image/webp;base64,UklGRmgAAABXRUJQVlA4WAoAAAAQAAAABwAABAAAQUxQSAsAAAABD9D/iAgUMKL/AQBWUDggNgAAALABAJ0BKggABQACQDgllAJ0AN0DvYAA+9RIHX+QUQGAQ9Pun6Y/Tc6Egz3uc+OXxWDxPDdAAA==",
+    picture: { src: "darvy-picture_i5rxj1", alt: "DARVYTHEME VSCode picture" },
     squarePicture: darvythemeSquarePicture,
     challenge:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
