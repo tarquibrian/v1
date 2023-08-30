@@ -118,7 +118,7 @@ export const ProjectsData: Project[] = [
     year: 2023,
     website: "zonustech.com",
     // picture: project2picture,
-    picture: "project2-picture_gytjfn",
+    picture: "zonustechpicture_dmp4dv",
     pictureBlur:
       "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoIAAUAAkA4JYwCdAD0h61QAM45vik40VchIqY8kp7z3fCcms16uVWnUM/MJK4injxOxAxoAAA=",
     squarePicture: zonusSquarePicture,
