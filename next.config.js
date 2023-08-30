@@ -2,7 +2,7 @@
 const nextConfig = {
   // en
   env: {
-    CLOUDNAME: "dskypy0xtt",
+    CLOUDNAME: "dskypy0xt",
   },
   images: {
     remotePatterns: [
