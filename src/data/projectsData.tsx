@@ -265,7 +265,10 @@ export const ProjectsData: Project[] = [
     year: 2022,
     website: "VSMarketplace",
     picture: { src: "darvy-picture_i5rxj1", alt: "DARVYTHEME VSCode picture" },
-    squarePicture: darvythemeSquarePicture,
+    squarePicture: {
+      src: "square1_waasj0",
+      alt: "darvytheme square picture project",
+    },
     challenge:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     solution:

@@ -6,6 +6,8 @@ import LineY from "./liney";
 import StatusIcon from "./icons/status";
 import OpenIcon from "./icons/open";
 import Link from "next/link";
+import NextImage from "./NextImage";
+import { getBase64ImageUrl } from "@/utils/base64image";
 
 interface Project {
   id: string;
@@ -17,10 +19,10 @@ interface Project {
   year?: number;
   href: string;
   status: boolean;
-  squarePicture: StaticImageData;
+  squarePicture: { src: string; alt: string };
 }
 
-const ListWrapper = ({
+const ListWrapper = async ({
   id,
   title,
   squarePicture,
@@ -35,10 +37,10 @@ const ListWrapper = ({
       <div className="listwrapper__section">
         <Link href={`/projects/${id}`} className="listwrapper__section-picture">
           <div className="picture__content">
-            <Image
-              src={squarePicture}
+            <NextImage
+              src={squarePicture.src}
               alt="picture project"
-              placeholder="blur"
+              blurDataURL={await getBase64ImageUrl(squarePicture.src)}
             />
           </div>
         </Link>
