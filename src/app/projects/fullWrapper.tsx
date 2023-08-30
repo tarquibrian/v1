@@ -4,7 +4,7 @@ import React from "react";
 
 const FullWrapper = () => {
   return ProjectsData.map((project) => {
-    const { id, title, picture, status, href, pictureBlur } = project;
+    const { id, title, picture, status, href } = project;
     return (
       <ProjectsWrapper
         key={id}
@@ -13,7 +13,6 @@ const FullWrapper = () => {
         picture={picture}
         status={status}
         href={href}
-        blurData={pictureBlur}
       />
     );
   });
