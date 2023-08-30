@@ -51,7 +51,7 @@ interface Project {
   gallery: Picture[];
   status: boolean;
   href: string;
-  squarePicture: StaticImageData;
+  squarePicture: Picture;
 }
 
 interface Picture {
@@ -73,7 +73,10 @@ export const ProjectsData: Project[] = [
       src: "arkitects_h9yfwi",
       alt: "arkitects picture banner",
     },
-    squarePicture: arkitectsSquare,
+    squarePicture: {
+      src: "arkitectsSquare_qdmewu",
+      alt: "arkitects square picture project",
+    },
     challenge:
       "The callenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provide them with a unique experience.",
     solution:
@@ -101,7 +104,10 @@ export const ProjectsData: Project[] = [
       src: "project1-picture_snqfl8",
       alt: "CarlsBurger restaurant picture",
     },
-    squarePicture: carlsSquarePicture,
+    squarePicture: {
+      src: "squarecarls_waed91",
+      alt: "carlsburger restauran square picture project",
+    },
     challenge:
       "The challenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provide them with a unique experience.",
     solution:
@@ -255,9 +261,9 @@ export const ProjectsData: Project[] = [
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     gallery: [
-      { src: "squarecarls_waed91", alt: "CarlsBurger restaurant picture" },
-      { src: "carlsmockup_ajvrcm", alt: "CarlsBurger restaurant picture" },
-      { src: "carlsmockup2_i0agoo", alt: "CarlsBurger restaurant picture" },
+      { src: "square1_waasj0", alt: "DARVYTHEME VSCode picture" },
+      { src: "darvymockup_wxkaxr", alt: "DARVYTHEME VSCode picture" },
+      { src: "darvymockup2_pzhlf3", alt: "DARVYTHEME VSCode picture" },
     ],
     status: true,
     href: "https://marketplace.visualstudio.com/items?itemName=darvy.darvypro",
