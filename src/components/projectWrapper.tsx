@@ -6,6 +6,7 @@ import StatusIcon from "./icons/status";
 import OpenIcon from "./icons/open";
 import Link from "next/link";
 import NextImage from "./NextImage";
+import { getBase64ImageUrl } from "@/utils/base64image";
 
 interface Project {
   id: string;
@@ -14,13 +15,18 @@ interface Project {
   timeline: string;
   client: string;
   services: string[];
-  picture: string;
+  picture: Picture;
   challenge: string;
   result: string;
   solution: string;
-  gallery: StaticImageData[];
+  gallery: Picture[];
   href: string;
   status: boolean;
+}
+
+interface Picture {
+  src: string;
+  alt: string;
 }
 
 const ProjectWrapper = async ({
@@ -38,7 +44,7 @@ const ProjectWrapper = async ({
   href,
   status,
 }: Project) => {
-  // const blur = await getBase64ImageUrl(picture);
+  const blur = await getBase64ImageUrl(picture.src);
 
   return (
     <Wrapper htmlElement="section" id="projectwrapper">
@@ -114,7 +120,11 @@ const ProjectWrapper = async ({
               blurDataURL={blur}
             /> */}
             {/* <AdvancedImage cldImg={myImage} /> */}
-            <NextImage src={picture} />
+            <NextImage
+              src={picture.src}
+              alt={picture.alt}
+              blurDataURL={await getBase64ImageUrl(picture.src)}
+            />
           </div>
         </Wrapper>
         <Wrapper className="projectwrapper__section-desc">
@@ -176,16 +186,28 @@ const ProjectWrapper = async ({
         <div className="projectwrapper__section-gallery">
           <div className="one">
             <div className="picture__contents">
-              <Image src={gallery[0]} alt="one" placeholder="blur" />
+              <NextImage
+                src={gallery[0].src}
+                alt={gallery[0].alt}
+                blurDataURL={await getBase64ImageUrl(gallery[0].src)}
+              />
             </div>
             <div className="picture__contents">
-              <Image src={gallery[1]} alt="one" placeholder="blur" />
+              <NextImage
+                src={gallery[1].src}
+                alt={gallery[1].alt}
+                blurDataURL={await getBase64ImageUrl(gallery[1].src)}
+              />
             </div>
           </div>
           <LineY />
           <div className="two">
             <div className="picture__contents">
-              <Image src={gallery[2]} alt="one" placeholder="blur" />
+              <NextImage
+                src={gallery[2].src}
+                alt={gallery[2].alt}
+                blurDataURL={await getBase64ImageUrl(gallery[2].src)}
+              />
             </div>
           </div>
         </div>

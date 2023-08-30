@@ -44,14 +44,19 @@ interface Project {
   services: string[];
   year?: number;
   website?: string;
-  picture: { src: string; alt: string };
+  picture: Picture;
   challenge: string;
   solution: string;
   result: string;
-  gallery: StaticImageData[];
+  gallery: Picture[];
   status: boolean;
   href: string;
   squarePicture: StaticImageData;
+}
+
+interface Picture {
+  src: string;
+  alt: string;
 }
 
 export const ProjectsData: Project[] = [
@@ -75,7 +80,11 @@ export const ProjectsData: Project[] = [
       "The callenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provide them with a unique experience.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
-    gallery: [arkitectsSquare, arkitectsMockup, arkitectMockup2],
+    gallery: [
+      { src: "arkitectsSquare_qdmewu", alt: "arkitects picture banner" },
+      { src: "arkitectsmockup_kaa7cs", alt: "arkitects picture banner" },
+      { src: "arkitectsmockup2_znrohg", alt: "arkitects picture banner" },
+    ],
     status: true,
     href: "https://www.behance.net/gallery/177999933/ARKITECTS-Architecture-Website-Concept",
   },
