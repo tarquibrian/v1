@@ -1,7 +1,6 @@
 import ProjectsWrapper from "@/components/projectsWrapper";
 import React from "react";
 import { ProjectsData } from "@/data/projectsData";
-import { NextResponse } from "next/server";
 
 const getProject = async () => {
   const res = await fetch("http://localhost:3000/api/projects");
