@@ -237,7 +237,10 @@ export const ProjectsData: Project[] = [
       src: "villatyoursm-picture_zqwqzn",
       alt: "Villatourims project picture",
     },
-    squarePicture: villaSquarePicutre,
+    squarePicture: {
+      src: "squarevilla_vfhkod",
+      alt: "villatourims square picture project",
+    },
     challenge:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     solution:
