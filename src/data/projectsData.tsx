@@ -135,7 +135,10 @@ export const ProjectsData: Project[] = [
       src: "zonustechpicture_dmp4dv",
       alt: "Zonustech agency picture project",
     },
-    squarePicture: zonusSquarePicture,
+    squarePicture: {
+      src: "squarezonus_rpd41x",
+      alt: "zonustech agency picture project",
+    },
     challenge:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     solution:
@@ -163,7 +166,10 @@ export const ProjectsData: Project[] = [
       src: "gymstorm-picture_xryetr",
       alt: "GYMSTORM fitness landing page picture",
     },
-    squarePicture: gymstormPictureSquare,
+    squarePicture: {
+      src: "gymstormSquare_xvy1zf",
+      alt: "gymstorm square picture project",
+    },
     challenge:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     solution:
@@ -200,7 +206,10 @@ export const ProjectsData: Project[] = [
       src: "project3-picture_souhv9",
       alt: "Modernfashion project picture",
     },
-    squarePicture: moderSquarePicture,
+    squarePicture: {
+      src: "squaremodern_pntu31",
+      alt: "modernfashion square picture project",
+    },
     challenge:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     solution:
