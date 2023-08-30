@@ -68,7 +68,6 @@ export const ProjectsData: Project[] = [
     services: ["UX/UI", "Web Dev", "CMS"],
     year: 2022,
     website: "carlsburger.com",
-    // picture: arkitectsPicture,
     picture: {
       src: "arkitects_h9yfwi",
       alt: "arkitects picture banner",
@@ -93,7 +92,6 @@ export const ProjectsData: Project[] = [
     services: ["UX/UI", "Web Dev", "CMS"],
     year: 2022,
     website: "carlsburger.com",
-    // picture: project1picture,
     picture: {
       src: "project1-picture_snqfl8",
       alt: "CarlsBurger restaurant picture",
@@ -118,7 +116,6 @@ export const ProjectsData: Project[] = [
     services: ["Web Design", "Web Development"],
     year: 2023,
     website: "zonustech.com",
-    // picture: project2picture,
     picture: {
       src: "zonustechpicture_dmp4dv",
       alt: "Zonustech agency picture project",
@@ -143,7 +140,6 @@ export const ProjectsData: Project[] = [
     services: ["UX", "UI", "Web Design"],
     year: 2022,
     website: "Dribbble | Behance",
-    // picture: gymstormPicture,
     picture: {
       src: "gymstorm-picture_xryetr",
       alt: "GYMSTORM fitness landing page picture",
@@ -168,7 +164,6 @@ export const ProjectsData: Project[] = [
     services: ["Web Design", "Web Development", "UX/UI"],
     year: 2022,
     website: "modernfashion.com",
-    // picture: project3picture,
     picture: {
       src: "project3-picture_souhv9",
       alt: "Modernfashion project picture",
@@ -193,7 +188,6 @@ export const ProjectsData: Project[] = [
     services: ["Web Design", "Web Development", "UX/UI", "DB Design", "DevOps"],
     year: 2022,
     website: "villatourism.com",
-    // picture: projectVilaPicture,
     picture: {
       src: "villatyoursm-picture_zqwqzn",
       alt: "Villatourims project picture",
@@ -218,7 +212,6 @@ export const ProjectsData: Project[] = [
     services: ["", "", ""],
     year: 2022,
     website: "VSMarketplace",
-    // picture: darvythemePicture,
     picture: { src: "darvy-picture_i5rxj1", alt: "DARVYTHEME VSCode picture" },
     squarePicture: darvythemeSquarePicture,
     challenge:
