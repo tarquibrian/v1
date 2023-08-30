@@ -5,6 +5,7 @@ import OpenIcon from "./icons/open";
 import Link from "next/link";
 import StatusIcon from "./icons/status";
 import NextImage from "./NextImage";
+import { getBase64ImageUrl } from "@/utils/base64image";
 
 interface Project {
   id: string;
@@ -12,7 +13,6 @@ interface Project {
   picture: string;
   status: boolean;
   href: string;
-  blurData: string;
 }
 
 const ProjectsWrapper = async ({
@@ -21,9 +21,8 @@ const ProjectsWrapper = async ({
   picture,
   status,
   href,
-  blurData,
 }: Project) => {
-  // const Blur = await getBase64ImageUrl(picture);
+  const blurData = await getBase64ImageUrl(picture);
   return (
     <Wrapper className="projectswrapper" htmlElement="section">
       <div className="projectswrapper__section">
@@ -46,7 +45,7 @@ const ProjectsWrapper = async ({
         </Wrapper>
         <div className="projectswrapper__section-picture">
           <Link href={`/projects/${id}`} className="picture__content">
-            <NextImage src={picture} />
+            <NextImage src={picture} blurDataURL={blurData} />
           </Link>
         </div>
       </div>
