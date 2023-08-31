@@ -1,5 +1,5 @@
 interface Project {
-  id: string;
+  label: string;
   title: string;
   desc: string;
   client: string;

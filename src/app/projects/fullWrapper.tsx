@@ -4,11 +4,11 @@ import React from "react";
 
 const FullWrapper = () => {
   return ProjectsData.map((project) => {
-    const { id, title, picture, status, href } = project;
+    const { label, title, picture, status, href } = project;
     return (
       <ProjectsWrapper
-        key={id}
-        id={id}
+        key={label}
+        id={label}
         title={title}
         picture={picture}
         status={status}

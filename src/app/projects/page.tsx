@@ -2,7 +2,7 @@ import ProjectsWrapper from "@/components/projectsWrapper";
 import React from "react";
 
 interface Project {
-  id: string;
+  label: string;
   title: string;
   desc: string;
   client: string;
@@ -35,11 +35,11 @@ const getProject = async () => {
 const ProjectsPage = async () => {
   const { projects } = await getProject();
   return projects.map((project: Project) => {
-    const { id, title, picture, status, href } = project;
+    const { label, title, picture, status, href } = project;
     return (
       <ProjectsWrapper
-        key={id}
-        id={id}
+        key={label}
+        id={label}
         title={title}
         picture={picture}
         status={status}
