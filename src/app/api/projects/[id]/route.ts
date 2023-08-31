@@ -9,6 +9,5 @@ export async function GET(
   const { id } = params;
   await connectMongo();
   const project = await Projects.findOne({ label: id });
-  console.log("prooooject", project);
   return NextResponse.json({ project });
 }
