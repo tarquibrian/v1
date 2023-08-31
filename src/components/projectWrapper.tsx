@@ -9,7 +9,7 @@ import NextImage from "./NextImage";
 import { getBase64ImageUrl } from "@/utils/base64image";
 
 interface Project {
-  id: string;
+  label: string;
   title: string;
   desc: string;
   timeline: string;
@@ -30,7 +30,7 @@ interface Picture {
 }
 
 const ProjectWrapper = async ({
-  id,
+  label,
   title,
   desc,
   timeline,

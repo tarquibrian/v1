@@ -24,9 +24,9 @@ interface Picture {
 
 export const ProjectsData: Project[] = [
   {
-    id: "arkitects",
+    label: "arkitects",
     title: "ARKITECTS",
-    desc: "Online platform specialized in architecture services, designed for a pleasant and efficient user experience. A strategic tool that attracts and retains clients by providing access to previous work.",
+    desc: "Online platform specialized in architecture services, designed for a pleasant and efficient user experience. A strategic tool that attracts and retains clients by provlabeling access to previous work.",
     client: "Arkitects",
     timeline: "2 Monts",
     services: ["UX/UI", "Web Dev", "CMS"],
@@ -41,9 +41,9 @@ export const ProjectsData: Project[] = [
       alt: "arkitects square picture project",
     },
     challenge:
-      "The callenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provide them with a unique experience.",
+      "The callenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provlabele them with a unique experience.",
     solution:
-      "The callenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provide them with a unique experience.",
+      "The callenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provlabele them with a unique experience.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     gallery: [
@@ -55,9 +55,9 @@ export const ProjectsData: Project[] = [
     href: "https://www.behance.net/gallery/177999933/ARKITECTS-Architecture-Website-Concept",
   },
   {
-    id: "carlsburger",
+    label: "carlsburger",
     title: "CARLS BURGER",
-    desc: "Web application about a hamburger restaurant that provides a satisfying, easy and attractive user experience, and is an excellent marketing tool to attract new customers and keep existing ones.",
+    desc: "Web application about a hamburger restaurant that provlabeles a satisfying, easy and attractive user experience, and is an excellent marketing tool to attract new customers and keep existing ones.",
     client: "Carls Burger",
     timeline: "6 Weeks",
     services: ["UX/UI", "Web Dev", "CMS"],
@@ -72,9 +72,9 @@ export const ProjectsData: Project[] = [
       alt: "carlsburger restauran square picture project",
     },
     challenge:
-      "The challenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provide them with a unique experience.",
+      "The challenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provlabele them with a unique experience.",
     solution:
-      "The challenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provide them with a unique experience.",
+      "The challenge was to develop a website that would capture the visual essence of our business, while featuring a distinctive design that would set us apart from other competitors. The goal was to grab the attention of potential customers, provlabele them with a unique experience.",
     result:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nam, eaque, nobis ab saepe sit eum distinctio eius dolores rerum ducimus impedit illo in fugit consequuntur, iste voluptas neque placeat.",
     gallery: [
@@ -86,7 +86,7 @@ export const ProjectsData: Project[] = [
     href: "https://carls-burger.vercel.app/",
   },
   {
-    id: "zonustech",
+    label: "zonustech",
     title: "ZONUSTECH AGENCY",
     desc: "Comprehensive Website for Branding Creation Agency: Design, Development, Deployment and Configuration of Domain and Hosting.",
     client: "Zonustech",
@@ -117,7 +117,7 @@ export const ProjectsData: Project[] = [
     href: "https://www.zonustech.com/",
   },
   {
-    id: "gymstorm",
+    label: "gymstorm",
     title: "GYMSTORM",
     desc: "GymStorm is an exciting design project in Figma, where user experience and a visually appealing interface are combined. Every detail has been carefully thought out to create a seamless and engaging experience.",
     client: "Personal",
@@ -157,9 +157,9 @@ export const ProjectsData: Project[] = [
     href: "https://dribbble.com/shots/22295109-GYMSTORM-Fitness-landing-page",
   },
   {
-    id: "modernfashion",
+    label: "modernfashion",
     title: "MODERFASHION",
-    desc: "Modern clothing ecommerce web application that offers a wide selection of clothing and fashion accessories for demanding customers.",
+    desc: "Modern clothing ecommerce web application that offers a wlabele selection of clothing and fashion accessories for demanding customers.",
     client: "Personal",
     timeline: "4 Weeks",
     services: ["Web Design", "Web Development", "UX/UI"],
@@ -188,7 +188,7 @@ export const ProjectsData: Project[] = [
     href: "https://ecommerce-website-zeta-one.vercel.app/",
   },
   {
-    id: "villarivero",
+    label: "villarivero",
     title: "VILLA TOURISM",
     desc: "Web application for tourist information management, using modules of Biographical Articles, Management and notification of cultural events, Visualization and addressing of tourist sites through Google Maps based on specific coordinates.",
     client: "Villa Rivero",
@@ -219,7 +219,7 @@ export const ProjectsData: Project[] = [
     href: "https://villa-turismo.herokuapp.com/",
   },
   {
-    id: "darvytheme",
+    label: "darvytheme",
     title: "DARVY THEME",
     desc: "Darvy Theme is a color theme for Visual Studio Code and very soon for other editors like Atom or Sublime Text. The color palette is inspired by popular themes like One Dark Pro and Tokyo Night, so you might love this theme",
     client: "Personal",
