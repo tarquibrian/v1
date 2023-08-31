@@ -22,12 +22,12 @@ interface Project {
 }
 
 interface Picture {
-  src: string;
+  src: string;  
   alt: string;
 }
 
 const getProject = async () => {
-  const res = await fetch(`${process.env.VERCEL_URL}/api/projects`, {
+  const res = await fetch(`https://www.tarquibrian.com/api/projects`, {
     cache: "no-store",
   });
   return res.json();
