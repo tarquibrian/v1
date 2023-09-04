@@ -27,7 +27,7 @@ interface Picture {
 }
 
 const getProject = async () => {
-  const res = await fetch(`v1-hxd0un1t2-tarquibrian.vercel.app/api/projects`, {
+  const res = await fetch(`https://v1-hxd0un1t2-tarquibrian.vercel.app/api/projects`, {
     cache: "no-store",
   });
   return res.json();
