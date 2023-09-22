@@ -1,7 +1,6 @@
 import connectMongo from "@/libs/mongodb";
 import { NextRequest, NextResponse } from "next/server";
 import Projects from "@/models/projects";
-import { NextApiRequest, NextApiResponse } from "next";
 
 export async function GET() {
   try {
@@ -10,11 +9,5 @@ export async function GET() {
     return NextResponse.json({ projects });
   } catch (err) {
     console.log(err);
-    return NextResponse.json(
-      {
-        message: "SERVER ERRROR",
-      },
-      { status: 500 }
-    );
   }
 }

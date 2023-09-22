@@ -12,12 +12,6 @@ export async function GET(
     const project = await Projects.findOne({ label: id });
     return NextResponse.json({ project });
   } catch (err) {
-    return NextResponse.json(
-      {
-        message: "SERVER ERRROR",
-        err: err,
-      },
-      { status: 500 }
-    );
+    console.log(err);
   }
 }
