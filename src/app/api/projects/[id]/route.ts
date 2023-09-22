@@ -6,8 +6,18 @@ export async function GET(
   request: NextRequest,
   { params }: { params: { id: string } }
 ) {
-  const { id } = params;
-  await connectMongo();
-  const project = await Projects.findOne({ label: id });
-  return NextResponse.json({ project });
+  try {
+    const { id } = params;
+    await connectMongo();
+    const project = await Projects.findOne({ label: id });
+    return NextResponse.json({ project });
+  } catch (err) {
+    console.log(err);
+    return NextResponse.json(
+      {
+        message: "SERVER ERRROR",
+      },
+      { status: 500 }
+    );
+  }
 }

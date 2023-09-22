@@ -9,5 +9,11 @@ export async function GET() {
     return NextResponse.json({ projects });
   } catch (err) {
     console.log(err);
+    return NextResponse.json(
+      {
+        message: "SERVER ERRROR",
+      },
+      { status: 500 }
+    );
   }
 }

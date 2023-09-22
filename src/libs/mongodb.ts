@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
 
+const { MONGODB_URI } = process.env;
+
 const connectMongo = async () => {
   try {
-    if (process.env.MONGODB_URI) {
-      await mongoose.connect(
-        "mongodb+srv://root:dwRSOSYDeg1wQDRd@cluster0.qxrcb.mongodb.net/portfolio"
-      );
+    if (MONGODB_URI) {
+      await mongoose.connect(MONGODB_URI);
       console.log("DB CONNECTED");
     }
   } catch (error) {
