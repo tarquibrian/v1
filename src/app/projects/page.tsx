@@ -26,12 +26,12 @@ interface Picture {
   alt: string;
 }
 
-const getProject = async () => {
-  const res = await fetch(`https://v1-gules.vercel.app/api/projects`, {
-    cache: "no-store",
-  });
-  return res.json();
-};
+// const getProject = async () => {
+//   const res = await fetch(`https://v1-gules.vercel.app/api/projects`, {
+//     cache: "no-store",
+//   });
+//   return res.json();
+// };
 
 const ProjectsPage = async () => {
   // const { projects } = await getProject();
