@@ -45,6 +45,7 @@ const ProjectWrapper = async ({
   status,
 }: Project) => {
   const blur = await getBase64ImageUrl(picture.src);
+  console.log("services", services);
 
   return (
     <Wrapper htmlElement="section" id="projectwrapper">
@@ -104,7 +105,7 @@ const ProjectWrapper = async ({
           <Wrapper className="details__row">
             <div className="label">SERVICES</div>
             <div className="desc">
-              {services.map((i, service) => (
+              {services.map((service, i) => (
                 <div className="service" key={i}>
                   {`${service}`} <span>-</span>
                 </div>

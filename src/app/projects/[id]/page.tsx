@@ -5,7 +5,7 @@ import { ProjectsData } from "@/data/projectsData";
 const getProject = async (id: string) => {
   const res = await fetch(`https://v1-gules.vercel.app/api/projects/${id}`, {
     next: {
-      revalidate: 10,
+      revalidate: 3600,
     },
   });
   return res.json();
