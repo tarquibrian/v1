@@ -10,9 +10,9 @@ const getProject = async (id: string) => {
 };
 
 const ProjectPage = async ({ params }: { params: { id: string } }) => {
-  const { project } = await getProject(params.id);
-  // const data = ProjectsData.find((project) => project.label === params.id);
-  return <>{project ? <ProjectWrapper {...project} /> : "no data"}</>;
+  // const { project } = await getProject(params.id);
+  const data = ProjectsData.find((project) => project.label === params.id);
+  return <>{data ? <ProjectWrapper {...data} /> : "no data"}</>;
 };
 
 export default ProjectPage;

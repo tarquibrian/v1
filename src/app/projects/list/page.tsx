@@ -34,8 +34,8 @@ const getProject = async () => {
 };
 
 const List = async () => {
-  const { projects } = await getProject();
-  return projects.map((project: Project) => {
+  // const { projects } = await getProject();
+  return ProjectsData.map((project: Project) => {
     const { label, title, desc, status, href, squarePicture, year, services } =
       project;
     return (
