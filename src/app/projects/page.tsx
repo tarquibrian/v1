@@ -27,7 +27,8 @@ interface Picture {
 
 const getProject = async () => {
   const res = await fetch(`http://localhost:3000/api/projects`, {
-    cache: "no-store",
+    cache: "no-cache",
+    next: { revalidate: 5 },
   });
   return res.json();
 };
