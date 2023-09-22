@@ -12,10 +12,10 @@ export async function GET(
     const project = await Projects.findOne({ label: id });
     return NextResponse.json({ project });
   } catch (err) {
-    console.log(err);
     return NextResponse.json(
       {
         message: "SERVER ERRROR",
+        err: err,
       },
       { status: 500 }
     );
