@@ -114,15 +114,19 @@ const ProjectWrapper = async ({
               ))}
             </div>
           </Wrapper>
+          <Wrapper className="details__row">
+            <div className="label">TECH STACK</div>
+            <div className="desc">
+              {techStack.map((tech, i) => (
+                <div className="service" key={i}>
+                  {`${tech}`} <span>-</span>
+                </div>
+              ))}
+            </div>
+          </Wrapper>
         </div>
         <Wrapper className="projectwrapper__section-picture">
           <div className="picture__content">
-            {/* <NextImage
-              src={picture}
-              alt="single project picutre"
-              blurDataURL={blur}
-            /> */}
-            {/* <AdvancedImage cldImg={myImage} /> */}
             <NextImage
               src={picture.src}
               alt={picture.alt}
