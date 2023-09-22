@@ -27,7 +27,7 @@ interface Picture {
 }
 
 const getProject = async () => {
-  const res = await fetch(`http://localhost:3000/api/projects`, {
+  const res = await fetch(`https://v1-gules.vercel.app/api/projects`, {
     cache: "no-store",
   });
   return res.json();
