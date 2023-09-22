@@ -1,6 +1,8 @@
 // "use client";
 import React from "react";
 import Image from "next/image";
+// import { cld } from "@/libs/cloudinary";
+// import { AdvancedImage, responsive, lazyload, placeholder } from "@cloudinary/react";
 
 const NextImage = ({
   src,
