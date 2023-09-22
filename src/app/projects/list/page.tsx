@@ -19,6 +19,7 @@ interface Project {
   status: boolean;
   href: string;
   squarePicture: Picture;
+  techStack: string[];
 }
 
 interface Picture {

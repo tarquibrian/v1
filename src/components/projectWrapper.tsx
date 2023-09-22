@@ -22,6 +22,7 @@ interface Project {
   gallery: Picture[];
   href: string;
   status: boolean;
+  techStack: string[];
 }
 
 interface Picture {
@@ -43,9 +44,10 @@ const ProjectWrapper = async ({
   gallery,
   href,
   status,
+  techStack,
 }: Project) => {
   const blur = await getBase64ImageUrl(picture.src);
-  console.log("services", services);
+  console.log("proj", techStack);
 
   return (
     <Wrapper htmlElement="section" id="projectwrapper">

@@ -3,7 +3,6 @@ import React from "react";
 import { ProjectsData } from "@/data/projectsData";
 
 const getProject = async (id: string) => {
-  console.log(process.env.API_URL)
   const res = await fetch(`${process.env.API_URL}/api/projects/${id}`, {
     next: {
       revalidate: 3600,
