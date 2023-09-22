@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 import Projects from "@/models/projects";
 import { NextApiRequest, NextApiResponse } from "next";
 
-export async function GET(req: NextApiRequest, res: NextApiResponse) {
+export async function GET(req: NextRequest, res: NextApiResponse) {
   try {
     await connectMongo();
     const projects = await Projects.find();
