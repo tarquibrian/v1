@@ -7,8 +7,9 @@ export async function GET(req: NextRequest, res: NextApiResponse) {
   try {
     await connectMongo();
     const projects = await Projects.find();
-    res.setHeader("Cache-control", "s-maxage=10, stale-while-revalidate");
-    return res.json({ projects });
+    return res
+      .setHeader("Cache-control", "s-maxage=10, stale-while-revalidate")
+      .json({ projects });
   } catch (err) {
     console.log(err);
     return NextResponse.json(
