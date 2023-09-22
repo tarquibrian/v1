@@ -2,10 +2,7 @@ import connectMongo from "@/libs/mongodb";
 import Projects from "@/models/projects";
 import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(
-  request: NextRequest,
-  { params }: { params: { id: string } }
-) {
+export async function GET({ params }: { params: { id: string } }) {
   try {
     const { id } = params;
     await connectMongo();
