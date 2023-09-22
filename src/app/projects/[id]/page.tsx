@@ -3,7 +3,7 @@ import React from "react";
 import { ProjectsData } from "@/data/projectsData";
 
 const getProject = async (id: string) => {
-  const res = await fetch(`https://v1-hxd0un1t2-tarquibrian.vercel.app/api/projects/${id}`, {
+  const res = await fetch(`https://tarquibrian.com/api/projects/${id}`, {
     cache: "no-store",
   });
   return res.json();

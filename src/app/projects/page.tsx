@@ -26,7 +26,7 @@ interface Picture {
 }
 
 const getProject = async () => {
-  const res = await fetch(`http://127.0.0.1:3000/api/projects`, {
+  const res = await fetch(`https://tarquibrian.com/api/projects`, {
     cache: "no-store",
   });
   return res.json();
