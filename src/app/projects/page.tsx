@@ -29,8 +29,8 @@ interface Picture {
 const getProject = async () => {
   const res = await fetch(`https://v1-gules.vercel.app/api/projects`, {
     next: {
-      revalidate: 10
-    }
+      revalidate: 10,
+    },
   });
   return res.json();
 };
