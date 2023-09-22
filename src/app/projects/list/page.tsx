@@ -27,7 +27,7 @@ interface Picture {
 }
 
 const getProject = async () => {
-  const res = await fetch(`https://v1-gules.vercel.app/api/projects`, {
+  const res = await fetch(`${process.env.API_URL}/api/projects`, {
     next: {
       revalidate: 3600,
     },

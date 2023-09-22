@@ -3,7 +3,8 @@ import React from "react";
 import { ProjectsData } from "@/data/projectsData";
 
 const getProject = async (id: string) => {
-  const res = await fetch(`https://v1-gules.vercel.app/api/projects/${id}`, {
+  console.log(process.env.API_URL)
+  const res = await fetch(`${process.env.API_URL}/api/projects/${id}`, {
     next: {
       revalidate: 3600,
     },
