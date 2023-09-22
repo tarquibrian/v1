@@ -3,13 +3,11 @@ import { NextRequest, NextResponse } from "next/server";
 import Projects from "@/models/projects";
 import { NextApiRequest, NextApiResponse } from "next";
 
-export async function GET(req: NextRequest, res: NextApiResponse) {
+export async function GET() {
   try {
     await connectMongo();
     const projects = await Projects.find();
-    return res
-      .setHeader("Cache-control", "s-maxage=10, stale-while-revalidate")
-      .json({ projects });
+    return NextResponse.json({ projects });
   } catch (err) {
     console.log(err);
     return NextResponse.json(

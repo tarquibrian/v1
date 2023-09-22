@@ -26,7 +26,7 @@ interface Picture {
 }
 
 const getProject = async () => {
-  const res = await fetch(`https://tarquibrian.com/api/projects`, {
+  const res = await fetch(`http://localhost:3000/api/projects`, {
     cache: "no-store",
   });
   return res.json();
@@ -34,7 +34,6 @@ const getProject = async () => {
 
 const ProjectsPage = async () => {
   const { projects } = await getProject();
-  console.log(projects);
   return projects.map((project: Project) => {
     const { label, title, picture, status, href } = project;
     return (

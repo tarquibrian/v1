@@ -22,12 +22,12 @@ interface Project {
 }
 
 interface Picture {
-  src: string;  
+  src: string;
   alt: string;
 }
 
 const getProject = async () => {
-  const res = await fetch(`https://tarquibrian.com/api/projects`, {
+  const res = await fetch(`http://localhost:3000/api/projects`, {
     cache: "no-store",
   });
   return res.json();
