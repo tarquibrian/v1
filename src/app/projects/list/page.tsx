@@ -26,16 +26,18 @@ interface Picture {
   alt: string;
 }
 
-// const getProject = async () => {
-//   const res = await fetch(`https://v1-gules.vercel.app/api/projects`, {
-//     cache: "no-store",
-//   });
-//   return res.json();
-// };
+const getProject = async () => {
+  const res = await fetch(`https://v1-gules.vercel.app/api/projects`, {
+    next: {
+      revalidate: 10,
+    },
+  });
+  return res.json();
+};
 
 const List = async () => {
-  // const { projects } = await getProject();
-  return ProjectsData.map((project: Project) => {
+  const { projects } = await getProject();
+  return projects.map((project: Project) => {
     const { label, title, desc, status, href, squarePicture, year, services } =
       project;
     return (
