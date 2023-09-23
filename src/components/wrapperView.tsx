@@ -179,7 +179,7 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
           <LineY view={false} className="aside-line" />
         </div>
         <div className="wrapperview__content-main">
-          <Wrapper className="nav">
+          <Wrapper className="nav" id="navbar">
             <Navbar />
           </Wrapper>
           <main>{children}</main>
