@@ -6,7 +6,6 @@ const DribbbleIcon = ({ size = 46, color = "currentColor", ...props }) => (
     height={size}
     fill={color}
     viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
     <title>Dribbble</title>
