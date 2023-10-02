@@ -3,7 +3,6 @@ import * as React from "react";
 const HeartIcon = ({ size = 46, color = "currentColor", ...props }) => (
   <svg
     viewBox="0 0 192 192"
-    xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
     fill="none"
     stroke="currentColor"
