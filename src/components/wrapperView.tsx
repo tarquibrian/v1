@@ -37,7 +37,6 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
     <div id="wrapperview" ref={ref}>
       <Wrapper className="wrapperview__picture">
         <div className="picture__content">
-          {/* <NextImage src={"banner-top_enhqba"} /> */}
           <Image src={banner} alt="picture top banner" placeholder="blur" />
         </div>
       </Wrapper>
