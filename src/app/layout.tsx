@@ -3,7 +3,6 @@ import ThreeCanvas from "@/threejs/canvas";
 import "../styles/global.scss";
 import type { Metadata } from "next";
 import WrapperView from "@/components/wrapperView";
-import { Cloudinary } from "@cloudinary/url-gen";
 
 export const metadata: Metadata = {
   title: "Brian Tarqui - Digital Freelancer",
