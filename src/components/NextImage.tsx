@@ -1,8 +1,6 @@
 // "use client";
 import React from "react";
 import Image from "next/image";
-// import { cld } from "@/libs/cloudinary";
-// import { AdvancedImage, responsive, lazyload, placeholder } from "@cloudinary/react";
 
 const NextImage = ({
   src,
@@ -17,12 +15,7 @@ const NextImage = ({
   width?: number;
   height?: number;
 }) => {
-  // const myImage = cld.image(src);
   return (
-    // <AdvancedImage
-    //   cldImg={myImage}
-    //   plugins={[responsive(), lazyload(), placeholder({ mode: "blur" })]}
-    // />
     <Image
       src={`https://res.cloudinary.com/dskypy0xt/image/upload/v1693362047/${src}`}
       alt={alt}
