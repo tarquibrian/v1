@@ -57,7 +57,6 @@ const Effect = () => {
   useEffect(() => {
     bloom.setSize(size.width, size.height);
     // final.setSize(size.width, size.height);
-    // console.log("loaded");
   }, [bloom, final, size]);
 
   useFrame(() => {
