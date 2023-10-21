@@ -2,6 +2,7 @@ import connectMongo from "@/libs/mongodb";
 import { NextRequest, NextResponse } from "next/server";
 import Projects from "@/models/projects";
 
+// all projects api
 export async function GET() {
   try {
     await connectMongo();
