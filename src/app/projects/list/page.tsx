@@ -52,10 +52,6 @@ const List = async () => {
         year={year}
         desc={desc}
         services={services}
-        // desc={desc}
-        // picture={picture}
-        // status={status}
-        // href={href}
       />
     );
   });
