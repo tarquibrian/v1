@@ -255,8 +255,8 @@
   &::before {
     background: radial-gradient(
       800px circle at var(--mouse1-x) var(--mouse1-y),
-      rgba(231, 0, 200, 0.15),
-      transparent 40%
+      rgba(231, 0, 200, 0.17),
+      transparent 50%
     );
     border-radius: inherit;
     content: "";
