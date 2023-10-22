@@ -2,7 +2,6 @@ import connectMongo from "@/libs/mongodb";
 import Projects from "@/models/projects";
 import { NextRequest, NextResponse } from "next/server";
 
-// single post api
 export async function GET(
   request: NextRequest,
   { params }: { params: { id: string } }
