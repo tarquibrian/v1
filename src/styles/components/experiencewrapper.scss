@@ -19,7 +19,7 @@
           align-items: center;
           justify-content: center;
           padding: 0 3rem;
-          font-family: "Manrope";
+          font-family: var(--ff-manrope);
           height: 100%;
         }
 
@@ -29,7 +29,7 @@
           }
         }
         &-title {
-          font-family: "Manrope";
+          font-family: var(--ff-manrope);
           padding: 1rem 1.5rem;
           display: flex;
           align-items: center;
