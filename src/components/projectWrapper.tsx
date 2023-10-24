@@ -46,7 +46,7 @@ const ProjectWrapper = async ({
   status,
   techStack,
 }: Project) => {
-  const blur = await getBase64ImageUrl(picture.src);
+  // const blur = await getBase64ImageUrl(picture.src);
   console.log("proj", techStack);
 
   return (
