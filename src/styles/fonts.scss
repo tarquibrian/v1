@@ -1,15 +1,8 @@
-@font-face {
-  font-family: "Adam";
-  src: local("Adam"),
-    url("../../public/fonts/Adam/Adam-Bold.ttf") format("truetype");
-  font-weight: 800;
-  font-display: auto;
-}
 
 @font-face {
   font-family: "Adam";
   src: local("Adam"),
-    url("../../public/fonts/Adam/Adam-Light.ttf") format("truetype");
+  url("../../public/fonts/Adam/Adam-Light.ttf") format("truetype");
   font-weight: 200;
   font-display: auto;
 }
@@ -17,8 +10,16 @@
 @font-face {
   font-family: "Adam";
   src: local("Adam"),
-    url("../../public/fonts/Adam/Adam-Medium.ttf") format("truetype");
+  url("../../public/fonts/Adam/Adam-Medium.ttf") format("truetype");
   font-weight: 400;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Adam";
+  src: local("Adam"),
+    url("../../public/fonts/Adam/Adam-Bold.ttf") format("truetype");
+  font-weight: 800;
   font-display: auto;
 }
 
