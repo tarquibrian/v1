@@ -46,7 +46,7 @@
         h4 {
           line-height: 1;
           font-size: clamp(1.2rem, 2vw, 1.5rem);
-          font-family: "Adam";
+          font-family: var(--ff-adam);
           margin-bottom: -4px;
         }
         p {
