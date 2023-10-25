@@ -193,7 +193,7 @@
 
         .active {
           // color: black;
-          // background-color: rgba(255, 255, 255, 0.6);
+          // background-color: rgba(255, 255, 255, 0.8);
           span {
             &::after {
               width: 100%;
@@ -224,6 +224,7 @@
               width: 0%;
               height: 1px;
               background-color: white;
+              // background-color: black;
               transition: 0.2s ease;
             }
           }
