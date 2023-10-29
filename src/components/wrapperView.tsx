@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
-import Aside from "./aside";
 import Link from "next/link";
 import Wrapper from "./wrapper";
 import banner from "../../public/img/banner-top.jpg";
