@@ -15,7 +15,6 @@ const OpenIcon = ({
     strokeLinejoin="round"
     strokeWidth={strokeWidth}
     viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
     <title>Open</title>
