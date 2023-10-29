@@ -6,7 +6,6 @@ import banner from "../../public/img/banner-top.jpg";
 import Image from "next/image";
 import LineY from "./liney";
 import picture from "../../public/img/pf-white.jpg";
-import EmailIcon from "./icons/email";
 import LinkedinIcon from "./icons/linkedin";
 import GithubIcon from "./icons/github";
 import DribbbleIcon from "./icons/dribbble";
