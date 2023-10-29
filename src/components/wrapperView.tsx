@@ -13,7 +13,6 @@ import OpenIcon from "./icons/open";
 import BehanceIcon from "./icons/behance";
 import Navbar from "./navbar";
 import Footer from "./footer";
-import NextImage from "./NextImage";
 
 const WrapperView = ({ children }: { children: React.ReactNode }) => {
   const ref = useRef<HTMLDivElement>(null);
