@@ -50,7 +50,6 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
                         alt="picture profile"
                         placeholder="blur"
                       />
-                      {/* <NextImage src="pf-white_aqoi5d" /> */}
                     </div>
                   </div>
                   <LineY />
