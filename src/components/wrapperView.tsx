@@ -87,7 +87,6 @@ const WrapperView = ({ children }: { children: React.ReactNode }) => {
               <Wrapper className="content__row">
                 <div className="label">CONTACT DETAILS</div>
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   width="16"
