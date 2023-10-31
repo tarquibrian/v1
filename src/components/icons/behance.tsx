@@ -1,13 +1,5 @@
-import * as React from "react";
-
 const BehanceIcon = ({ size = 46, color = "currentColor", ...props }) => (
-  <svg
-    width={size}
-    height={size}
-    fill={color}
-    viewBox="0 0 24 24"
-    {...props}
-  >
+  <svg width={size} height={size} fill={color} viewBox="0 0 24 24" {...props}>
     <title>Behance</title>
     <path d="M16.13 10.953c-1.355 0-1.542 1.35-1.542 1.35h2.878s.019-1.35-1.336-1.35Z" />
     <path d="M9.6 12.297H7.05v2.344h2.423c.366-.01 1.05-.113 1.05-1.14 0-1.218-.923-1.204-.923-1.204Z" />
