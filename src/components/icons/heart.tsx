@@ -1,5 +1,3 @@
-import * as React from "react";
-
 const HeartIcon = ({ size = 46, color = "currentColor", ...props }) => (
   <svg
     viewBox="0 0 192 192"
