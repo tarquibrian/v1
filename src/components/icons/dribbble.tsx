@@ -1,5 +1,3 @@
-import * as React from "react";
-
 const DribbbleIcon = ({ size = 46, color = "currentColor", ...props }) => (
   <svg
     width={size}
