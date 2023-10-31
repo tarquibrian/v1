@@ -1,5 +1,3 @@
-import * as React from "react";
-
 const OpenIcon = ({
   size = 46,
   strokeWidth = 1,
