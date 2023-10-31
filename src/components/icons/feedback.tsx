@@ -1,5 +1,3 @@
-import React from "react";
-
 const FeedbackIcon = () => {
   return (
     <svg viewBox="0 0 24 24" fill="none">
