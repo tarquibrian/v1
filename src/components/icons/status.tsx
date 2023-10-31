@@ -1,5 +1,3 @@
-import React from "react";
-
 const StatusIcon = ({ active = false }) => {
   return (
     <svg
