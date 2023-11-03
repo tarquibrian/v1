@@ -1,6 +1,5 @@
 import React from "react";
 import Wrapper from "./wrapper";
-import Image, { StaticImageData } from "next/image";
 import LineY from "./liney";
 import StatusIcon from "./icons/status";
 import OpenIcon from "./icons/open";
