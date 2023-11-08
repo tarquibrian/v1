@@ -19,8 +19,8 @@ const Sphere = () => {
         value: [0.22, 0.0, 0.1],
       },
       colorDeep: {
-        // value: [0.1, 0, 0.1],
-        value: [0.0, 0.0, 0.04],
+        value: [0.1, 0, 0.1],
+        // value: [0.0, 0.0, 0.04],
       },
       resolution: { value: new THREE.Vector4() },
     }),
