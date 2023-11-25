@@ -16,7 +16,7 @@ const Sphere = () => {
       },
       colorBase: {
         // value: [0.29, 0, 0.48],
-        value: [0.22, 0.0, 0.1],
+        value: [0.52, 0.3, 0.4],
       },
       colorDeep: {
         // value: [0.1, 0, 0.1],
