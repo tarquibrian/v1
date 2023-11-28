@@ -10,8 +10,6 @@ const Effect = () => {
   const { gl, scene, camera, size } = useThree();
 
   const [bloom, final] = useMemo(() => {
-    // const renderScene = new RenderPass(scene, camera);
-
     gl.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     gl.setSize(size.width, size.height);
     gl.setClearColor(0xeeeeee, 1);
