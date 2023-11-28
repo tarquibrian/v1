@@ -56,15 +56,10 @@ const Effect = () => {
 
   useEffect(() => {
     bloom.setSize(size.width, size.height);
-    // final.setSize(size.width, size.height);
   }, [bloom, final, size]);
 
   useFrame(() => {
-    // scene.traverse(darkenNonBloomed);
     bloom.render();
-    // scene.traverse(restoreMaterial);
-    // then writes the normal scene on top
-    // final.render();
   }, 1);
   return null;
 };
