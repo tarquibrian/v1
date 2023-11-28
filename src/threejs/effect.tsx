@@ -24,33 +24,7 @@ const Effect = () => {
     const effect1 = new ShaderPass(DotScreenShader);
     effect1.uniforms["scale"].value = 4;
     comp.addPass(effect1);
-    // comp.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    // comp.setSize(size.width, size.width);
 
-    // comp.renderToScreen = false;
-    // comp.addPass(renderScene);
-    // // comp.addPass(new UnrealBloomPass(new THREE.Vector2(512, 512), 1.5, 1, 0));
-
-    // const finalComposer = new EffectComposer(gl);
-    // finalComposer.addPass(renderScene);
-    // const material = new THREE.ShaderMaterial({
-    //   uniforms: {
-    //     baseTexture: { value: null },
-    //     bloomTexture: { value: comp.renderTarget2.texture },
-    //   },
-    //   vertexShader:
-    //     "varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 ); }",
-    //   fragmentShader:
-    //     "uniform sampler2D baseTexture; uniform sampler2D bloomTexture; varying vec2 vUv; vec4 getTexture( sampler2D texelToLinearTexture ) { return mapTexelToLinear( texture2D( texelToLinearTexture , vUv ) ); } void main() { gl_FragColor = ( getTexture( baseTexture ) + vec4( 1.0 ) * getTexture( bloomTexture ) ); }",
-    // });
-    // material.map = true;
-    // const finalPass = new ShaderPass(material, "baseTexture");
-    // finalPass.needsSwap = true;
-    // finalComposer.addPass(finalPass);
-    // const fxaa = new ShaderPass(FXAAShader);
-    // fxaa.material.uniforms["resolution"].value.x = 1 / size.width;
-    // fxaa.material.uniforms["resolution"].value.y = 1 / size.height;
-    // finalComposer.addPass(fxaa);
     return [comp, effect1];
   }, [gl, scene, size, camera]);
 
