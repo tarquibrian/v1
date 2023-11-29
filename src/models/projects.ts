@@ -2,6 +2,7 @@ import mongoose, { Schema } from "mongoose";
 
 const projectSchema = new Schema(
   {
+    id: String,
     name: String,
   },
   {
