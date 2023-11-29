@@ -11,16 +11,16 @@ const Sphere = () => {
     () => ({
       time: { value: 0 },
       color: {
-        // value: [0.5, 0.65, 0.64],
-        value: [0.22, 0.0, 0.2],
+        value: [0.5, 0.65, 0.64],
+        // value: [0.22, 0.0, 0.2],
       },
       colorBase: {
-        // value: [0.29, 0, 0.48],
-        value: [0.52, 0.3, 0.4],
+        value: [0.29, 0, 0.48],
+        // value: [0.52, 0.3, 0.4],
       },
       colorDeep: {
-        // value: [0.1, 0, 0.1],
-        value: [0.0, 0.0, 0.04],
+        value: [0.1, 0, 0.1],
+        // value: [0.0, 0.0, 0.04],
       },
       resolution: { value: new THREE.Vector4() },
     }),
