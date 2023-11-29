@@ -13,7 +13,7 @@ const ThreeCanvas = () => {
         inset: "0",
         width: "100vw",
         height: "100vh",
-        zIndex: "-2",
+        zIndex: "-9",
       }}
     >
       <Sphere />
